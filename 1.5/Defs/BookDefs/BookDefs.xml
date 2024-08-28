@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_TrainingManual</defName>
+		<label>training manual</label>
+		<description>A training manual</description>
+		<thingClass>AlphaBooks.Book_Skill</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/Textbook/Textbook</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/Textbook/Textbook</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>Namer_TextBook</nameMaker>
+				<descriptionMaker>Description_SkillBook</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/Novel/Novel_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/Novel/Novel_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					 <li Class="AlphaBooks.BookOutcomeProperties_Skill" />
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		 <modExtensions>
+            <li Class="AlphaBooks.BookDefModExtension">
+                <doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+            </li>
+        </modExtensions>
+	</ThingDef>
+</Defs>
