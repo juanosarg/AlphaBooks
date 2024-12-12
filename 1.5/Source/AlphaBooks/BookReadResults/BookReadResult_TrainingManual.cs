@@ -8,7 +8,7 @@ using Verse;
 
 namespace AlphaBooks
 {
-    public static class BookReadResult_GiveHediff
+    public static class BookReadResult_TrainingManual
     {
 
         public static Dictionary<SkillDef, HediffDef> skillDefList = new Dictionary<SkillDef, HediffDef>() { { SkillDefOf.Shooting, InternalDefOf.ABooks_Training_Shooting },
