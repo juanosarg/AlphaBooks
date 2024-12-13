@@ -3,13 +3,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Shooting</defName>
 		<label>training manual: shooting</label>
-		<description>Reading a shooting training manual has increased the speed of learning the shooting skill for a day.</description>
+		<description>Reading a shooting training manual has increased the speed of learning the shooting skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -68,13 +69,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Melee</defName>
 		<label>training manual: melee</label>
-		<description>Reading a melee training manual has increased the speed of learning the melee skill for a day.</description>
+		<description>Reading a melee training manual has increased the speed of learning the melee skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -133,13 +135,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Construction</defName>
 		<label>training manual: construction</label>
-		<description>Reading a construction training manual has increased the speed of learning the construction skill for a day.</description>
+		<description>Reading a construction training manual has increased the speed of learning the construction skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -198,13 +201,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Mining</defName>
 		<label>training manual: mining</label>
-		<description>Reading a mining training manual has increased the speed of learning the mining skill for a day.</description>
+		<description>Reading a mining training manual has increased the speed of learning the mining skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -263,13 +267,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Cooking</defName>
 		<label>training manual: cooking</label>
-		<description>Reading a cooking training manual has increased the speed of learning the cooking skill for a day.</description>
+		<description>Reading a cooking training manual has increased the speed of learning the cooking skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -328,13 +333,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Plants</defName>
 		<label>training manual: plants</label>
-		<description>Reading a plants training manual has increased the speed of learning the plants skill for a day.</description>
+		<description>Reading a plants training manual has increased the speed of learning the plants skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -393,13 +399,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Animals</defName>
 		<label>training manual: animals</label>
-		<description>Reading an animals training manual has increased the speed of learning the animals skill for a day.</description>
+		<description>Reading an animals training manual has increased the speed of learning the animals skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -458,13 +465,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Crafting</defName>
 		<label>training manual: crafting</label>
-		<description>Reading a crafting training manual has increased the speed of learning the crafting skill for a day.</description>
+		<description>Reading a crafting training manual has increased the speed of learning the crafting skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -523,13 +531,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Artistic</defName>
 		<label>training manual: artistic</label>
-		<description>Reading an artistic training manual has increased the speed of learning the artistic skill for a day.</description>
+		<description>Reading an artistic training manual has increased the speed of learning the artistic skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -588,13 +597,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Medicine</defName>
 		<label>training manual: medicine</label>
-		<description>Reading a medicine training manual has increased the speed of learning the medicine skill for a day.</description>
+		<description>Reading a medicine training manual has increased the speed of learning the medicine skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -653,13 +663,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Social</defName>
 		<label>training manual: social</label>
-		<description>Reading a social training manual has increased the speed of learning the social skill for a day.</description>
+		<description>Reading a social training manual has increased the speed of learning the social skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
@@ -718,13 +729,14 @@
 	<HediffDef>
 		<defName>ABooks_Training_Intellectual</defName>
 		<label>training manual: intellectual</label>
-		<description>Reading an intellectual training manual has increased the speed of learning the intellectual skill for a day.</description>
+		<description>Reading an intellectual training manual has increased the speed of learning the intellectual skill for three days.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
-				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>

@@ -303,6 +303,7 @@
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookReadResults\BookReadResult_RandomInspiration.cs" />
     <Compile Include="BookReadResults\BookReadResult_TrainingManual.cs" />
     <Compile Include="Books\Book_Skill.cs" />
     <Compile Include="DefExtensions\BookDefModExtension.cs" />
@@ -314,9 +315,11 @@
     <Compile Include="HediffComps\HediffComp_DeleteAfterTime.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_DeleteAfterTime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_RandomInspiration.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Skill.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Alpha.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Alpha.cs" />
+    <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_RandomInspiration.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Skill.cs" />
   </ItemGroup>
   <ItemGroup />

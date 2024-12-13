@@ -16,8 +16,8 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Book">
-				<nameMaker>Namer_TextBook</nameMaker>
-				<descriptionMaker>Description_SkillBook</descriptionMaker>
+				<nameMaker>ABooks_TrainingManual_Namer</nameMaker>
+				<descriptionMaker>ABooks_TrainingManual_Description</descriptionMaker>
 				<ageYearsRange>100~200</ageYearsRange>
 				<openGraphic>
 					<texPath>Things/Item/Book/ABooks_TrainingManual/ABooks_TrainingManual_Open</texPath>
