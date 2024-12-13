@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
+using System;
 using Verse;
 using Verse.AI;
 using static UnityEngine.GridBrushBase;
@@ -18,7 +19,16 @@ namespace AlphaBooks
         {
             __result.AddFinishAction(delegate
             {
-                __instance.Book.def.GetModExtension<BookDefModExtension>()?.doerClass.GetMethod("Notify_BookRead").Invoke(null, [__instance.pawn,__instance.Book]);
+                BookDefModExtension extension = __instance.Book.def.GetModExtension<BookDefModExtension>();
+
+                if (extension?.readResults.NullOrEmpty() == false)
+                {
+                    foreach(BookReadResults result in extension.readResults)
+                    {
+                        result.doerClass.GetMethod("Notify_BookRead").Invoke(null, [__instance.pawn, __instance.Book, result.thoughtToGive]);
+                    }
+                }
+
             });
 
         }

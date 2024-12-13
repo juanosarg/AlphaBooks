@@ -100,7 +100,7 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>desc->This [writingQualityAdjective] [bookType] [follows] a [protag] as [protagThey] [storyStruggles]. [writingQualitySentence]. [maybe_date]\n\nOnce read, this book will inspire the reader with a random inspiration, and then it will be destroyed.</li>
+				<li>desc->This [writingQualityAdjective] [bookType] [follows] a [protag] as [protagThey] [storyStruggles]. [writingQualitySentence]. [maybe_date]\n\nOnce read, this book will inspire the reader with a random inspiration, and then it will be destroyed. It will have no effect on colonists with an active inspiration.</li>
 				<!-- Follows Variants -->
 				<li>follows->explores the journey of</li>
 				<li>follows->delves into the experiences of</li>
@@ -118,7 +118,7 @@
 				<li>protag->pioneer</li>
 				<li>protag->philosopher</li>
 				<li>protag->idealist</li>
-				<li>protagThey->they</li>
+				
 				<li>protagThey->he</li>
 				<li>protagThey->she</li>
 				<!-- Story Struggle Variants -->

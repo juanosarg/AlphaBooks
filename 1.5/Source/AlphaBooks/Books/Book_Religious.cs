@@ -8,14 +8,14 @@ using Verse.AI;
 using Verse.Grammar;
 namespace AlphaBooks
 {
-    public class Book_Skill : Book_NotAutoReadable
+    public class Book_Religious : Book_NotAutoReadable
     {
-        public SkillDef skill;
+        public MemeDef structure;
 
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Defs.Look(ref skill, "skill");
+            Scribe_Defs.Look(ref structure, "structure");
 
         }
 

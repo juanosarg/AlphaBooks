@@ -64,4 +64,73 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	<!-- Religious texts -->
+	<RulePackDef>
+		<defName>ABooks_ReligiousText_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title(p=4)->[religiousTextNameBasic]</li>
+				<li>title(p=2)->[religiousTextNameGrandiose]</li>
+				<li>title->[religiousTextNameSimple]</li>
+				<li>title->[religiousTextNameAuthored]</li>
+				<!-- Basic -->
+				<li>religiousTextNameBasic(p=6)->The [adjective] Path of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic(p=6)->The [adjective] Code of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic(p=6)->The Teachings of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic(p=6)->The Writings of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->Sacred Writ of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->The [adjective] Doctrine of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->The Scripture of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->The Hymns of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->The Revelations of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->The Holy Word of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose(p=6)->The Eternal Wisdom of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose(p=6)->The Unveiling Truth of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Celestial Testament of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Divine Mandate of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The [adjective] Chronicles of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Eternal Teachings of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Prophecies of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Immutable Laws of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Holy Edict of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Sacred Covenant of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple(p=6)->The [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple(p=6)->Reflections on the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The Path of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->Meditations on the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The Scrolls of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The Words of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The [adjective] Wisdom of the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->Verses of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The [adjective] Testament of the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The Laws of the [adjective] [altStructureNameBasic]</li>
+				<!-- Authored -->
+				<li>religiousTextNameAuthored(p=6)->The [adjective] Revelations of [ANYPAWN_nameIndef] on the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored(p=6)->[ANYPAWN_nameIndef]’s Chronicle of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Testament to the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Reflections on the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Visions of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Hymns of the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->The [adjective] Philosophy of [ANYPAWN_nameIndef] on the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->The Sacred Writings of [ANYPAWN_nameIndef] on the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->The Prophecies of [ANYPAWN_nameIndef] on the [adjective] [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Divine Insights into the [adjective] [altStructureNameBasic]</li>
+				
+				<li>altStructureNameBasic->[subject] System</li>
+				<li>altStructureNameBasic->[subject] Framework</li>
+				<li>altStructureNameBasic->[subject] Doctrine</li>
+				<li>altStructureNameBasic->[subject] Order</li>
+				<li>altStructureNameBasic->[subject] Schema</li>
+				<li>altStructureNameBasic->[subject] Organization</li>
+				<li>altStructureNameBasic->[subject] Body</li>
+				<li>altStructureNameBasic->[subject] Institution</li>
+				<li>altStructureNameBasic->[subject] Network</li>
+				<li>altStructureNameBasic->[subject] Hierarchy</li>
+<li>adjective->poop</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 </Defs>

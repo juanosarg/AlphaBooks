@@ -11,7 +11,15 @@ namespace AlphaBooks
     public class BookDefModExtension :DefModExtension
     {
 
+        public List<BookReadResults> readResults;
+
+    }
+
+    public class BookReadResults
+    {
         public Type doerClass;
+        public ThoughtDef thoughtToGive;
+
 
     }
 }

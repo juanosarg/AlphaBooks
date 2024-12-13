@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="BookBase">
-		<defName>ABooks_TrainingManual</defName>
-		<label>training manual</label>
-		<description>A training manual</description>
-		<thingClass>AlphaBooks.Book_Skill</thingClass>
+		<defName>ABooks_ReligiousText</defName>
+		<label>religious text</label>
+		<description>A religious text</description>
+		<thingClass>AlphaBooks.Book_Religious</thingClass>
 		<graphicData>
-			<texPath>Things/Item/Book/ABooks_TrainingManual/ABooks_TrainingManual</texPath>
+			<texPath>Things/Item/Book/ABooks_ReligiousText/ABooks_ReligiousText</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.8</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Item/Book/ABooks_TrainingManual/ABooks_TrainingManual</uiIconPath>
+		<uiIconPath>Things/Item/Book/ABooks_ReligiousText/ABooks_ReligiousText</uiIconPath>
 		<statBases>
 			<MarketValue>160</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Book">
-				<nameMaker>ABooks_TrainingManual_Namer</nameMaker>
-				<descriptionMaker>ABooks_TrainingManual_Description</descriptionMaker>
+				<nameMaker>ABooks_ReligiousText_Namer</nameMaker>
+				<descriptionMaker>ABooks_SelfHelp_Description</descriptionMaker>
 				<ageYearsRange>100~200</ageYearsRange>
 				<openGraphic>
-					<texPath>Things/Item/Book/ABooks_TrainingManual/ABooks_TrainingManual_Open</texPath>
+					<texPath>Things/Item/Book/ABooks_ReligiousText/ABooks_ReligiousText_Open</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>0.7</drawSize>
 				</openGraphic>
 				<verticalGraphic>
-					<texPath>Things/Item/Book/ABooks_TrainingManual/ABooks_TrainingManual_Vertical</texPath>
+					<texPath>Things/Item/Book/ABooks_ReligiousText/ABooks_ReligiousText_Vertical</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-					<li Class="AlphaBooks.BookOutcomeProperties_Skill"/>
+					<li Class="AlphaBooks.BookOutcomeProperties_Religious"/>
 				</doers>
 			</li>
 		</comps>
@@ -41,7 +41,11 @@
 			<li Class="AlphaBooks.BookDefModExtension">
 				<readResults>
 					<li>
-						<doerClass>AlphaBooks.BookReadResult_TrainingManual</doerClass>
+						<doerClass>AlphaBooks.BookReadResult_RandomInspiration</doerClass>					
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_ThoughtByQuality</doerClass>	
+						<thoughtToGive>ABooks_SelfHelpBookThought</thoughtToGive>						
 					</li>
 					<li>
 						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					

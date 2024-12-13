@@ -4,7 +4,7 @@
 		<defName>ABooks_SelfHelpBook</defName>
 		<label>self-help book</label>
 		<description>A self-help book</description>
-		<thingClass>Book</thingClass>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_SelfHelp/ABooks_SelfHelp</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -30,17 +30,28 @@
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-					 <li Class="AlphaBooks.BookOutcomeProperties_RandomInspiration" />
+					<li Class="AlphaBooks.BookOutcomeProperties_RandomInspiration"/>
 				</doers>
 			</li>
 		</comps>
 		<thingSetMakerTags Inherit="false">
 			<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
-		 <modExtensions>
-            <li Class="AlphaBooks.BookDefModExtension">
-                <doerClass>AlphaBooks.BookReadResult_RandomInspiration</doerClass>
-            </li>
-        </modExtensions>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_RandomInspiration</doerClass>					
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_ThoughtByQuality</doerClass>	
+						<thoughtToGive>ABooks_SelfHelpBookThought</thoughtToGive>						
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

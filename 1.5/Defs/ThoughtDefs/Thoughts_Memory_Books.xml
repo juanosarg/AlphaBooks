@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>ABooks_SelfHelpBookThought</defName>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+     
+      <li>
+        <label>awful self-help book</label>
+        <description>What WAS that book? That was nonsense.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>poor self-help book</label>
+        <description>Well, that was underwhelming. I’m not sure it’ll make much difference.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>normal self-help book</label>
+        <description>That self-help book had some helpful tips.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>good self-help book</label>
+        <description>Some great advice in there. I think this could really help me.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>excellent self-help book</label>
+        <description>That was genuinely insightful. I’ve got a fresh perspective on life now.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>masterwork self-help book</label>
+        <description>I feel like I’ve unlocked the secrets of the universe. This book was transformative!</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>legendary self-help book</label>
+        <description>This book is life-changing. I see everything with new clarity now!</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+
+</Defs>

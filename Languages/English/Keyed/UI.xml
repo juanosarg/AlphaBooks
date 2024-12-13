@@ -4,5 +4,6 @@
 	<ABooks_NotTallied> (Not tallied) </ABooks_NotTallied>
 	<ABooks_ForADay>for a day</ABooks_ForADay>
 	<ABooks_ForXDays>for {0} days</ABooks_ForXDays>
-	<ABooks_RandomInspiration>Receive a random inspiration</ABooks_RandomInspiration>
+	<ABooks_RandomInspiration>Reader will receive a random inspiration.</ABooks_RandomInspiration>
+	<ABooks_ExtraMood>Reader will receive a mood bonus of {0} for {1}.</ABooks_ExtraMood>
 </LanguageData>
