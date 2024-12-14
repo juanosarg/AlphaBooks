@@ -25,7 +25,8 @@ namespace AlphaBooks
                 {
                     foreach(BookReadResults result in extension.readResults)
                     {
-                        result.doerClass.GetMethod("Notify_BookRead").Invoke(null, [__instance.pawn, __instance.Book, result.thoughtToGive]);
+                        result.doerClass.GetMethod("Notify_BookRead").Invoke(null, [__instance.pawn, __instance.Book, result.thoughtToGive,
+                            result.abilityToGive,result.chargesByQuality,result.hediffToAdd]);
                     }
                 }
 

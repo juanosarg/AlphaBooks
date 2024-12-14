@@ -6,15 +6,14 @@ using Verse.Grammar;
 
 namespace AlphaBooks
 {
-    public class ReadingOutcomeDoer_RandomInspiration : BookOutcomeDoer
+    public class ReadingOutcomeDoer_Hediff : BookOutcomeDoer
     {
 
-   
+     
 
-        public new BookOutcomeProperties_RandomInspiration Props => (BookOutcomeProperties_RandomInspiration)props;
+        public new BookOutcomeProperties_Hediff Props => (BookOutcomeProperties_Hediff)props;
 
       
-
         public override bool DoesProvidesOutcome(Pawn reader)
         {
             return false;
@@ -22,10 +21,10 @@ namespace AlphaBooks
        
         public override string GetBenefitsString(Pawn reader = null)
         {
-            return "ABooks_RandomInspiration".Translate();
+            return "ABooks_Hediff".Translate(Props.descriptionForStages[(int)CompQuality.qualityInt],Props.ticks.ToStringTicksToPeriod());
         }
 
-      
+       
 
     }
 }

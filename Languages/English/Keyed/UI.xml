@@ -6,4 +6,8 @@
 	<ABooks_ForXDays>for {0} days</ABooks_ForXDays>
 	<ABooks_RandomInspiration>Reader will receive a random inspiration.</ABooks_RandomInspiration>
 	<ABooks_ExtraMood>Reader will receive a mood bonus of {0} for {1}.</ABooks_ExtraMood>
+	<ABooks_Ability>Reader will get the {0} ability.</ABooks_Ability>
+	<ABooks_Ability_Charges>Reader will get {1} charges of the {0} ability.</ABooks_Ability_Charges>
+	<ABooks_ReligiousMoodImpact>Reader will receive a mood bonus or penalty, depending on whether their ideo shares the book's subject as an ideological structure.</ABooks_ReligiousMoodImpact>
+	<ABooks_Hediff>Reader will receive {0} for {1}</ABooks_Hediff>
 </LanguageData>

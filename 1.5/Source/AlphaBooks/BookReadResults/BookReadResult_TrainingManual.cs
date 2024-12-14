@@ -21,7 +21,7 @@ namespace AlphaBooks
         };
 
 
-        public static void Notify_BookRead(Pawn pawn,Book book, ThoughtDef thought = null)
+        public static void Notify_BookRead(Pawn pawn, Book book, ThoughtDef thought = null, AbilityDef ability = null, List<int> chargesByQuality = null, HediffDef hediffToAdd = null)
         {
             if(book is Book_Skill)
             {

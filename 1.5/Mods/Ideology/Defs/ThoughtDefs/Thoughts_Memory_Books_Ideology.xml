@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>ABooks_ReligiousBookThought</defName>
+    <durationDays>2</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+     
+      <li>
+        <label>heretical thoughts</label>
+        <description>This text goes against everything I hold true. It feels unsettling and offensive to my beliefs.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>elevated teachings</label>
+        <description>Reading this text has reaffirmed my beliefs and filled me with a sense of purpose. I feel spiritually strengthened.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+     
+    </stages>
+  </ThoughtDef>
+
+ 
+
+</Defs>

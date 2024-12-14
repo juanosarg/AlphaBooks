@@ -31,6 +31,20 @@
 				</verticalGraphic>
 				<doers>
 					<li Class="AlphaBooks.BookOutcomeProperties_Religious"/>
+					<li Class="AlphaBooks.BookOutcomeProperties_GiveAbility">
+						<abilityToGive>ABooks_Convert_Charges</abilityToGive>
+						<charges>true</charges>
+						<chargesByQuality>
+							<li>1</li>
+							<li>1</li>
+							<li>1</li>
+							<li>2</li>
+							<li>2</li>
+							<li>2</li>
+							<li>3</li>
+						</chargesByQuality>
+						<propagateRulesForTitle>false</propagateRulesForTitle>
+					</li>
 				</doers>
 			</li>
 		</comps>
@@ -41,14 +55,23 @@
 			<li Class="AlphaBooks.BookDefModExtension">
 				<readResults>
 					<li>
-						<doerClass>AlphaBooks.BookReadResult_RandomInspiration</doerClass>					
+						<doerClass>AlphaBooks.BookReadResult_GiveAbility</doerClass>
+						<abilityToGive>ABooks_Convert_Charges</abilityToGive>
+						<chargesByQuality>
+							<li>1</li>
+							<li>1</li>
+							<li>1</li>
+							<li>2</li>
+							<li>2</li>
+							<li>2</li>
+							<li>3</li>
+						</chargesByQuality>
 					</li>
 					<li>
-						<doerClass>AlphaBooks.BookReadResult_ThoughtByQuality</doerClass>	
-						<thoughtToGive>ABooks_SelfHelpBookThought</thoughtToGive>						
+						<doerClass>AlphaBooks.BookReadResult_Religious</doerClass>
 					</li>
 					<li>
-						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
 					</li>
 				</readResults>
 			</li>

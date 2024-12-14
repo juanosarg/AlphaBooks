@@ -42,5 +42,10 @@ namespace AlphaBooks
         public static HediffDef ABooks_Training_Medicine;
         public static HediffDef ABooks_Training_Social;
         public static HediffDef ABooks_Training_Intellectual;
+
+        [MayRequireIdeology]
+        public static ThoughtDef ABooks_ReligiousBookThought;
+
+
     }
 }

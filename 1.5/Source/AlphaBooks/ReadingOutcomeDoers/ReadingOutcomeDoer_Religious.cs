@@ -26,7 +26,7 @@ namespace AlphaBooks
         }
         public override string GetBenefitsString(Pawn reader = null)
         {
-            return "";// string.Format(" - {0}: {1}, x{2} {3}", "ABooks_SkillLearnFactor".Translate(), Book.skill.LabelCap, MultiplierByQuality.Evaluate((int)base.Quality), "ABooks_ForXDays".Translate(3));
+            return "ABooks_ReligiousMoodImpact".Translate();
         }
 
         public override List<RulePack> GetTopicRulePacks()
@@ -34,16 +34,11 @@ namespace AlphaBooks
             RulePack rulepack = new RulePack();
             rulepack.rulesStrings =
             [
-                "subject->" + (string)Book.structure.cachedLabelCap,
+                "subject->" + (string)Book.structure.LabelCap
                
             ];
-            RulePack rulepack2 = new RulePack();
-            rulepack2.rulesStrings =
-            [
-               
-                "adjective->" + Book.structure.symbolPacks.RandomElement().adjective,
-            ];
-            return new List<RulePack> { rulepack,rulepack2 };
+            
+            return new List<RulePack> { rulepack };
         }
 
     }

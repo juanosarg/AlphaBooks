@@ -303,15 +303,24 @@
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\CompAbilityEffect_DeleteWhenZeroCharges.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_DeleteWhenZeroCharges.cs" />
+    <Compile Include="BookReadResults\BookReadResult_GiveHediff.cs" />
+    <Compile Include="BookReadResults\BookReadResult_GiveAbility.cs" />
     <Compile Include="BookReadResults\BookReadResult_RandomInspiration.cs" />
     <Compile Include="BookReadResults\BookReadResult_ThoughtByQuality.cs" />
     <Compile Include="BookReadResults\BookReadResult_DestroyBook.cs" />
+    <Compile Include="BookReadResults\BookReadResult_Religious.cs" />
     <Compile Include="BookReadResults\BookReadResult_TrainingManual.cs" />
     <Compile Include="Books\Book_NotAutoReadable.cs" />
+    <Compile Include="Books\Book_Hediff.cs" />
     <Compile Include="Books\Book_Religious.cs" />
     <Compile Include="Books\Book_Skill.cs" />
     <Compile Include="DefExtensions\BookDefModExtension.cs" />
+    <Compile Include="Defs\ChargeAbilityDef.cs" />
+    <Compile Include="GraphicsCache\GraphicsCache.cs" />
     <Compile Include="Harmony\BookUtility_IsValidBook.cs" />
+    <Compile Include="Harmony\Command_Ability_BGTexture.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\SkillRecord_LearnRateFactor.cs" />
@@ -320,12 +329,19 @@
     <Compile Include="HediffComps\HediffComp_DeleteAfterTime.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_DeleteAfterTime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_GiveAbility.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_RandomInspiration.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Religious.cs" />
+    <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Hediff.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Skill.cs" />
+    <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_ThoughtByQuality.cs" />
+    <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_GiveAbility.cs" />
+    <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Hediff.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_RandomInspiration.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Religious.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Skill.cs" />
+    <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_ThoughtByQuality.cs" />
+    <Compile Include="StaticCollections\StaticCollections.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
