@@ -192,4 +192,121 @@
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
+	
+	<!-- Religious Text -->
+	
+	<RulePackDef>
+		<defName>ABooks_ReligiousText_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+    <!-- Roots -->
+    <li>desc->This sacred text of the [subject_primary] structure offers [spiritualInsightAdjective] [guidance] for [adherents]. [lessonSummary] [writingQualitySentence]</li>
+    <li>desc->In this [spiritualInsightAdjective] scripture of the [subject_primary] structure, the [prophetTitle] [reveals] [divineMessage]. [lessonSummary]. [maybe_date]</li>
+
+    <!-- Root: Guidance and Revelation Variants -->
+    <li>guidance->profound wisdom</li>
+    <li>guidance->spiritual guidance</li>
+    <li>guidance->moral instruction</li>
+    <li>guidance->divine commandments</li>
+    <li>guidance->sacred paths to enlightenment</li>
+
+    <li>lessonSummary->It teaches [adherents] to [virtueAction] and [aspireToVirtue].</li>
+    <li>lessonSummary->It emphasizes the importance of [virtueNoun] and [spiritualPractice].</li>
+    <li>lessonSummary->It calls upon [adherents] to [moralCallToAction] in their lives.</li>
+
+    <li>adherents->the [subject_primary] followers</li>
+    <li>adherents->those devoted to the [subject_primary] hierarchy</li>
+    <li>adherents->the [subject_primary] believers</li>
+
+    <!-- Virtue Actions and Aspirations -->
+    <li>virtueAction->embrace humility</li>
+    <li>virtueAction->seek divine wisdom</li>
+    <li>virtueAction->live in harmony</li>
+    <li>virtueAction->serve the needy</li>
+    <li>virtueAction->practice selflessness</li>
+
+    <li>aspireToVirtue->achieve inner peace</li>
+    <li>aspireToVirtue->grow closer to the divine</li>
+    <li>aspireToVirtue->live a virtuous life</li>
+    <li>aspireToVirtue->honor the teachings of the [subject_primary] body</li>
+
+    <!-- Virtues and Practices -->
+    <li>virtueNoun->faith</li>
+    <li>virtueNoun->charity</li>
+    <li>virtueNoun->compassion</li>
+    <li>virtueNoun->justice</li>
+    <li>virtueNoun->patience</li>
+
+    <li>spiritualPractice->prayer</li>
+    <li>spiritualPractice->meditation</li>
+    <li>spiritualPractice->worship</li>
+    <li>spiritualPractice->fasting</li>
+    <li>spiritualPractice->pilgrimage</li>
+
+    <!-- Divine Message -->
+    <li>divineMessage->the eternal truths of the [subject_primary] framework</li>
+    <li>divineMessage->the path to salvation</li>
+    <li>divineMessage->the sacred covenant between the divine and humanity</li>
+    <li>divineMessage->the mysteries of creation</li>
+    <li>divineMessage->the call to righteous living</li>
+
+    <!-- Prophet Titles -->
+    <li>prophetTitle->prophet</li>
+    <li>prophetTitle->sage</li>
+    <li>prophetTitle->messenger</li>
+    <li>prophetTitle->seer</li>
+    <li>prophetTitle->scribe</li>
+
+    <!-- Call to Action -->
+    <li>moralCallToAction->practice forgiveness</li>
+    <li>moralCallToAction->seek redemption</li>
+    <li>moralCallToAction->show kindness to all</li>
+    <li>moralCallToAction->protect the weak</li>
+    <li>moralCallToAction->honor their ancestors</li>
+
+    <!-- Writing Quality and Spiritual Insight -->
+    <li>spiritualInsightAdjective->profound</li>
+    <li>spiritualInsightAdjective->enlightening</li>
+    <li>spiritualInsightAdjective->divinely inspired</li>
+    <li>spiritualInsightAdjective->soul-stirring</li>
+    <li>spiritualInsightAdjective->sacred</li>
+
+    <li>writingQualitySentence(quality[greater_than]4)->It is revered as [sacredPraise].</li>
+    <li>writingQualitySentence(quality[less_than]5,quality[greater_than]2)->It offers [spiritualGuidance] in a [thoughtfulDesc].</li>
+    <li>writingQualitySentence(quality[less_than]3,quality[greater_than]0)->It is [spiritualStruggle] but still [sacredSignificance].</li>
+	<li>writingQualitySentence(quality[less_than]1)->It is [spiritualShit].</li>
+
+	<li>spiritualShit->written in a way that makes it just unreadable trash</li>
+    <li>spiritualShit->religious drivel, with few redeeming values</li>
+    <li>spiritualShit->, unfortunately, pure nonsense</li>
+	<li>spiritualShit->unreadable, like it was written by a small child, but someone, somewhere probably died for it</li>
+
+    <li>sacredPraise->a true timeless cornerstone of faith</li>
+    <li>sacredPraise->a masterpiece of spiritual insight</li>
+    <li>sacredPraise->a sublime guide for all seeking the divine</li>
+
+    <li>spiritualGuidance->a glimpse into sacred truths</li>
+    <li>spiritualGuidance->moral lessons through its verses</li>
+    <li>spiritualGuidance->deep reflections on the human condition</li>
+
+    <li>thoughtfulDesc->structured and contemplative way</li>
+    <li>thoughtfulDesc->layered with meaning way</li>
+    <li>thoughtfulDesc->in a richly allegorical way</li>
+	<li>thoughtfulDesc->in a simple and concise manner</li>
+
+    <li>spiritualStruggle->very challenging to interpret and obtuse</li>
+    <li>spiritualStruggle->an unnecessarily complex text</li>
+    <li>spiritualStruggle->written in a dense style</li>
+
+    <li>sacredSignificance->remains somewhat central to the [subject_primary] organization</li>
+    <li>sacredSignificance->holds some meaning for believers</li>
+    <li>sacredSignificance->offers some wisdom despite its difficulties</li>
+</rulesStrings>
+
+		</rulePack>
+	</RulePackDef>
+	
 </Defs>

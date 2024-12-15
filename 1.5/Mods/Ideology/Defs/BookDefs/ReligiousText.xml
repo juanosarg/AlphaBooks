@@ -17,7 +17,7 @@
 		<comps>
 			<li Class="CompProperties_Book">
 				<nameMaker>ABooks_ReligiousText_Namer</nameMaker>
-				<descriptionMaker>ABooks_SelfHelp_Description</descriptionMaker>
+				<descriptionMaker>ABooks_ReligiousText_Description</descriptionMaker>
 				<ageYearsRange>100~200</ageYearsRange>
 				<openGraphic>
 					<texPath>Things/Item/Book/ABooks_ReligiousText/ABooks_ReligiousText_Open</texPath>
