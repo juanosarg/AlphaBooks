@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<AbilityDef>
+		<defName>ABooks_GreaterFireSpew_Charges</defName>
+		<label>greater fire spew</label>
+		<description>Spew flammable bile that ignites immediately in contact with oxygen, creating a dangerous conflagration that will set everything on its path on fire.</description>
+		<iconPath>UI/Widgets/ABooks_GreaterFireSpew</iconPath>
+		<cooldownTicksRange>3000</cooldownTicksRange>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<aiCanUse>true</aiCanUse>
+		<warmupStartSound>FireSpew_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>16.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>FireSpew_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>ABooks_GreaterFireSpew</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

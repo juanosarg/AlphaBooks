@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_PsychologyBook_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>title->[prefix] [concept]</li>
+				<li>title->[concept]: [subtitle]</li>
+				<li>title->[concept] and the [phenomenon]</li>
+				<li>title->[emotionalVerb] [phenomenon]</li>
+				<li>title->The [concept] of [phenomenon]</li>
+				<li>title->[phenomenon] in the [context]</li>
+				<!-- Prefixes -->
+				<li>prefix->The Art of</li>
+				<li>prefix->The Science of</li>
+				<li>prefix->The Power of</li>
+				<li>prefix->The Mystery of</li>
+				<li>prefix->Breaking Through</li>
+				<li>prefix->Unraveling</li>
+				<li>prefix->Discovering</li>
+				<li>prefix->Mastering</li>
+				<li>prefix->The Secret to</li>
+				<!-- Concepts -->
+				<li>concept->Mindfulness</li>
+				<li>concept->Resilience</li>
+				<li>concept->Happiness</li>
+				<li>concept->Emotional Intelligence</li>
+				<li>concept->Empathy</li>
+				<li>concept->Self-Awareness</li>
+				<li>concept->Identity</li>
+				<li>concept->Behavioral Patterns</li>
+				<li>concept->Human Potential</li>
+				<li>concept->Personal Growth</li>
+				<li>concept->Subconscious</li>
+				<li>concept->Attachment</li>
+				<li>concept->Trauma</li>
+				<li>concept->Cognitive Bias</li>
+				<li>concept->Decision-Making</li>
+				<li>concept->Social Connections</li>
+				<!-- Subtitles -->
+				<li>subtitle->A Journey to Understanding Yourself</li>
+				<li>subtitle->Why We Think and Act the Way We Do</li>
+				<li>subtitle->The Key to Mental Clarity</li>
+				<li>subtitle->How to Build Better Relationships</li>
+				<li>subtitle->Unlocking the Secrets of the Human Mind</li>
+				<li>subtitle->The Hidden Forces Shaping Our Lives</li>
+				<li>subtitle->A Practical Guide to Change</li>
+				<li>subtitle->Breaking the Cycle of Negative Thinking</li>
+				<li>subtitle->Lessons from Neuroscience and Psychology</li>
+				<li>subtitle->Strategies for Emotional Well-being</li>
+				<!-- Phenomena -->
+				<li>phenomenon->Stress</li>
+				<li>phenomenon->Anxiety</li>
+				<li>phenomenon->Burnout</li>
+				<li>phenomenon->Confidence</li>
+				<li>phenomenon->Relationships</li>
+				<li>phenomenon->Motivation</li>
+				<li>phenomenon->Habits</li>
+				<li>phenomenon->Change</li>
+				<li>phenomenon->Fear</li>
+				<li>phenomenon->Loneliness</li>
+				<li>phenomenon->Uncertainty</li>
+				<li>phenomenon->Creativity</li>
+				<li>phenomenon->Leadership</li>
+				<li>phenomenon->Decision Fatigue</li>
+				<!-- Emotional Verbs -->
+				<li>emotionalVerb->Overcoming</li>
+				<li>emotionalVerb->Embracing</li>
+				<li>emotionalVerb->Transforming</li>
+				<li>emotionalVerb->Navigating</li>
+				<li>emotionalVerb->Conquering</li>
+				<li>emotionalVerb->Reframing</li>
+				<li>emotionalVerb->Breaking Free from</li>
+				<li>emotionalVerb->Understanding</li>
+				<li>emotionalVerb->Redefining</li>
+				<li>emotionalVerb->Harnessing</li>
+				<!-- Context -->
+				<li>context->Rim Worlds</li>
+				<li>context->Workplace</li>
+				<li>context->Space Age</li>
+				<li>context->Everyday Life</li>
+				<li>context->Human Experience</li>
+				<li>context->Post-Scarcity Era</li>
+				<li>context->Family Dynamics</li>
+				<li>context->Relationships</li>
+				<li>context->Social Media</li>
+				<li>context->Leadership Roles</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

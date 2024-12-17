@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_RuinedBook</defName>
+		<label>ruined book</label>
+		<description>A ruined book</description>
+		
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_RuinedBook/ABooks_RuinedBook</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_RuinedBook/ABooks_RuinedBook</uiIconPath>
+		<statBases>
+			<MarketValue>2</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>Namer_Novel</nameMaker>
+				<descriptionMaker>ABooks_RuinedBook_Description</descriptionMaker>
+				<ageYearsRange>2800~3000</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_RuinedBook/ABooks_RuinedBook_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_RuinedBook/ABooks_RuinedBook_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_Nothing"/>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>None</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_BurnedBook</defName>
+		<label>burned book</label>
+		<description>A burned book</description>
+		
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_BurnedBook/ABooks_BurnedBook</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_BurnedBook/ABooks_BurnedBook</uiIconPath>
+		<statBases>
+			<MarketValue>2</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>Namer_Novel</nameMaker>
+				<descriptionMaker>ABooks_RuinedBook_Description</descriptionMaker>
+				<ageYearsRange>2800~3000</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_BurnedBook/ABooks_BurnedBook_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_BurnedBook/ABooks_BurnedBook_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_Nothing"/>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>None</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

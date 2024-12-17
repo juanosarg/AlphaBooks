@@ -35,13 +35,32 @@ namespace AlphaBooks
         
         public override string GetBenefitsString(Pawn reader = null)
         {
-            if (Props.charges)
-            {
-                return "ABooks_Ability_Charges".Translate(Props.abilityToGive.LabelCap, ChargesByQuality().Evaluate((int)base.Quality));
+
+            if (Props.abilitiesToGive.Count == 1) {
+
+                if (Props.charges)
+                {
+                    return "ABooks_Ability_Charges".Translate(Props.abilitiesToGive[0].LabelCap, ChargesByQuality().Evaluate((int)base.Quality));
+                }
+                else
+                {
+                    return "ABooks_Ability".Translate(Props.abilitiesToGive[0].LabelCap);
+
+                }
+
+
             }
             else
             {
-                return "ABooks_Ability".Translate(Props.abilityToGive.LabelCap);
+                if (Props.charges)
+                {
+                    return "ABooks_Ability_Several_Charges".Translate(Props.abilitiesToGive.Select(x => x.LabelCap).ToStringSafeEnumerable(), ChargesByQuality().Evaluate((int)base.Quality));
+                }
+                else
+                {
+                    return "ABooks_Ability_Several".Translate(Props.abilitiesToGive.Select(x => x.LabelCap).ToStringSafeEnumerable());
+
+                }
 
             }
 
@@ -54,7 +73,7 @@ namespace AlphaBooks
                 RulePack rulepack = new RulePack();
                 rulepack.rulesStrings =
                 [
-                    "subject->" + (string)Props.abilityToGive.LabelCap
+                    "subject->" + (string)Props.abilitiesToGive[0].LabelCap
 
                 ];
 

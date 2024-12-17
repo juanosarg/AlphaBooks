@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_SelfHelp_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>desc->This [writingQualityAdjective] [bookType] [follows] a [protag] as [protagThey] [storyStruggles]. [writingQualitySentence]. [maybe_date]\n\nOnce read, this book will inspire the reader with a random inspiration, and then it will be destroyed. It will have no effect on colonists with an active inspiration.</li>
+				<!-- Follows Variants -->
+				<li>follows->explores the journey of</li>
+				<li>follows->delves into the experiences of</li>
+				<li>follows->provides insight into the life of</li>
+				<li>follows->shares the story of</li>
+				<li>follows->uncovers the struggles of</li>
+				<!-- Protagonist Variants -->
+				<li>protag->individual</li>
+				<li>protag->wanderer</li>
+				<li>protag->seeker</li>
+				<li>protag->visionary</li>
+				<li>protag->dreamer</li>
+				<li>protag->traveler</li>
+				<li>protag->optimist</li>
+				<li>protag->pioneer</li>
+				<li>protag->philosopher</li>
+				<li>protag->idealist</li>
+				<li>protagThey->he</li>
+				<li>protagThey->she</li>
+				<!-- Story Struggle Variants -->
+				<li>storyStruggles->strives to uncover their inner potential</li>
+				<li>storyStruggles->navigates the challenges of self-discovery</li>
+				<li>storyStruggles->learns to embrace their strengths and weaknesses</li>
+				<li>storyStruggles->embarks on a quest for personal growth</li>
+				<li>storyStruggles->faces their fears and grows stronger</li>
+				<li>storyStruggles->discovers the beauty of self-acceptance</li>
+				<li>storyStruggles->overcomes doubt to achieve greatness</li>
+				<li>storyStruggles->finds inspiration in unlikely places</li>
+				<li>storyStruggles->seeks the path to enlightenment</li>
+				<li>storyStruggles->unlocks their hidden talents</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective(quality==6)->remarkably insightful</li>
+				<li>writingQualityAdjective(quality==5)->thought-provoking and engaging</li>
+				<li>writingQualityAdjective(quality==4)->insightful and encouraging</li>
+				<li>writingQualityAdjective(quality==3)->well-written</li>
+				<li>writingQualityAdjective(quality==2)->ordinary</li>
+				<li>writingQualityAdjective(quality==1)->poorly-crafted</li>
+				<li>writingQualityAdjective(quality==0)->nearly incomprehensible</li>
+				<li>writingQualitySentence(quality[greater_than]4)->It is [excellentDesc] [excellentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]5,quality[greater_than]1)->It is [decentDesc] [decentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]2)->It is [awfulDesc] [awfulExtra]</li>
+				<!-- Excellent Descriptions -->
+				<li>excellentDesc->a deeply reflective work</li>
+				<li>excellentDesc->filled with motivational anecdotes</li>
+				<li>excellentDesc->rich with inspiring thoughts</li>
+				<li>excellentDesc->a captivating exploration of personal potential</li>
+				<li>excellentDesc->a remarkably uplifting read</li>
+				<li>excellentExtra->. Its words resonate deeply with the reader</li>
+				<li>excellentExtra->. It offers profound insights and practical advice</li>
+				<li>excellentExtra->. It leaves the reader inspired to achieve more</li>
+				<!-- Decent Descriptions -->
+				<li>decentDesc->a straightforward motivational guide</li>
+				<li>decentDesc->a simple yet effective book</li>
+				<li>decentDesc->an easy read with helpful ideas</li>
+				<li>decentDesc->a collection of modest yet useful thoughts</li>
+				<li>decentDesc->an approachable take on personal growth</li>
+				<li>decentExtra-> but it lacks depth in some areas</li>
+				<li>decentExtra-> though its ideas feel repetitive</li>
+				<li>decentExtra-> but it doesn’t break any new ground</li>
+				<li>decentExtra-> though it struggles to maintain focus</li>
+				<li>decentExtra-> but its advice can feel overly simplistic</li>
+				<!-- Awful Descriptions -->
+				<li>awfulDesc->confusing and scattered</li>
+				<li>awfulDesc->filled with horrendous platitudes</li>
+				<li>awfulDesc->frustratingly vague and unhelpful</li>
+				<li>awfulDesc->barely coherent in its message</li>
+				<li>awfulDesc->the kind of crap that you find heavily discounted in the bargain bin</li>
+				<li>awfulExtra-> and fails to deliver any real value</li>
+				<li>awfulExtra-> and reads more like a diary than a guide</li>
+				<li>awfulExtra-> and leaves the reader with more questions than answers</li>
+				<li>awfulExtra-> and is riddled with clichés</li>
+				<li>awfulExtra-> and feels basically like something from an MLM scam</li>
+				<!-- Date -->
+				<li>maybe_date-></li>
+				<li>maybe_date->This book was first published [date_form].</li>
+				<li>maybe_date->The text was written [date_form].</li>
+				<li>maybe_date->This book was originally published by an obscure company known for its eccentric blend of self-help insights and pseudoscientific theories.</li>
+				<li>date_form->recently</li>
+				<li>date_form->many years ago</li>
+				<li>date_form->on the [date]</li>
+				<li>date_form->in [date_season]</li>
+				<!-- Book Type -->
+				<li>bookType(p=4)->self-help book</li>
+				<li>bookType(p=2)->guidebook</li>
+				<li>bookType->manual</li>
+				<li>bookType->reference</li>
+				<li>bookType->collection</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

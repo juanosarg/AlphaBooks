@@ -8,6 +8,9 @@
 	<ABooks_ExtraMood>Reader will receive a mood bonus of {0} for {1}.</ABooks_ExtraMood>
 	<ABooks_Ability>Reader will get the {0} ability.</ABooks_Ability>
 	<ABooks_Ability_Charges>Reader will get {1} charges of the {0} ability.</ABooks_Ability_Charges>
+	<ABooks_Ability_Several>Reader will get one of the following abilities: {0}.</ABooks_Ability_Several>
+	<ABooks_Ability_Several_Charges>Reader will get one of the following abilities: {0} with {1} charges.</ABooks_Ability_Several_Charges>
 	<ABooks_ReligiousMoodImpact>Reader will receive a mood bonus or penalty, depending on whether their ideo shares the book's subject as an ideological structure.</ABooks_ReligiousMoodImpact>
 	<ABooks_Hediff>Reader will receive {0} for {1}</ABooks_Hediff>
+	<ABooks_Nothing>This ruined book won't provide any benefit to the reader except a meager amount of recreation, and it will basically disintegrate after being read.</ABooks_Nothing>
 </LanguageData>

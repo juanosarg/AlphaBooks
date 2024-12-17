@@ -13,7 +13,7 @@ namespace AlphaBooks
 
     
 
-        public static void Notify_BookRead(Pawn pawn, Book book, ThoughtDef thought = null, AbilityDef ability = null, List<int> chargesByQuality = null, HediffDef hediffToAdd = null)
+        public static void Notify_BookRead(Pawn pawn, Book book, ThoughtDef thought = null, List<AbilityDef> abilities = null, List<int> chargesByQuality = null, HediffDef hediffToAdd = null)
         {
             InspirationDef inspiration = pawn.mindState.inspirationHandler.GetRandomAvailableInspirationDef();
             if (inspiration != null)

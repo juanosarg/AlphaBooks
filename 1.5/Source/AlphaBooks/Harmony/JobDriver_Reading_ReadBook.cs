@@ -17,6 +17,7 @@ namespace AlphaBooks
         [HarmonyPostfix]
         public static void CommunicateFinishedReading(ref Toil __result, JobDriver_Reading __instance)
         {
+          
             __result.AddFinishAction(delegate
             {
                 BookDefModExtension extension = __instance.Book.def.GetModExtension<BookDefModExtension>();
@@ -26,7 +27,8 @@ namespace AlphaBooks
                     foreach(BookReadResults result in extension.readResults)
                     {
                         result.doerClass.GetMethod("Notify_BookRead").Invoke(null, [__instance.pawn, __instance.Book, result.thoughtToGive,
-                            result.abilityToGive,result.chargesByQuality,result.hediffToAdd]);
+                            result.abilitiesToGive,
+                            result.chargesByQuality,result.hediffToAdd]);
                     }
                 }
 

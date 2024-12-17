@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_OfficeBinder_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Memo Title Formats -->
+				<li>title->[intro] [subject].</li>
+				<li>title->[actionRequired] [subject].</li>
+				<li>title->[reminder] [subject].</li>
+				<li>title->[update] [subject].</li>
+				<li>title->[announcement] [subject].</li>
+				<!-- Introductory Phrases -->
+				<li>intro->New</li>
+				<li>intro->Urgent</li>
+				<li>intro->Important</li>
+				<li>intro->Immediate</li>
+				<li>intro->Reminder</li>
+				<li>intro->Action Required</li>
+				<li>intro->Scheduled</li>
+				<!-- Action Required Phrases -->
+				<li>actionRequired->Action required for</li>
+				<li>actionRequired->Attention needed for</li>
+				<li>actionRequired->All staff should be aware of</li>
+				<li>actionRequired->Immediate action regarding</li>
+				<li>actionRequired->Please address the following</li>
+				<!-- Reminder Phrases -->
+				<li>reminder->Reminder: [subject]</li>
+				<li>reminder->Don’t forget to review [subject]</li>
+				<li>reminder->Final reminder: [subject]</li>
+				<li>reminder->Please remember to complete [subject]</li>
+				<!-- Update Phrases -->
+				<li>update->Important update: [subject]</li>
+				<li>update->Please be advised: [subject]</li>
+				<li>update->Latest update on [subject]</li>
+				<li>update->Attention: New update on [subject]</li>
+				<!-- Announcement Phrases -->
+				<li>announcement->Official announcement: [subject]</li>
+				<li>announcement->Company-wide announcement on [subject]</li>
+				<li>announcement->Important announcement: [subject]</li>
+			
+				<!-- Subject Phrases -->
+				<li>subject->Company policy</li>
+				<li>subject->Audit schedule</li>
+				<li>subject->Employee update</li>
+				<li>subject->Quarterly review</li>
+				<li>subject->Holiday hours</li>
+				<li>subject->Safety procedures</li>
+				<li>subject->Work-from-home guidelines</li>
+				<li>subject->Office relocation</li>
+				<li>subject->Data privacy review</li>
+				<li>subject->Employee recognition program</li>
+				<li>subject->Procurement contract</li>
+				<li>subject->Travel reimbursement policy</li>
+				<li>subject->IT system maintenance</li>
+				<li>subject->Annual report deadlines</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

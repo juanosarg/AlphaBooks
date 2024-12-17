@@ -32,8 +32,11 @@ namespace AlphaBooks
                     StringBuilder stringBuilder = new StringBuilder();
                     stringBuilder.AppendLine();
                     float num = sk.Pawn.GetStatValue(item.Value);
-                    stringBuilder.AppendLine("  - " + item.Value.LabelCap +"ABooks_NotTallied".Translate()+ ": x" + num.ToStringPercent());
-                    __result += stringBuilder.ToString().TrimEndNewlines();
+                    if (num != 1) {
+                        stringBuilder.AppendLine("  - " + item.Value.LabelCap + "ABooks_NotTallied".Translate() + ": x" + num.ToStringPercent());
+                        __result += stringBuilder.ToString().TrimEndNewlines();
+                    }
+                    
                     break;
                 }
             }

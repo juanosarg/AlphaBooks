@@ -14,7 +14,7 @@ namespace AlphaBooks
 
 
 
-        public static void Notify_BookRead(Pawn pawn, Book book, ThoughtDef thought = null, AbilityDef ability = null, List<int> chargesByQuality = null, HediffDef hediffToAdd = null)
+        public static void Notify_BookRead(Pawn pawn, Book book, ThoughtDef thought = null, List<AbilityDef> abilities = null, List<int> chargesByQuality = null, HediffDef hediffToAdd = null)
         {
             if (book is Book_Religious)
             {
@@ -24,11 +24,11 @@ namespace AlphaBooks
                 {
                     if (pawn.Ideo?.HasMeme(book_Religious.structure) == true)
                     {
-                        pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtMaker.MakeThought(InternalDefOf.ABooks_ReligiousBookThought, 0));
+                        pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtMaker.MakeThought(InternalDefOf.ABooks_ReligiousBookThought, 1));
                     }
                     else
                     {
-                        pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtMaker.MakeThought(InternalDefOf.ABooks_ReligiousBookThought, 1));
+                        pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtMaker.MakeThought(InternalDefOf.ABooks_ReligiousBookThought, 0));
 
 
                     }

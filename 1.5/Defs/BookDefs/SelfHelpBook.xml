@@ -25,7 +25,7 @@
 					<drawSize>0.7</drawSize>
 				</openGraphic>
 				<verticalGraphic>
-					<texPath>Things/Item/Book/ABooks_TrainingManual/ABooks_SelfHelp_Vertical</texPath>
+					<texPath>Things/Item/Book/ABooks_SelfHelp/ABooks_SelfHelp_Vertical</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>

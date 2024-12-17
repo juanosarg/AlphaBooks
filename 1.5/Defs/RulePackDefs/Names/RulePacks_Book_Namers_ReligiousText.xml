@@ -1,70 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Training Manuals -->
-	<RulePackDef>
-		<defName>ABooks_TrainingManual_Namer</defName>
-		<include>
-			<li>ArtNameUtility</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>title->[titleBasic]</li>
-				<li>title(p=2)->[titleAuthored]</li>
-				<!-- Basic -->
-				<li>titleBasic(p=6)->[randAdjective] [subject_primary] Training Manual</li>
-				<li>titleBasic(p=6)->[randNoun] and [subject_primary] Skill Training</li>
-				<li>titleBasic->Training the Art of [subject_primary]</li>
-				<li>titleBasic->Essential Training Techniques in [subject_primary]</li>
-				<li>titleBasic->A Beginner’s Training Guide to [subject_primary]</li>
-				<li>titleBasic->Advanced Training Lessons in [subject_primary]</li>
-				<li>titleBasic->Training to Expertise: [subject_primary]</li>
-				<li>titleBasic->Training for Survival: [subject_primary]</li>
-				<li>titleBasic->Training Mastery in [subject_primary]</li>
-				<li>titleBasic->Practice Makes Perfect: Training [subject_primary]</li>
-				<!-- Authored -->
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Training Manual of [subject_primary]</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Training Guide to [subject_primary]</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Training Book: [subject_primary]</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Training Handbook of [subject_primary]</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Training Lessons in [subject_primary]</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Training Notes on [subject_primary]</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Training Strategies for [subject_primary]</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
-	<!-- Self-help books -->
-	<RulePackDef>
-		<defName>ABooks_SelfHelp_Namer</defName>
-		<include>
-			<li>ArtNameUtility</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>title->[titleBasic]</li>
-				<li>title(p=2)->[titleAuthored]</li>
-				<!-- Basic -->
-				<li>titleBasic(p=6)->[randAdjective] Self-Help Guide</li>
-				<li>titleBasic(p=6)->[randNoun] and Personal Growth</li>
-				<li>titleBasic->Unlocking Your Potential</li>
-				<li>titleBasic->The Path to Inspiration</li>
-				<li>titleBasic->A Beginner’s Guide to Inspiration</li>
-				<li>titleBasic->Inspirational Techniques for Self-Improvement</li>
-				<li>titleBasic->Inspiration Through Self-Reflection</li>
-				<li>titleBasic->Survival, Inspiration and Growth</li>
-				<li>titleBasic->The Journey to Inspiration</li>
-				<li>titleBasic->Practice Makes Perfect: A Guide to Inspiration</li>
-				<!-- Authored -->
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Guide to Inspiration</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Self-Help Manual</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Book of Inspiration</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Inspirational Handbook</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Lessons in Inspiration</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Notes on Inspiration</li>
-				<li>titleAuthored->[ANYPAWN_nameIndef]’s Strategies for Inspiration</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
-	<!-- Religious texts -->
 	<RulePackDef>
 		<defName>ABooks_ReligiousText_Namer</defName>
 		<include>
@@ -118,7 +53,6 @@
 				<li>religiousTextNameAuthored->The Sacred Writings of [ANYPAWN_nameIndef] on the [altStructureNameBasic]</li>
 				<li>religiousTextNameAuthored->The Prophecies of [ANYPAWN_nameIndef] on the [altStructureNameBasic]</li>
 				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Divine Insights into the [altStructureNameBasic]</li>
-				
 				<li>altStructureNameBasic->[subject_primary] System</li>
 				<li>altStructureNameBasic->[subject_primary] Framework</li>
 				<li>altStructureNameBasic->[subject_primary] Doctrine</li>
@@ -129,7 +63,6 @@
 				<li>altStructureNameBasic->[subject_primary] Institution</li>
 				<li>altStructureNameBasic->[subject_primary] Network</li>
 				<li>altStructureNameBasic->[subject_primary] Hierarchy</li>
-
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

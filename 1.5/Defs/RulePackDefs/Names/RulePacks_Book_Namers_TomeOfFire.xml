@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_TomeOfFire_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>title->[intro] [coreConcept]</li>
+				<li>title->[coreConcept] [suffix]</li>
+				<!-- Introductory statements -->
+				<li>intro->Archotech</li>
+				<li>intro->Ignis</li>
+				<li>intro->Pyro</li>
+				<li>intro->Infernal</li>
+				<li>intro->Eternal</li>
+				<li>intro->Flamebound</li>
+				<li>intro->Promethean</li>
+				<li>intro->Molten</li>
+				<li>intro->Solar</li>
+				<li>intro->Vulcanic</li>
+				<!-- Core concepts -->
+				<li>coreConcept->Codex</li>
+				<li>coreConcept->Tome</li>
+				<li>coreConcept->Manual</li>
+				<li>coreConcept->Cipher</li>
+				<li>coreConcept->Protocol</li>
+				<li>coreConcept->Algorithm</li>
+				<li>coreConcept->Archive</li>
+				<li>coreConcept->Compendium</li>
+				<li>coreConcept->Log</li>
+				<li>coreConcept->Blueprint</li>
+				<li>coreConcept->Manifest</li>
+				<li>coreConcept->Matrix</li>
+				<!-- Suffixes -->
+				<li>suffix->of the Pyre</li>
+				<li>suffix->of Eternal Flame</li>
+				<li>suffix->of Ignition</li>
+				<li>suffix->of Emberkind</li>
+				<li>suffix->of Solar Wrath</li>
+				<li>suffix->of Firelink</li>
+				<li>suffix->of Infernal Code</li>
+				<li>suffix->of Radiant Sparks</li>
+				<li>suffix->of Archonic Blaze</li>
+				<li>suffix->of Volcanic Power</li>
+				<li>suffix->of Rebirth</li>
+				<li>suffix->of Plasma Logic</li>
+				<li>suffix->of Quantum Flame</li>
+				<li>suffix->of Ember Protocol</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

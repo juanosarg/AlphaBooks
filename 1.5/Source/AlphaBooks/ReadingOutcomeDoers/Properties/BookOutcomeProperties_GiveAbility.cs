@@ -5,7 +5,7 @@ namespace AlphaBooks
 {
     public class BookOutcomeProperties_GiveAbility : BookOutcomeProperties
     {
-        public AbilityDef abilityToGive;
+        public List<AbilityDef> abilitiesToGive;
         public bool charges = false;
         public List<int> chargesByQuality;
         public bool propagateRulesForTitle = true;

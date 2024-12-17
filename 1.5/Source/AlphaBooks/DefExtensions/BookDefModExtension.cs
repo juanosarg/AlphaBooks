@@ -19,7 +19,7 @@ namespace AlphaBooks
     {
         public Type doerClass;
         public ThoughtDef thoughtToGive;
-        public AbilityDef abilityToGive;
+        public List<AbilityDef> abilitiesToGive;
         public List<int> chargesByQuality;
         public HediffDef hediffToAdd;
 

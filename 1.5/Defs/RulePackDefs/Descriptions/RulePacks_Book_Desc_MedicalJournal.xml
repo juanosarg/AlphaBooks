@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_MedicalJournal_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>desc->[intro] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>desc->[conceptExploration]: [impactStatement]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>desc->[intro] [contextStatement] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>ending->\n\nOnce read, this journal will grant medical boosts for three days, and then it will be destroyed.</li>
+				<!-- Introductory statements -->
+				<li>intro->This [writingQualityAdjective] [bookType] offers a profound look into</li>
+				<li>intro->A [writingQualityAdjective] guide to understanding</li>
+				<li>intro->A timeless [bookType] chronicling the advances in</li>
+				<li>intro->A [writingQualityAdjective] account of the challenges in</li>
+				<li>intro->An extraordinary [bookType] exploring</li>
+				<li>intro->A hauntingly vivid exploration of</li>
+				<!-- Concept Exploration -->
+				<li>conceptExploration->the complexities of field medicine</li>
+				<li>conceptExploration->the intricacies of immunity gain and healing</li>
+				<li>conceptExploration->the evolution of treatment techniques in the Rim</li>
+				<li>conceptExploration->how colonies adapt their medical practices</li>
+				<li>conceptExploration->the importance of resourcefulness in medical care</li>
+				<li>conceptExploration->balancing patient care and survival priorities</li>
+				<!-- Context Statements -->
+				<li>contextStatement->examples from Rim colonies, this journal examines</li>
+				<li>contextStatement->decades of colonial medical experiences, it explores</li>
+				<li>contextStatement->the writings of stranded physicians, it reveals</li>
+				<li>contextStatement->real stories of pioneers, this journal uncovers</li>
+				<li>contextStatement->vivid anecdotes of emergency treatments, it explains</li>
+				<!-- Impact Statements -->
+				<li>impactStatement->Its insights will reshape how you understand medical care under duress</li>
+				<li>impactStatement->It provides essential knowledge for any frontier doctor</li>
+				<li>impactStatement->It sheds light on the resourceful nature of practitioners on the Rim</li>
+				<li>impactStatement->This journal is a vital resource for those facing harsh medical challenges</li>
+				<li>impactStatement->The lessons within are essential for survival in resource-scarce environments</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective(quality==6)->masterfully crafted</li>
+				<li>writingQualityAdjective(quality==5)->brilliantly insightful</li>
+				<li>writingQualityAdjective(quality==4)->thought-provoking and precise</li>
+				<li>writingQualityAdjective(quality==3)->functional but uninspired</li>
+				<li>writingQualityAdjective(quality==2)->mediocre</li>
+				<li>writingQualityAdjective(quality==1)->barely comprehensible</li>
+				<li>writingQualityAdjective(quality==0)->incoherent ramble of a</li>
+				<li>writingQualitySentence(quality[greater_than]3)->It is [excellentDesc] [excellentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]4,quality[greater_than]1)->It is [decentDesc] [decentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]2)->It is [awfulDesc] [awfulExtra]</li>
+				<!-- Excellent descriptors -->
+				<li>excellentDesc->a masterwork of practical medical advice</li>
+				<li>excellentDesc->an invaluable resource for understanding emergency treatment</li>
+				<li>excellentDesc->an expertly constructed guide for medical survival</li>
+				<li>excellentDesc->a deeply original exploration of Rim medicine</li>
+				<li>excellentDesc->rich with practical advice and vivid case studies</li>
+				<li>excellentExtra->that reveals the resilience of medical practitioners</li>
+				<li>excellentExtra->that inspires ingenuity even in desperate situations</li>
+				<li>excellentExtra->that equips readers with essential survival knowledge</li>
+				<!-- Decent descriptors -->
+				<li>decentDesc->a passable guide to field medicine</li>
+				<li>decentDesc->interesting but unpolished</li>
+				<li>decentDesc->helpful in some areas but lacking depth</li>
+				<li>decentDesc->focused on a few narrow medical scenarios</li>
+				<li>decentDesc->occasionally insightful but uneven</li>
+				<li>decentExtra->and may be of use to less experienced medics</li>
+				<li>decentExtra->, it fails to address the larger picture of rudimentary medicine on the Rim</li>
+				<li>decentExtra->though its methods can be inconsistent</li>
+				<!-- Awful descriptors -->
+				<li>awfulDesc->a haphazard collection of medical guesses</li>
+				<li>awfulDesc->a confusing mess of outdated techniques</li>
+				<li>awfulDesc->entirely impractical and poorly researched</li>
+				<li>awfulDesc->filled with irrelevant anecdotes and fluff</li>
+				<li>awfulDesc->a chaotic jumble of contradictory treatments</li>
+				<li>awfulExtra->and utterly useless for anyone treating patients on the Rim</li>
+				<li>awfulExtra->and actively harmful for anyone seeking real medical guidance</li>
+				<!-- Date -->
+				<li>maybe_date-></li>
+				<li>maybe_date->The journal was published [date_form].</li>
+				<li>maybe_date->The text was first recorded [date_form].</li>
+				<li>maybe_date->Its origins are lost to time, like so many on the Rim.</li>
+				<li>date_form->recently</li>
+				<li>date_form->generations ago</li>
+				<li>date_form->on the [date]</li>
+				<li>date_form->during [date_season]</li>
+				<!-- Book Types -->
+				<li>bookType(p=4)->medical journal</li>
+				<li>bookType(p=3)->field guide</li>
+				<li>bookType(p=2)->treatment manual</li>
+				<li>bookType(p=1)->survival guide</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

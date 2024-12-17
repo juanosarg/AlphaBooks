@@ -46,6 +46,11 @@ namespace AlphaBooks
         [MayRequireIdeology]
         public static ThoughtDef ABooks_ReligiousBookThought;
 
+        public static ThingCategoryDef Books;
+
+        public static ThingDef ABooks_RuinedBook;
+        public static ThingDef ABooks_BurnedBook;
+
 
     }
 }

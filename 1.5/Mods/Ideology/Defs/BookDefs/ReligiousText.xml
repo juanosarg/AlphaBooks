@@ -32,7 +32,7 @@
 				<doers>
 					<li Class="AlphaBooks.BookOutcomeProperties_Religious"/>
 					<li Class="AlphaBooks.BookOutcomeProperties_GiveAbility">
-						<abilityToGive>ABooks_Convert_Charges</abilityToGive>
+						<abilitiesToGive><li>ABooks_Convert_Charges</li></abilitiesToGive>
 						<charges>true</charges>
 						<chargesByQuality>
 							<li>1</li>
@@ -45,6 +45,19 @@
 						</chargesByQuality>
 						<propagateRulesForTitle>false</propagateRulesForTitle>
 					</li>
+					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						
+						<descriptionForStages>
+							<li>-1% Certainty loss factor, +5% Social ideo spread frequency factor, +1% Conversion power</li>
+							<li>-10% Certainty loss factor, +20% Social ideo spread frequency factor, +5% Conversion power</li>
+							<li>-20% Certainty loss factor, +40% Social ideo spread frequency factor, +10% Conversion power</li>
+							<li>-35% Certainty loss factor, +60% Social ideo spread frequency factor, +20% Conversion power</li>
+							<li>-50% Certainty loss factor, +75% Social ideo spread frequency factor, +30% Conversion power</li>
+							<li>-60% Certainty loss factor, +100% Social ideo spread frequency factor, +40% Conversion power</li>
+							<li>-75% Certainty loss factor, +200% Social ideo spread frequency factor, +50% Conversion power</li>
+						</descriptionForStages>
+						<ticks>120000</ticks>
+					</li>
 				</doers>
 			</li>
 		</comps>
@@ -56,7 +69,7 @@
 				<readResults>
 					<li>
 						<doerClass>AlphaBooks.BookReadResult_GiveAbility</doerClass>
-						<abilityToGive>ABooks_Convert_Charges</abilityToGive>
+						<abilitiesToGive><li>ABooks_Convert_Charges</li></abilitiesToGive>
 						<chargesByQuality>
 							<li>1</li>
 							<li>1</li>
@@ -69,6 +82,10 @@
 					</li>
 					<li>
 						<doerClass>AlphaBooks.BookReadResult_Religious</doerClass>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_ReligiousFervor</hediffToAdd>
 					</li>
 					<li>
 						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
