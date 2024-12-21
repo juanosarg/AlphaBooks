@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_RestaurantGuide</defName>
+		<label>restaurant guide</label>
+		<description>A restaurant guide</description>
+		<thingClass>AlphaBooks.Book_Skill</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_RestaurantGuide/ABooks_RestaurantGuide</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_RestaurantGuide/ABooks_RestaurantGuide</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_RestaurantGuide_Namer</nameMaker>
+				<descriptionMaker>ABooks_RestaurantGuide_Description</descriptionMaker>
+				<ageYearsRange>0~5</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_RestaurantGuide/ABooks_RestaurantGuide_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_RestaurantGuide/ABooks_RestaurantGuide_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_Nothing">
+						
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>
