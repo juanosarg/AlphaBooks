@@ -4,6 +4,8 @@
 		<li>/</li>
 		<li>1.5</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/Mods/Ideology</li>
+		<li IfModActive="sarg.alphagenes">1.5/Mods/AlphaGenes</li>
+		<li IfModActive="VanillaExpanded.VGeneticsE">1.5/Mods/VanillaGeneticsExpanded</li>
 	</v1.5>
 </loadFolders>
 

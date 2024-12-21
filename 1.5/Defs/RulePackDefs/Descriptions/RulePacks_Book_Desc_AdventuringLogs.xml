@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_AdventuringLogs_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+			<li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>desc->[dateEntry] [eventDescription]. [reflection][qualityDescription][ending]</li>
+				<li>desc->[dateEntry] [eventDescription]. [followUpEvent]. [reflection][qualityDescription][ending]</li>
+				<li>desc->[dateEntry] [eventDescription]. [unexpectedDiscovery]. [reflection][qualityDescription][ending]</li>
+				<li>desc->[dateEntry] [eventDescription]. [reflection]. [note]. [qualityDescription][ending]</li>
+				<li>ending->\n\nOnce read, this book will uncover one or several new locations on the world map, and then it will be destroyed.</li>
+				<!-- Date Entry -->
+				<li>dateEntry->[date_season] [day]:</li>
+				<li>dateEntry->The 15th of [date_season]:</li>
+				<li>dateEntry->[day]th of [date_season]:</li>
+				<li>day->5</li>
+				<li>day->11</li>
+				<li>day->19</li>
+				<li>day->23</li>
+				<!-- Event Descriptions -->
+				<li>eventDescription->I braved the perilous crossing of the [location], only to find myself face-to-face with [obstacle]</li>
+				<li>eventDescription->Traversing the [location] was treacherous, but the discovery of [discovery] made it worthwhile</li>
+				<li>eventDescription->I narrowly escaped the [danger], an encounter I won't soon forget</li>
+				<li>eventDescription->My journey through the [location] revealed [unexpectedEvent]</li>
+				<li>eventDescription->Today, I ventured into the [location], where [obstacle] awaited</li>
+				<li>eventDescription->I found myself lost in the [location], only to stumble upon [discovery]</li>
+				<li>eventDescription->The [location] tested my endurance, but overcoming [obstacle] proved my resolve</li>
+				<li>eventDescription->Crossing the [location] was fraught with peril, as [danger] loomed at every turn</li>
+				<li>eventDescription->While traversing the [location], I uncovered [unexpectedEvent], a discovery of great importance</li>
+				<li>eventDescription->My exploration of the [location] was cut short by an encounter with [danger]</li>
+				<li>eventDescription->In the heart of the [location], I faced [obstacle], a trial that will haunt me</li>
+				<li>eventDescription->As I journeyed through the [location], [discovery] came into view, a sight that renewed my spirit</li>
+				<li>eventDescription->The [location] concealed [unexpectedEvent], a secret I was unprepared to uncover</li>
+				<li>eventDescription->I pressed onward into the [location], where the shadow of [danger] followed me</li>
+				<li>eventDescription->Today, the [location] yielded [discovery], a moment of triumph amidst the chaos</li>
+				<li>eventDescription->Navigating the [location] was grueling, but the encounter with [unexpectedEvent] made it unforgettable</li>
+				<li>eventDescription->The [location] offered no reprieve, as [obstacle] blocked my path forward</li>
+				<li>eventDescription->Within the depths of the [location], I stumbled upon [discovery], a glimmer of hope in the wild</li>
+				<li>eventDescription->The [location] tested my willpower, with [danger] nearly claiming my life</li>
+				<li>eventDescription->I ventured into the [location], unaware that [unexpectedEvent] would forever alter my journey</li>
+				<li>eventDescription->Surviving the [location] was a feat in itself, as [danger] threatened at every turn</li>
+				<li>eventDescription->The [location] held secrets untold, with [discovery] changing the course of my travels</li>
+				<li>eventDescription->The [location] stretched endlessly before me, its silence broken only by [unexpectedEvent]</li>
+				<li>eventDescription->Crossing the [location] was arduous, with [obstacle] nearly bringing my journey to an end</li>
+				<li>eventDescription->Deep within the [location], I came across [discovery], a moment that left me breathless</li>
+				<!-- Locations -->
+				<li>location->Mbgun'go River</li>
+				<li>location->Blighted Ravine</li>
+				<li>location->Forgotten Archotech Ruins</li>
+				<li>location->Shrouded Forest</li>
+				<li>location->Jagged Peaks</li>
+				<li>location->Endless Dunes</li>
+				<li>location->Frozen Wastes</li>
+				<li>location->Glittering Crystal Caves</li>
+				<li>location->Ravaged Plains</li>
+				<li>location->Scarlet Fen</li>
+				<li>location->Echoing Chasm</li>
+				<li>location->Ancient Archotech Obelisk</li>
+				<li>location->Searing Sulfur Flats</li>
+				<li>location->Choking Ashlands</li>
+				<li>location->Veiled Canopy</li>
+				<li>location->Thunderhowl Peaks</li>
+				<li>location->Grasping Vines Thicket</li>
+				<li>location->Blackwater Bog</li>
+				<li>location->Hollow Basin</li>
+				<li>location->Luminescent Marsh</li>
+				<li>location->Ironclad Crevasse</li>
+				<li>location->Blistering Sands</li>
+				<li>location->Starlit Mesa</li>
+				<li>location->Whispering Glades</li>
+				<li>location->Fractured Ridge</li>
+				<li>location->Twilight Tundra</li>
+				<li>location->Obsidian Cliff</li>
+				<li>location->Overgrown Shrine</li>
+				<li>location->Howling Abyss</li>
+				<li>location->Scorched Gully</li>
+				<li>location->Verdant Valley</li>
+				<li>location->Cinderfields</li>
+				<li>location->Shattered Archipelago</li>
+				<li>location->Haunted Quarry</li>
+				<li>location->Golden River Delta</li>
+				<li>location->Frostspire Glacier</li>
+				<li>location->Wailing Steppes</li>
+				<li>location->Bloodmoon Basin</li>
+				<li>location->Eclipse Ravine</li>
+				<li>location->Sunken Archotech Vault</li>
+				<li>location->Phantom Hollow</li>
+				<li>location->Serpent's Spine Pass</li>
+				<li>location->Oblivion Rift</li>
+				<li>location->Moonlit Waterfalls</li>
+				<li>location->Eternal Sands Expanse</li>
+				<li>location->Runed Stonefield</li>
+				<li>location->The Shadowed Labyrinth</li>
+				<li>location->Windswept Bluffs</li>
+				<li>location->Cobalt Caverns</li>
+				<li>location->Frostwood Grove</li>
+				<li>location->The Infinite Mire</li>
+				<li>location->Burning Horizon Dunes</li>
+				<li>location->Crystalvine Abyss</li>
+				<li>location->Voidscarred Plateau</li>
+				<li>location->Azure Bloom Lagoon</li>
+				<li>location->Silent Peaks</li>
+				<!-- Obstacles -->
+				<li>obstacle->an aggressive pack of wild muffalo</li>
+				<li>obstacle->a tribe of cannibals</li>
+				<li>obstacle->an unexpected Archotech sentinel</li>
+				<li>obstacle->a devastating electrical storm</li>
+				<li>obstacle->a deadly ambush of raiders</li>
+				<!-- Discoveries -->
+				<li>discovery->a hidden valley teeming with life</li>
+				<li>discovery->ancient Archotech carvings</li>
+				<li>discovery->a vein of glittering gold ore</li>
+				<li>discovery->a forgotten colony outpost</li>
+				<li>discovery->strange but beautiful glowing flora</li>
+				<!-- Unexpected Events -->
+				<li>unexpectedEvent->an eerie silence broken only by whispers of the wind</li>
+				<li>unexpectedEvent->a bizarre Archotech signal that seemed to follow me</li>
+				<li>unexpectedEvent->the terrain itself seemingly shifting underfoot in a bizarre transformative display</li>
+				<li>unexpectedEvent->the air growing heavy with an unexplainable energy</li>
+				<li>unexpectedEvent->an uncanny meteor shower in the middle of the day</li>
+				<!-- Follow-Up Events -->
+				<li>followUpEvent->In the aftermath, I managed to find a safe place to camp for the night</li>
+				<li>followUpEvent->The struggle left me battered, but I pressed onward</li>
+				<li>followUpEvent->The encounter was harrowing, but it led me to a surprising new path</li>
+				<li>followUpEvent->This ordeal has taught me to tread more carefully in these wild lands</li>
+				<!-- Reflection -->
+				<li>reflection->I am reminded of how fragile survival can be</li>
+				<li>reflection->This journey has tested every ounce of my resilience</li>
+				<li>reflection->I am grateful for the small victories amidst the chaos</li>
+				<li>reflection->The Rim never ceases to amaze and terrify me in equal measure</li>
+				<li>reflection->These experiences will shape me in ways I cannot yet imagine</li>
+				<!-- Notes -->
+				<li>note->Perhaps tomorrow will bring quieter moments of reflection</li>
+				<li>note->The road ahead is uncertain, but I must press on</li>
+				<li>note->I hope this log will serve as a guide for future explorers</li>
+				<li>note->For now, all I can do is survive and learn from the Rim</li>
+				<!-- Quality Descriptions -->
+				<li>qualityDescription(quality==0)->\n\nThe writing is crude and barely legible, reflecting the struggles of its author.</li>
+				<li>qualityDescription(quality==1)->\n\nThe journal entries are very rough, but sincere, a testament to the hardships endured.</li>
+				<li>qualityDescription(quality==2)->\n\nThe notes are mostly clear and engaging, offering a genuine insight into the Rim’s perils.</li>
+				<li>qualityDescription(quality==3)->\n\nThe prose is well-crafted, vividly painting the journey in the reader’s mind.</li>
+				<li>qualityDescription(quality==4)->\n\nEach word resonates with passion and precision, making it a compelling read.</li>
+				<li>qualityDescription(quality==5)->\n\nThe writing is an exquisite balance of art and storytelling, truly a masterpiece.</li>
+				<li>qualityDescription(quality==6)->\n\nThe entries transcend mere words, an artifact of timeless wonder.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

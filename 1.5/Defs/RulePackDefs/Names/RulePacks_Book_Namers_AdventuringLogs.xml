@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_AdventuringLogs_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>title->[adjective] [subject] of [location]</li>
+				<li>title->[adjective] [subject] of the [event]</li>
+				<li>title->The [subject] of [adjective] [location]</li>
+				<li>title->[subject] Among [location]</li>
+				<li>title->[subject]: Chronicles of [event]</li>
+				<li>title->The [adjective] [subject]</li>
+				<!-- Adjectives -->
+				<li>adjective->Perilous</li>
+				<li>adjective->Uncharted</li>
+				<li>adjective->Fabled</li>
+				<li>adjective->Forgotten</li>
+				<li>adjective->Wondrous</li>
+				<li>adjective->Cursed</li>
+				<li>adjective->Blazing</li>
+				<li>adjective->Lost</li>
+				<li>adjective->Heroic</li>
+				<li>adjective->Harrowing</li>
+				<!-- Subjects -->
+				<li>subject->Journeys</li>
+				<li>subject->Travels</li>
+				<li>subject->Adventures</li>
+				<li>subject->Expeditions</li>
+				<li>subject->Logs</li>
+				<li>subject->Tales</li>
+				<li>subject->Explorations</li>
+				<!-- Locations -->
+				<li>location->the Rim</li>
+				<li>location->the Unknown</li>
+				<li>location->the Wastes</li>
+				<li>location->the Outer Reaches</li>
+				<li>location->the Blazing Desert</li>
+				<li>location->the Frozen Tundra</li>
+				<li>location->the Forgotten Jungle</li>
+				<li>location->the Abyss</li>
+				<li>location->Archotech Ruins</li>
+				<li>location->the Shattered Peaks</li>
+				<!-- Events -->
+				<li>event->Discovery</li>
+				<li>event->Survival</li>
+				<li>event->Reckoning</li>
+				<li>event->Mystery</li>
+				<li>event->Conquest</li>
+				<li>event->Awakening</li>
+				<li>event->Legend</li>
+				<li>event->Folly</li>
+				<li>event->Triumph</li>
+				<li>event->Doom</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

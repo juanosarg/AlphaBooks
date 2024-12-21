@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+
+	<AlphaBooks.QuestWhitelistDef>
+		<defName>ABooks_QuestWhitelist</defName>
+		<whiteListedQuests>			
+			
+			<li>OpportunitySite_BanditCamp</li>
+			<li>OpportunitySite_DownedRefugee</li>
+			<li>OpportunitySite_ItemStash</li>
+	
+			<li>OpportunitySite_PrisonerWillingToJoin</li>
+			
+			
+		</whiteListedQuests>							
+	</AlphaBooks.QuestWhitelistDef>
+
+
+
+
+
+</Defs>

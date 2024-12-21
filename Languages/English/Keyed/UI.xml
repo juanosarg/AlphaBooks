@@ -13,4 +13,5 @@
 	<ABooks_ReligiousMoodImpact>Reader will receive a mood bonus or penalty, depending on whether their ideo shares the book's subject as an ideological structure.</ABooks_ReligiousMoodImpact>
 	<ABooks_Hediff>Reader will receive {0} for {1}</ABooks_Hediff>
 	<ABooks_Nothing>This ruined book won't provide any benefit to the reader except a meager amount of recreation, and it will basically disintegrate after being read.</ABooks_Nothing>
+	<ABooks_NewMapLocations>Reading this book will discover {0} new map locations on the world map.</ABooks_NewMapLocations>
 </LanguageData>

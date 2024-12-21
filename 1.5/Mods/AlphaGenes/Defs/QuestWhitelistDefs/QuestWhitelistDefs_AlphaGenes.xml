@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+
+	<AlphaBooks.QuestWhitelistDef>
+		<defName>ABooks_QuestWhitelist_AlphaGenes</defName>
+		<whiteListedQuests>			
+			
+			<li>AG_OpportunitySite_AbandonedBiotechLab</li>
+			
+		</whiteListedQuests>							
+	</AlphaBooks.QuestWhitelistDef>
+
+
+
+
+
+</Defs>
