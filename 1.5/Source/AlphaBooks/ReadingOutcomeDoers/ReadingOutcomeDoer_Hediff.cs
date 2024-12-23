@@ -21,7 +21,15 @@ namespace AlphaBooks
        
         public override string GetBenefitsString(Pawn reader = null)
         {
-            return "ABooks_Hediff".Translate(Props.descriptionForStages[(int)CompQuality.qualityInt],Props.ticks.ToStringTicksToPeriod());
+            if (Props.ticks != 0)
+            {
+                return "ABooks_Hediff".Translate(Props.descriptionForStages[(int)CompQuality.qualityInt], Props.ticks.ToStringTicksToPeriod());
+
+            }
+            else
+            {
+                return "ABooks_HediffNoTime".Translate(Props.descriptionForStages[(int)CompQuality.qualityInt]);
+            }
         }
 
        

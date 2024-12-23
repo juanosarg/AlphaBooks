@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_PsycasterGuide</defName>
+		<label>psycaster guide</label>
+		<description>A psycaster guide</description>
+		<thingClass>AlphaBooks.Book_Psycast</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_PsycasterGuide/ABooks_PsycasterGuide</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_PsycasterGuide/ABooks_PsycasterGuide</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_PsycasterGuide_Namer</nameMaker>
+				<descriptionMaker>ABooks_PsycasterGuide_Description</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_PsycasterGuide/ABooks_PsycasterGuide_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_PsycasterGuide/ABooks_PsycasterGuide_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_GainPsycast"/>
+					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						
+						<descriptionForStages>
+							<li>+2.5% Psychic Sensitivity, +2.5% Psychic Entropy Max, +2.5% Psychic Entropy Recovery Rate</li>
+							<li>+5% Psychic Sensitivity, +5% Psychic Entropy Max, +5% Psychic Entropy Recovery Rate</li>
+							<li>+10% Psychic Sensitivity, +10% Psychic Entropy Max, +10% Psychic Entropy Recovery Rate</li>
+							<li>+20% Psychic Sensitivity, +20% Psychic Entropy Max, +20% Psychic Entropy Recovery Rate</li>
+							<li>+50% Psychic Sensitivity, +50% Psychic Entropy Max, +50% Psychic Entropy Recovery Rate, +10% Meditation Focus Gain</li>
+							<li>+75% Psychic Sensitivity, +75% Psychic Entropy Max, +100% Psychic Entropy Recovery Rate, +15% Meditation Focus Gain</li>
+							<li>+100% Psychic Sensitivity, +100% Psychic Entropy Max, +200% Psychic Entropy Recovery Rate, +25% Meditation Focus Gain</li>
+						</descriptionForStages>
+						<ticks>180000</ticks>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GivePsycast</doerClass>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
-	
+	<AbilityDef Abstract="True" Name="ABooks_AuraBuffBase">
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<statBases>
+			<Ability_Duration>1000</Ability_Duration>
+			<Ability_EffectRadius>9.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>9.9</range>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
 	<AbilityDef>
 		<defName>ABooks_GreaterFireSpew_Charges</defName>
 		<label>greater fire spew</label>
@@ -24,6 +50,25 @@
 			<li Class="CompProperties_AbilityLaunchProjectile">
 				<projectileDef>ABooks_GreaterFireSpew</projectileDef>
 			</li>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="ABooks_AuraBuffBase">
+		<defName>ABooks_SharpshooterCommand_Charges</defName>
+		<label>sharpshooter command</label>
+		<description>Inspire nearby colonists with sharp military strategies. The effect remains attached to the caster for 24 hours.</description>
+		<iconPath>UI/Widgets/ABooks_SharpshooterCommand</iconPath>
+		
+		<aiCanUse>true</aiCanUse>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>ABooks_SharpshooterCommand</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
 		</comps>
 	</AbilityDef>
 </Defs>

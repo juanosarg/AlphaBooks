@@ -9,7 +9,7 @@
 		<chargeAbilities>			
 			
 			<li>ABooks_GreaterFireSpew_Charges</li>
-			
+			<li>ABooks_SharpshooterCommand_Charges</li>
 			
 		</chargeAbilities>							
 	</AlphaBooks.ChargeAbilityDef>

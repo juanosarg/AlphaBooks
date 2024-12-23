@@ -42,6 +42,7 @@ namespace AlphaBooks
         public static HediffDef ABooks_Training_Medicine;
         public static HediffDef ABooks_Training_Social;
         public static HediffDef ABooks_Training_Intellectual;
+        public static HediffDef ABooks_RestaurantGuide;
 
         [MayRequireIdeology]
         public static ThoughtDef ABooks_ReligiousBookThought;
@@ -50,6 +51,13 @@ namespace AlphaBooks
 
         public static ThingDef ABooks_RuinedBook;
         public static ThingDef ABooks_BurnedBook;
+        public static ThingDef MealLavish;
+        public static ThingDef MealSimple;
+        public static ThingDef MealFine;
+        public static ThingDef MealFine_Meat;
+        public static ThingDef MealFine_Veg;
+        public static ThingDef MealLavish_Meat;
+        public static ThingDef MealLavish_Veg;
 
 
     }

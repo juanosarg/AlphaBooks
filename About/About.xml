@@ -5,7 +5,7 @@
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<!--<modIconPath IgnoreIfNoMatchingField="True">UI/VELogo</modIconPath>-->
+	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaBooks</modIconPath>
 	<packageId>sarg.alphabooks</packageId>
 	<description>
 </description>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_ArmyManual</defName>
+		<label>army manual</label>
+		<description>An army manual</description>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_ArmyManual/ABooks_ArmyManual</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_ArmyManual/ABooks_ArmyManual</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_ArmyManual_Namer</nameMaker>
+				<descriptionMaker>ABooks_ArmyManual_Description</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_ArmyManual/ABooks_ArmyManual_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_ArmyManual/ABooks_ArmyManual_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_GiveAbility">
+						<abilitiesToGive><li>ABooks_SharpshooterCommand_Charges</li></abilitiesToGive>
+						<charges>true</charges>
+						<chargesByQuality>
+							<li>1</li>
+							<li>1</li>
+							<li>1</li>
+							<li>2</li>
+							<li>2</li>
+							<li>2</li>
+							<li>3</li>
+						</chargesByQuality>
+						<propagateRulesForTitle>false</propagateRulesForTitle>
+					</li>
+					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						
+						<descriptionForStages>
+							<li>-1% Ranged Cooldown Factor, +1% Shooting Accuracy, -1% Aiming Delay Factor, -1% Mortar Miss Radius Factor</li>
+							<li>-5% Ranged Cooldown Factor, +3% Shooting Accuracy, -5% Aiming Delay Factor, -10% Mortar Miss Radius Factor</li>
+							<li>-10% Ranged Cooldown Factor, +5% Shooting Accuracy, -10% Aiming Delay Factor, -20% Mortar Miss Radius Factor</li>
+							<li>-12% Ranged Cooldown Factor, +10% Shooting Accuracy, -10% Aiming Delay Factor, -30% Mortar Miss Radius Factor</li>
+							<li>-20% Ranged Cooldown Factor, +15% Shooting Accuracy, -15% Aiming Delay Factor, -40% Mortar Miss Radius Factor, -10% Incoming Damage Factor</li>
+							<li>-25% Ranged Cooldown Factor, +20% Shooting Accuracy, -20% Aiming Delay Factor, -50% Mortar Miss Radius Factor, -15% Incoming Damage Factor</li>
+							<li>-25% Ranged Cooldown Factor, +25% Shooting Accuracy, -25% Aiming Delay Factor, -75% Mortar Miss Radius Factor, -20% Incoming Damage Factor</li>
+						</descriptionForStages>
+						<ticks>180000</ticks>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveAbility</doerClass>
+						<abilitiesToGive><li>ABooks_SharpshooterCommand_Charges</li></abilitiesToGive>
+						<chargesByQuality>
+							<li>1</li>
+							<li>1</li>
+							<li>1</li>
+							<li>2</li>
+							<li>2</li>
+							<li>2</li>
+							<li>3</li>
+						</chargesByQuality>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_ArmyManual</hediffToAdd>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_PsycasterGuide_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>desc->This [writingQualityAdjective] [bookType] [follows] a [psycaster] as [heOrShe] [storyStruggles]. [writingQualitySentence]. [maybe_date]\n\nOnce read, this book will grant psycasting insights and teach the reader [subject_primary], then it will be destroyed.</li>
+				<!-- Root: Story struggle variant -->
+				<li>follows->shares the psychic secrets of</li>
+				<li>follows->highlights the psionic practices of</li>
+				<li>follows->documents the mental discipline of</li>
+				<li>follows->explores the techniques of</li>
+				<li>follows->delves into the psyche of</li>
+				<li>follows->records the experiences of</li>
+				<li>follows->reveals the methods behind</li>
+				<li>follows->guides readers through the art of</li>
+				<li>heOrShe->he</li>
+				<li>heOrShe->she</li>
+				<li>storyStruggles->seeks to master the subtleties of [subject_primary]</li>
+				<li>storyStruggles->aims to uncover the mysteries of [subject_primary]</li>
+				<li>storyStruggles->explains the challenges and rewards of psycasting</li>
+				<li>storyStruggles->shares unique insights into mastering psychic abilities</li>
+				<li>storyStruggles->delves into the complexities of using [subject_primary]</li>
+				<li>storyStruggles->outlines effective strategies for harnessing mental energy</li>
+				<li>storyStruggles->focuses on the importance of discipline and focus</li>
+				<li>storyStruggles->emphasizes the value of patience in unlocking [subject_primary]</li>
+				<li>storyStruggles->charts the journey to psionic enlightenment</li>
+				<li>storyStruggles->breaks down the fundamentals of psychic mastery</li>
+				<li>psycaster->mentor</li>
+				<li>psycaster->seer</li>
+				<li>psycaster->psion</li>
+				<li>psycaster->psychic adept</li>
+				<li>psycaster->mystic</li>
+				<li>psycaster->archopsion</li>
+				<li>psycaster->telepath</li>
+				<li>psycaster->mentalist</li>
+				<li>psycaster->psychic master</li>
+				<li>psycaster->visionary</li>
+				<!-- Writing quality -->
+				<li>writingQualityAdjective(quality==6)->masterfully crafted</li>
+				<li>writingQualityAdjective(quality==5)->intelligent and perceptive</li>
+				<li>writingQualityAdjective(quality==4)->articulate and considered</li>
+				<li>writingQualityAdjective(quality==3)->decently composed</li>
+				<li>writingQualityAdjective(quality==2)->average at best</li>
+				<li>writingQualityAdjective(quality==1)->poorly executed</li>
+				<li>writingQualityAdjective(quality==0)->barely readable</li>
+				<li>writingQualitySentence(quality[greater_than]4)->It is [excellentDesc] [excellentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]5,quality[greater_than]1)->It is [decentDesc] [decentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]2)->It is [awfulDesc] [awfulExtra]</li>
+				<li>excellentDesc->a profound exploration of the psychic arts</li>
+				<li>excellentDesc->deeply insightful about harnessing mental energy</li>
+				<li>excellentDesc->tightly-written and filled with psionic wisdom</li>
+				<li>excellentDesc->creative and inspiring for psychic mastery</li>
+				<li>excellentDesc->a remarkably original and well-crafted guide</li>
+				<li>excellentDesc->filled with engaging examples from master psycasters</li>
+				<li>excellentExtra->. Each page reveals intricate techniques for mastering [subject_primary]</li>
+				<li>excellentExtra->. It is an engaging read that inspires profound psychic growth</li>
+				<li>excellentExtra->. Its insights are highly actionable and transformative</li>
+				<li>decentDesc->a solid guide to the basics of psychic abilities</li>
+				<li>decentDesc->interesting and informative, with practical advice</li>
+				<li>decentDesc->focused on understanding [subject_primary]</li>
+				<li>decentDesc->occasionally inspiring with relatable examples</li>
+				<li>decentDesc->appealing to aspiring psycasters</li>
+				<li>decentExtra-> but it lacks depth for advanced practitioners</li>
+				<li>decentExtra-> but some techniques feel outdated</li>
+				<li>decentExtra-> but its guidance can be vague at times</li>
+				<li>decentExtra-> but it focuses too heavily on theory over application</li>
+				<li>decentExtra-> but it often overcomplicates simple methods</li>
+				<li>awfulDesc->written by someone with limited understanding of psycasting</li>
+				<li>awfulDesc->filled with irrelevant or fantastical anecdotes</li>
+				<li>awfulDesc->vague and incoherent in its explanations</li>
+				<li>awfulDesc->lacking in clear, actionable psychic techniques</li>
+				<li>awfulDesc->riddled with contradictory or nonsensical advice</li>
+				<li>awfulExtra-> and its methods are often counterproductive</li>
+				<li>awfulExtra-> and it fails to address key principles of psycasting</li>
+				<li>awfulExtra-> and it includes absurd or impractical suggestions</li>
+				<!-- Date -->
+				<li>maybe_date-></li>
+				<li>maybe_date->The book was published [date_form].</li>
+				<li>maybe_date->The text was first printed [date_form].</li>
+				<li>maybe_date->It's unclear exactly when the book was written.</li>
+				<li>date_form->recently</li>
+				<li>date_form->many centuries ago</li>
+				<li>date_form->on the [date]</li>
+				<li>date_form->in [date_season]</li>
+				<!-- Misc rules -->
+				<li>bookType(p=4)->psycaster guide</li>
+				<li>bookType(p=2)->mystic manual</li>
+				<li>bookType->reference book</li>
+				<li>bookType->learning resource</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

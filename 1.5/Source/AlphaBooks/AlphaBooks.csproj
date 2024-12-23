@@ -305,6 +305,7 @@
   <ItemGroup>
     <Compile Include="Abilities\CompAbilityEffect_DeleteWhenZeroCharges.cs" />
     <Compile Include="Abilities\Properties\CompProperties_DeleteWhenZeroCharges.cs" />
+    <Compile Include="BookReadResults\BookReadResult_GivePsycast.cs" />
     <Compile Include="BookReadResults\BookReadResult_GiveHediff.cs" />
     <Compile Include="BookReadResults\BookReadResult_GiveAbility.cs" />
     <Compile Include="BookReadResults\BookReadResult_MapLocations.cs" />
@@ -315,6 +316,7 @@
     <Compile Include="BookReadResults\BookReadResult_TrainingManual.cs" />
     <Compile Include="Books\Book_NotAutoReadable.cs" />
     <Compile Include="Books\Book_Hediff.cs" />
+    <Compile Include="Books\Book_Psycast.cs" />
     <Compile Include="Books\Book_Religious.cs" />
     <Compile Include="Books\Book_Skill.cs" />
     <Compile Include="Buildings\Building_RuinedBookcase.cs" />
@@ -325,6 +327,7 @@
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
     <Compile Include="Harmony\BookUtility_IsValidBook.cs" />
     <Compile Include="Harmony\Command_Ability_BGTexture.cs" />
+    <Compile Include="Harmony\GenRecipe_MakeRecipeProducts.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\SkillRecord_LearnRateFactor.cs" />
@@ -337,10 +340,12 @@
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_GiveAbility.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Nothing.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_RandomInspiration.cs" />
+    <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_GainPsycast.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Religious.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Hediff.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Skill.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_ThoughtByQuality.cs" />
+    <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_GainPsycast.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_GiveAbility.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Hediff.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_MapLocations.cs" />

@@ -23,9 +23,9 @@ namespace AlphaBooks
 
         public static void Notify_BookRead(Pawn pawn, Book book, ThoughtDef thought = null, List<AbilityDef> abilities = null, List<int> chargesByQuality = null, HediffDef hediffToAdd = null)
         {
-            if(book is Book_Skill)
+            if(book is Book_Skill book_Skill)
             {
-                Book_Skill book_Skill = (Book_Skill)book;
+               
                 foreach(var item in skillDefList)
                 {
                     if(item.Key == book_Skill.skill)

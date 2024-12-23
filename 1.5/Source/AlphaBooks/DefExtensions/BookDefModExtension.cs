@@ -22,8 +22,7 @@ namespace AlphaBooks
         public List<AbilityDef> abilitiesToGive;
         public List<int> chargesByQuality;
         public HediffDef hediffToAdd;
-
-
+       
 
     }
 }
