@@ -13,6 +13,7 @@
 		<fillPercent>0.4</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
 		<pathCost>50</pathCost>
+		<defaultPlacingRot>North</defaultPlacingRot>
 		<building>
 			<storageGroupTag>Bookcase</storageGroupTag>
 			<maxItemsInCell>5</maxItemsInCell>
@@ -42,7 +43,7 @@
 			<li>ITab_ContentsBooks</li>
 			<li>ITab_Storage</li>
 		</inspectorTabs>
-		<defaultPlacingRot>South</defaultPlacingRot>
+	
 		<statBases>
 			<Flammability>1.0</Flammability>
 			<Beauty>0.5</Beauty>

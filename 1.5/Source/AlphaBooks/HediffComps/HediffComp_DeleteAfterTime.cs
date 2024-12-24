@@ -33,38 +33,37 @@ namespace AlphaBooks
             {
                 if(ticksByQuality == 0)
                 {
-                    if (this.parent.Severity == 0.05f)
+                    if (this.parent.Severity <= 0.06f)
                     {
                         ticksByQuality = Props.ticksAwful;
-                    }else if (this.parent.Severity == 0.15f)
+                    }else if (this.parent.Severity == 0.16f)
                     {
                         ticksByQuality = Props.ticksPoor;
                     }
                     else
-                    if (this.parent.Severity == 0.25f)
+                    if (this.parent.Severity <= 0.26f)
                     {
                         ticksByQuality = Props.ticksNormal;
                     }
                     else
-                    if (this.parent.Severity == 0.35f)
+                    if (this.parent.Severity <= 0.36f)
                     {
                         ticksByQuality = Props.ticksGood;
                     }
                     else
-                    if (this.parent.Severity == 0.45f)
+                    if (this.parent.Severity <= 0.46f)
                     {
                         ticksByQuality = Props.ticksExcellent;
                     }
                     else
-                    if (this.parent.Severity == 0.55f)
+                    if (this.parent.Severity <= 0.56f)
                     {
                         ticksByQuality = Props.ticksMasterwork;
                     }
                     else
-                    if (this.parent.Severity == 0.65f)
-                    {
+                    
                         ticksByQuality = Props.ticksLegendary;
-                    }
+                    
 
                 }
 

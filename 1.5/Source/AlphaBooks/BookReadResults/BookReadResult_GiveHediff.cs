@@ -16,9 +16,18 @@ namespace AlphaBooks
         public static void Notify_BookRead(Pawn pawn, Book book, ThoughtDef thought = null, List<AbilityDef> abilities = null, List<int> chargesByQuality = null, HediffDef hediffToAdd = null)
         {
             CompQuality quality = book.TryGetComp<CompQuality>();
-            pawn.health.AddHediff(hediffToAdd);
+
             Hediff addedHediff = pawn.health.hediffSet.GetFirstHediffOfDef(hediffToAdd);
-            addedHediff.Severity = 0.1f * (int)quality.qualityInt +0.05f;
+
+            if (addedHediff != null)
+            {
+                pawn.health.RemoveHediff(addedHediff);
+            }
+            pawn.health.AddHediff(hediffToAdd);
+            addedHediff = pawn.health.hediffSet.GetFirstHediffOfDef(hediffToAdd);
+            addedHediff.Severity = 0.1f * (int)quality.qualityInt + 0.05f;
+
+
 
         }
 

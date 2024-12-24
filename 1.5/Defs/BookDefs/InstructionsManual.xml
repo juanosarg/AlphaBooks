@@ -30,7 +30,19 @@
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-					<li Class="AlphaBooks.BookOutcomeProperties_Nothing"/>
+					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						<descriptionForStages>
+							<li>the capacity to increase the quality of crafts by 1 for 6 hours</li>
+							<li>the capacity to increase the quality of crafts by 1 for 12 hours</li>
+							<li>the capacity to increase the quality of crafts by 1 for 1 day</li>
+							<li>the capacity to increase the quality of crafts by 1 for 1.5 days</li>
+							<li>the capacity to increase the quality of crafts by 1 for 2 days</li>
+							<li>the capacity to increase the quality of crafts by 1 for 2.5 days</li>
+							<li>the capacity to increase the quality of crafts by 1 for 3 days</li>
+						
+						</descriptionForStages>
+						
+					</li>
 				</doers>
 			</li>
 		</comps>
@@ -40,7 +52,10 @@
 		<modExtensions>
 			<li Class="AlphaBooks.BookDefModExtension">
 				<readResults>
-					
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_InstructionManual</hediffToAdd>
+					</li>
 					<li>
 						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
 					</li>

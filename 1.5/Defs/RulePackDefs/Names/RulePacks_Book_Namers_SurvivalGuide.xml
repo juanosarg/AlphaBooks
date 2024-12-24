@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_SurvivalGuide_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Survival Guide Names -->
+				<li>title->[adjective] [guideType] of the [subject_primary]</li>
+				<li>title->[subject_primary]: [adjective] [guideType]</li>
+				<li>title->[subject_primary] Survival: [guideType]</li>
+				<li>title->[adjective] Tips for Thriving in the [subject_primary]</li>
+				<!-- Adjectives -->
+				<li>adjective->Essential</li>
+				<li>adjective->Ultimate</li>
+				<li>adjective->Comprehensive</li>
+				<li>adjective->Bare-Bones</li>
+				<li>adjective->Expert</li>
+				<li>adjective->Basic</li>
+				<li>adjective->Invaluable</li>
+				<li>adjective->Beginner's</li>
+				<li>adjective->Advanced</li>
+				<li>adjective->Minimalist's</li>
+				<!-- Guide Types -->
+				<li>guideType->Survival Guide</li>
+				<li>guideType->Handbook</li>
+				<li>guideType->Field Manual</li>
+				<li>guideType->Compendium</li>
+				<li>guideType->Playbook</li>
+				<li>guideType->Tactical Guide</li>
+				<li>guideType->Explorer's Manual</li>
+				<li>guideType->Survivor's Notes</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

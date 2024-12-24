@@ -43,6 +43,7 @@ namespace AlphaBooks
         public static HediffDef ABooks_Training_Social;
         public static HediffDef ABooks_Training_Intellectual;
         public static HediffDef ABooks_RestaurantGuide;
+        public static HediffDef ABooks_InstructionManual;
 
         [MayRequireIdeology]
         public static ThoughtDef ABooks_ReligiousBookThought;

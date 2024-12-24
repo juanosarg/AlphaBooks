@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_PoliticalPamphlet_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+    <!-- Description -->
+    <li>desc->[intro]. [contentOverview]. [reveal]. [writingQualitySentence] [ending]</li>
+    <li>desc->[intro]. [contextStatement]. [contentOverview]. [reveal]. [writingQualitySentence] [ending]</li>
+    <li>desc->[intro]. [contentOverview]. [quirky_flavor]. [reveal]. [writingQualitySentence] [ending]</li>
+    <li>desc->[intro]. [contextStatement]. [contentOverview]. [quirky_flavor]. [reveal]. [writingQualitySentence] [ending]</li>
+    
+    <!-- Introductory Statements -->
+    <li>intro->This [bookType] seeks to ignite a revolution of thought, but mostly outrage</li>
+    <li>intro->A fiery call to arms for anyone fed up with [issue], and eager to hurl insults</li>
+    <li>intro->An impassioned manifesto, which, beneath its righteous tone, hides a scathing roast</li>
+    <li>intro->This [writingQualityAdjective] pamphlet claims to fight for [ideal], but clearly enjoys mudslinging</li>
+    <li>intro->A blunt-edged weapon in the war against [problem], or just an excuse to be mean</li>
+    
+    <!-- Context Statements -->
+    <li>contextStatement->Born out of heated debates and no small amount of vitriol</li>
+    <li>contextStatement->Emerging from the relentless infighting of [subject_primary]</li>
+    <li>contextStatement->Inspired by frustration with [issue], and perhaps too much caffeine</li>
+    <li>contextStatement->Forged in the fires of political outrage, and possibly a little spite</li>
+    <li>contextStatement->Driven by ideals of [ideal], but with a hefty dose of personal vendetta</li>
+
+    <!-- Content Overview -->
+    <li>contentOverview->The pamphlet outlines a bold vision for [ideal]</li>
+    <li>contentOverview->It proposes solutions to [problem], though they're overshadowed by name-calling</li>
+    <li>contentOverview->The pages detail a critique of [issue], interspersed with insults</li>
+    <li>contentOverview->Rhetoric is aimed at addressing [topic], but often drifts into personal attacks</li>
+    <li>contentOverview->Ideas of reform are discussed, but mostly drowned out by inflammatory language</li>
+    
+    <!-- Quirky Flavor -->
+    <li>quirky_flavor->Includes a glossary of creative new insults for political opponents</li>
+    <li>quirky_flavor->Features a surprising amount of focus on someone's hairstyle</li>
+    <li>quirky_flavor->An entire section is dedicated to mocking the grammar of opposing leaflets</li>
+    <li>quirky_flavor->Contains a limerick about [subject_primary] that's too rude to repeat</li>
+    <li>quirky_flavor->Unintentionally hilarious in its over-the-top insults</li>
+    
+    <!-- Reveal -->
+    <li>reveal->While claiming to tackle [issue], it dedicates more space to personal attacks</li>
+    <li>reveal->Any actual arguments are drowned out by relentless mudslinging</li>
+    <li>reveal->Underneath the rhetoric, it’s really just a long list of petty grievances</li>
+    <li>reveal->Reads less like a political tract and more like a long, angry rant</li>
+    <li>reveal->The thin veneer of political argument barely conceals the venomous insults</li>
+    
+    <!-- Writing Quality Sentence -->
+    <li>writingQualitySentence(quality==6)->It is an elegantly composed diatribe, delivering its jabs with finesse and wit.</li>
+    <li>writingQualitySentence(quality==5)->It is sharply written, its barbs cutting with precision despite its tone.</li>
+    <li>writingQualitySentence(quality==4)->It is solidly constructed, though the insults often overshadow its arguments.</li>
+    <li>writingQualitySentence(quality==3)->It is serviceable, if somewhat clumsy in its balancing of ideas and insults.</li>
+    <li>writingQualitySentence(quality==2)->It is a clunky, poorly organized tirade, with jabs that miss their mark.</li>
+    <li>writingQualitySentence(quality==1)->It is a chaotic mess of incoherent arguments and juvenile name-calling.</li>
+    <li>writingQualitySentence(quality==0)->It is an abysmal screed, with no effort to mask its bile and petty insults.</li>
+    
+    <!-- Ending -->
+    <li>ending->\n\nAfter being read, this pamphlet will disappear in a puff of vitriol, but may leave a lingering sense of indignation.</li>
+
+</rulesStrings>
+
+		</rulePack>
+	</RulePackDef>
+</Defs>

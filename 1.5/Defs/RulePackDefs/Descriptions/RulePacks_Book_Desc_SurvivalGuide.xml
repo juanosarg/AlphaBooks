@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_SurvivalGuide_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Description -->
+				<li>desc->[intro]. [advice]. [warning]. [quirk]. [conclusion]\n\n[writingQualitySentence]\n\n[ending]</li>
+				<li>desc->[intro]. [advice]. [quirk]. [warning] [conclusion]\n\n[writingQualitySentence]\n\n[ending]</li>
+				<li>desc->[intro]. [advice]. [warning]".\n\n[writingQualitySentence]\n\n[ending]</li>
+				<li>desc->[intro]. [advice]. [quirk]".\n\n[writingQualitySentence]\n\n[ending]</li>
+				<li>desc->[intro]. [advice]".\n\n[writingQualitySentence]\n\n[ending]</li>
+				<!-- Intro -->
+				<li>intro->"Navigating the [subject_primary] is no small feat</li>
+				<li>intro->"Surviving in the [subject_primary] requires knowledge and grit</li>
+				<li>intro->"The [subject_primary] can be both a sanctuary and a peril</li>
+				<li>intro->"To thrive in the [subject_primary], one must first respect it</li>
+				<li>intro->"The [subject_primary] is as unforgiving as it is beautiful</li>
+				<!-- Advice -->
+				<li>advice->Mastering [key_survival_topic] is crucial for survival</li>
+				<li>advice->Understanding the patterns of local wildlife is vital</li>
+				<li>advice->Locating and preserving [key_resource] should be your top priority</li>
+				<li>advice->Establishing shelter quickly is paramount to survival</li>
+				<li>advice->Keep an eye on the weather—it shifts faster than you might expect</li>
+				<li>advice->Avoid overexertion; conserve your energy whenever possible</li>
+				<!-- Key Survival Topics -->
+				<li>key_survival_topic->navigation through harsh terrain</li>
+				<li>key_survival_topic->finding and purifying water</li>
+				<li>key_survival_topic->constructing effective shelters</li>
+				<li>key_survival_topic->managing long-term food storage</li>
+				<li>key_survival_topic->avoiding and defending against predators</li>
+				<li>key_survival_topic->identifying safe plant life</li>
+				<!-- Key Resources -->
+				<li>key_resource->clean water</li>
+				<li>key_resource->adequate food supplies</li>
+				<li>key_resource->materials for shelter</li>
+				<li>key_resource->firewood or other fuel</li>
+				<li>key_resource->tools for defense</li>
+				<li>key_resource->medicine or healing supplies</li>
+				<!-- Warning -->
+				<li>warning->Fail to prepare, and the [subject_primary] will punish you swiftly</li>
+				<li>warning->The nights here are colder and deadlier than you might imagine</li>
+				<li>warning->Inadequate planning could leave you at the mercy of predators</li>
+				<li>warning->Beware of overconfidence; even seasoned explorers fall victim here</li>
+				<li>warning->Misjudging the environment could mean certain doom</li>
+				<li>warning->The [subject_primary] has no tolerance for mistakes</li>
+				<!-- Quirk -->
+				<li>quirk->Interestingly, the [subject_primary] boasts some edible plants that taste oddly of [quirky_flavor]</li>
+				<li>quirk->Legends say the [subject_primary] hides treasures in its most desolate reaches</li>
+				<li>quirk->Here, even the insects seem to have survival strategies worth studying</li>
+				<li>quirk->The [subject_primary] is known for its eerie, almost melodic wind patterns</li>
+				<li>quirk->Oddly, the [subject_primary] supports some of the most vibrant sunsets you'll ever see</li>
+				<!-- Quirky Flavors -->
+				<li>quirky_flavor->mint</li>
+				<li>quirky_flavor->lemongrass</li>
+				<li>quirky_flavor->blueberries</li>
+				<li>quirky_flavor->earthy mushrooms</li>
+				<li>quirky_flavor->spiced honey</li>
+				<!-- Conclusion -->
+				<li>conclusion->Approach the [subject_primary] with respect and vigilance, and you might just survive."</li>
+				<li>conclusion->Only the prepared and resourceful can truly thrive in this environment."</li>
+				<li>conclusion->It’s a place of harsh lessons—but also remarkable rewards."</li>
+				<li>conclusion->Remember, survival here isn’t just a skill—it’s an art."</li>
+				<li>conclusion->The [subject_primary] doesn’t forgive, but it can be conquered."</li>
+				<!-- Writing Quality Sentence -->
+				<li>writingQualitySentence->This [bookType] is [writingQualityAdjective], offering readers insights into the dangers and strategies of survival.</li>
+				<li>writingQualitySentence->With [writingQualityAdjective] prose, this [bookType] provides a wealth of knowledge for the cautious traveler.</li>
+				<li>writingQualitySentence->The [bookType] is a [writingQualityAdjective] resource, blending advice with imagery of the [subject_primary].</li>
+				<!-- Book Type -->
+				<li>bookType->survival guide</li>
+				<li>bookType->manual</li>
+				<li>bookType->handbook</li>
+				<li>bookType->compendium</li>
+				<li>bookType->field guide</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective(quality==6)->masterfully written</li>
+				<li>writingQualityAdjective(quality==5)->exquisitely detailed</li>
+				<li>writingQualityAdjective(quality==4)->thoughtfully composed</li>
+				<li>writingQualityAdjective(quality==3)->competently written</li>
+				<li>writingQualityAdjective(quality==2)->somewhat clunky</li>
+				<li>writingQualityAdjective(quality==1)->poorly organized</li>
+				<li>writingQualityAdjective(quality==0)->chaotically thrown together</li>
+				<!-- Ending -->
+				<li>ending->Once studied, this book will vanish into the ether, leaving only the knowledge it imparted.</li>
+				<li>ending->Upon completion, this guide will self-destruct, ensuring its secrets stay with the reader.</li>
+				<li>ending->Absorbing its wisdom, you will lose the book but gain survival know-how.</li>
+				<li>ending->After reading, the book disappears, leaving only the lessons etched in your memory.</li>
+			</rulesStrings>
+			</rulePack>
+		</RulePackDef>
+	</Defs>

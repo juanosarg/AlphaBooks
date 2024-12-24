@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="ComfyTemperatureMin"]/parts</xpath>
+		<value>
+			<li Class="AlphaBooks.TempMin_ByBiome"/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="ComfyTemperatureMax"]/parts</xpath>
+		<value>
+			<li Class="AlphaBooks.TempMax_ByBiome"/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="MoveSpeed"]/parts</xpath>
+		<value>
+			<li Class="AlphaBooks.Multiplier_ByBiome"/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="ImmunityGainSpeed"]/parts</xpath>
+		<value>
+			<li Class="AlphaBooks.Multiplier_ByBiome"/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="WorkSpeedGlobal"]/parts</xpath>
+		<value>
+			<li Class="AlphaBooks.Multiplier_ByBiome"/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StatDef[defName = "HuntingStealth"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/StatDef[defName = "HuntingStealth"]</xpath>
+			<value>
+				<parts>
+					<li Class="AlphaBooks.Multiplier_ByBiome"/>
+				</parts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/StatDef[defName = "HuntingStealth"]/parts</xpath>
+			<value>
+				<li Class="AlphaBooks.Multiplier_ByBiome"/>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/StatDef[defName = "TameAnimalChance"]/parts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/StatDef[defName = "TameAnimalChance"]</xpath>
+			<value>
+				<parts>
+					<li Class="AlphaBooks.Multiplier_ByBiome"/>
+				</parts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+		<xpath>/Defs/StatDef[defName = "TameAnimalChance"]/parts</xpath>
+			<value>
+				<li Class="AlphaBooks.Multiplier_ByBiome"/>
+			</value>
+		</match>
+	</Operation>
+</Patch>
