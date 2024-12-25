@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_MidasTome</defName>
+		<label>midas tome</label>
+		<description>A midas tome</description>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_MidasTome/ABooks_MidasTome</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_MidasTome/ABooks_MidasTome</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_MidasTome_Namer</nameMaker>
+				<descriptionMaker>ABooks_MidasTome_Description</descriptionMaker>
+				<ageYearsRange>2000~3000</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_MidasTome/ABooks_MidasTome_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_MidasTome/ABooks_MidasTome_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						<descriptionForStages>
+							<li>the capacity to turn all finished crafts and structures into gold for 4 hours</li>
+							<li>the capacity to turn all finished crafts and structures into gold for 6 hours</li>
+							<li>the capacity to turn all finished crafts and structures into gold for 10 hours</li>
+							<li>the capacity to turn all finished crafts and structures into gold for 12 hours</li>
+							<li>the capacity to turn all finished crafts and structures into gold for 15 hours</li>
+							<li>the capacity to turn all finished crafts and structures into gold for 20 hours</li>
+							<li>the capacity to turn all finished crafts and structures into gold for 1 day</li>
+						
+						</descriptionForStages>
+						
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_MidasTome</hediffToAdd>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

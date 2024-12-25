@@ -6,13 +6,12 @@ using Verse.Grammar;
 
 namespace AlphaBooks
 {
-    public class ReadingOutcomeDoer_Nothing : BookOutcomeDoer
+    public class ReadingOutcomeDoer_CallRaids : BookOutcomeDoer
     {
 
+       
 
-
-        public new BookOutcomeProperties_Nothing Props => (BookOutcomeProperties_Nothing)props;
-
+        public new BookOutcomeProperties_CallRaids Props => (BookOutcomeProperties_CallRaids)props;
 
 
         public override bool DoesProvidesOutcome(Pawn reader)
@@ -22,7 +21,9 @@ namespace AlphaBooks
 
         public override string GetBenefitsString(Pawn reader = null)
         {
-            return "ABooks_Nothing".Translate();
+           
+            return "ABooks_CallRaids".Translate(Props.lengthForQualities[(int)CompQuality.qualityInt].ToString("0.##"));
+            
         }
 
 

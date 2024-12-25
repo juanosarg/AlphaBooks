@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+
+	<AlphaBooks.AstronomicalIncidentWhitelistDef>
+		<defName>ABooks_AstronomicalIncidentWhitelist_VEE</defName>
+		<whiteListedIncidents>			
+			
+			<li>VEE_Drought</li>
+			<li>VEE_SpaceBattle</li>
+			<li>VEE_MeteoriteShower</li>
+	
+		
+			
+			
+		</whiteListedIncidents>							
+	</AlphaBooks.AstronomicalIncidentWhitelistDef>
+
+
+
+
+
+</Defs>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_BookOfPortents_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title->[titleBasic]</li>
+				<li>title(p=2)->[titleAuthored]</li>
+				<!-- Basic -->
+				<li>titleBasic(p=5)->The [randAdjective] Book of Portents</li>
+				<li>titleBasic(p=5)->Chronicles of the [randAdjective] Skies</li>
+				<li>titleBasic(p=5)->The Celestial Codex</li>
+				<li>titleBasic(p=5)->Prophecies of the [randAdjective] Heavens</li>
+				<li>titleBasic(p=5)->Portents of the [randAstronomicalPhenomenon]</li>
+				<li>titleBasic->The Arcane Almanac</li>
+				<li>titleBasic->Omens and Signs</li>
+				<li>titleBasic->The Astronomer’s Revelations</li>
+				<li>titleBasic->Signs from the Void</li>
+				<li>titleBasic->The Foretelling Skies</li>
+				<!-- Authored -->
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Celestial Guide</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Prophetic Compendium</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Codex of Omens</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Mystical Astral Tome</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Almanac of Portents</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Guide to Celestial Portents</li>
+				<!-- Random Adjectives -->
+				<li>randAdjective->Ethereal</li>
+				<li>randAdjective->Arcane</li>
+				<li>randAdjective->Mystical</li>
+				<li>randAdjective->Fated</li>
+				<li>randAdjective->Ancient</li>
+				<li>randAdjective->Unseen</li>
+				<li>randAdjective->Occult</li>
+				<li>randAdjective->Otherworldly</li>
+				<li>randAdjective->Enigmatic</li>
+				<li>randAdjective->Foreboding</li>
+				<!-- Astronomical Phenomena -->
+				<li>randAstronomicalPhenomenon->Eclipse</li>
+				<li>randAstronomicalPhenomenon->Aurora</li>
+				<li>randAstronomicalPhenomenon->Meteor Shower</li>
+				<li>randAstronomicalPhenomenon->Solar Flare</li>
+				<li>randAstronomicalPhenomenon->Starlight</li>
+				<li>randAstronomicalPhenomenon->Comet</li>
+				<li>randAstronomicalPhenomenon->Blood Moon</li>
+				<li>randAstronomicalPhenomenon->Voidstorm</li>
+				<li>randAstronomicalPhenomenon->Supernova</li>
+				<li>randAstronomicalPhenomenon->Falling Stars</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

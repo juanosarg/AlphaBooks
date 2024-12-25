@@ -19,7 +19,7 @@ namespace AlphaBooks
     public static class AlphaBooks_GenRecipe_PostProcessProduct_Patch
     {
         [HarmonyPostfix]
-        static void IncreaseQualityByOne(Thing product, RecipeDef recipeDef, Pawn worker)
+        static void HandleCraftModifications(Thing product, RecipeDef recipeDef, Pawn worker)
         {
 
 
@@ -42,7 +42,15 @@ namespace AlphaBooks
                 }
 
             }
- 
+            if (worker?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_MidasTome) == true)
+            {
+
+                if (product?.def.MadeFromStuff==true)
+                {
+                    product.SetStuffDirect(ThingDefOf.Gold);
+                }
+
+            }
 
         }
     }

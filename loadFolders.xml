@@ -7,6 +7,7 @@
 		<li IfModActive="sarg.alphagenes">1.5/Mods/AlphaGenes</li>
 		<li IfModActive="VanillaExpanded.VGeneticsE">1.5/Mods/VanillaGeneticsExpanded</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/Mods/Royalty</li>
+		<li IfModActive="VanillaExpanded.VEE">1.5/Mods/VanillaEventsExpanded</li>
 	</v1.5>
 </loadFolders>
 

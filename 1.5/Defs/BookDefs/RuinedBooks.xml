@@ -30,7 +30,9 @@
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-					<li Class="AlphaBooks.BookOutcomeProperties_Nothing"/>
+					<li Class="AlphaBooks.BookOutcomeProperties_Text">
+						<text>ABooks_Nothing</text>
+					</li>
 				</doers>
 			</li>
 		</comps>
@@ -79,7 +81,9 @@
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-					<li Class="AlphaBooks.BookOutcomeProperties_Nothing"/>
+					<li Class="AlphaBooks.BookOutcomeProperties_Text">
+						<text>ABooks_Nothing</text>
+					</li>
 				</doers>
 			</li>
 		</comps>

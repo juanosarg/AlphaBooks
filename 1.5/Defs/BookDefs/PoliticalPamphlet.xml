@@ -30,7 +30,19 @@
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-					<li Class="AlphaBooks.BookOutcomeProperties_Nothing"/>
+					<li Class="AlphaBooks.BookOutcomeProperties_CallRaids">
+						<lengthForQualities>
+							<li>0.5</li>
+							<li>0.75</li>
+							<li>1</li>
+							<li>1.25</li>
+							<li>1.5</li>
+							<li>1.75</li>
+							<li>2</li>
+						
+						</lengthForQualities>
+						
+					</li>
 				</doers>
 			</li>
 		</comps>
