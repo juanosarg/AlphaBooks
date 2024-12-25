@@ -43,7 +43,6 @@
 			<li>ITab_ContentsBooks</li>
 			<li>ITab_Storage</li>
 		</inspectorTabs>
-	
 		<statBases>
 			<Flammability>1.0</Flammability>
 			<Beauty>0.5</Beauty>
@@ -110,7 +109,6 @@
 			</bookendGraphicNorth>
 		</building>
 	</ThingDef>
-	
 	<ThingDef ParentName="ABooks_BookcaseBase">
 		<defName>ABooks_RuinedBookcase_Filled</defName>
 		<label>filled ruined bookcase</label>
@@ -170,6 +168,49 @@
 				<addTopAltitudeBias>true</addTopAltitudeBias>
 				<drawSize>(2,2)</drawSize>
 			</bookendGraphicNorth>
+		</building>
+	</ThingDef>
+	<ThingDef ParentName="ABooks_BookcaseBase">
+		<defName>ABooks_BookPlinth</defName>
+		<label>book plinth</label>
+		<description>A small plinth to display a single open book. Books stored here will passively enhance academic work done nearby, and increase the beauty of the plinth. The stored books will never deteriorate.</description>
+		<thingClass>AlphaBooks.Building_BookPlinth</thingClass>
+		<graphicData>
+			<texPath>Things/Building/ABooks_BookPlinth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<MaxHitPoints>25</MaxHitPoints>
+			<Mass>4</Mass>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<building>
+			<storageGroupTag>Bookcase</storageGroupTag>
+			<maxItemsInCell>1</maxItemsInCell>
+			<blueprintClass>Blueprint_Bookcase</blueprintClass>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<categories Inherit="False">
+						<li>Books</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Books</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
 		</building>
 	</ThingDef>
 </Defs>
