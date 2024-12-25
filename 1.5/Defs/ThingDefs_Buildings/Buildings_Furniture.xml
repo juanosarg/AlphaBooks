@@ -1,193 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef Abstract="True" Name="ABooks_RuinedBase" ParentName="BuildingBase">
-	</ThingDef>
-	<ThingDef Abstract="True" Name="ABooks_BookcaseBase" ParentName="ABooks_RuinedBase">
-		<thingClass>AlphaBooks.Building_RuinedBookcase</thingClass>
-		<drawerType>RealtimeOnly</drawerType>
-		<preventDroppingThingsOn>true</preventDroppingThingsOn>
-		<deselectedSelectionBracketFactor>0.3</deselectedSelectionBracketFactor>
-		<surfaceType>None</surfaceType>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.4</fillPercent>
-		<castEdgeShadows>true</castEdgeShadows>
-		<pathCost>50</pathCost>
-		<defaultPlacingRot>North</defaultPlacingRot>
-		<building>
-			<storageGroupTag>Bookcase</storageGroupTag>
-			<maxItemsInCell>5</maxItemsInCell>
-			<blueprintClass>Blueprint_Bookcase</blueprintClass>
-			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-			<ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
-			<fixedStorageSettings>
-				<filter>
-					<categories Inherit="False">
-						<li>Books</li>
-					</categories>
-				</filter>
-			</fixedStorageSettings>
-			<defaultStorageSettings>
-				<priority>Important</priority>
-				<filter>
-					<categories>
-						<li>Books</li>
-					</categories>
-				</filter>
-			</defaultStorageSettings>
-		</building>
-		<placeWorkers>
-			<li>PlaceWorker_DrawLinesToResearchTablesInRoom</li>
-		</placeWorkers>
-		<inspectorTabs>
-			<li>ITab_ContentsBooks</li>
-			<li>ITab_Storage</li>
-		</inspectorTabs>
-		<statBases>
-			<Flammability>1.0</Flammability>
-			<Beauty>0.5</Beauty>
-		</statBases>
-		<staticSunShadowHeight>0.5</staticSunShadowHeight>
-		<canOverlapZones>false</canOverlapZones>
-	</ThingDef>
-	<ThingDef ParentName="ABooks_BookcaseBase">
-		<defName>ABooks_RuinedBookcase</defName>
-		<label>ruined bookcase</label>
-		<description>A wide bookcase for storing and displaying up to ten books. Books stored here will passively enhance academic work done nearby, and increase the beauty of the bookcase. The stored books will never deteriorate.</description>
-		<graphicData>
-			<texPath>Things/Building/RuinedBookcase/ABooks_RuinedBookcase</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,2)</drawSize>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Mass>8</Mass>
-		</statBases>
-		<size>(2,1)</size>
-		<building>
-			<bookendGraphicEast>
-				<texPath>Things/Building/Furniture/Bookcase/Bookcase_Bookend_east</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<addTopAltitudeBias>true</addTopAltitudeBias>
-				<drawSize>(2,3)</drawSize>
-			</bookendGraphicEast>
-			<bookendGraphicNorth>
-				<texPath>Things/Building/Furniture/Bookcase/Bookcase_Bookend_north</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<addTopAltitudeBias>true</addTopAltitudeBias>
-				<drawSize>(3,2)</drawSize>
-			</bookendGraphicNorth>
-		</building>
-	</ThingDef>
-	<ThingDef ParentName="ABooks_BookcaseBase">
-		<defName>ABooks_RuinedBookcase_Small</defName>
-		<label>small ruined bookcase</label>
-		<description>A narrow bookcase for storing and displaying up to five books. Books stored here will passively enhance academic work done nearby, and increase the beauty of the bookcase. The stored books will never deteriorate.</description>
-		<graphicData>
-			<texPath>Things/Building/RuinedBookcase/ABooks_RuinedBookcaseSmall</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-		</graphicData>
-		<uiIconScale>0.5</uiIconScale>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<Mass>4</Mass>
-		</statBases>
-		<size>(1,1)</size>
-		<building>
-			<bookendGraphicEast>
-				<texPath>Things/Building/Furniture/Bookcase/BookcaseSmall_Bookend_east</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<addTopAltitudeBias>true</addTopAltitudeBias>
-				<drawSize>(2,2)</drawSize>
-			</bookendGraphicEast>
-			<bookendGraphicNorth>
-				<texPath>Things/Building/Furniture/Bookcase/BookcaseSmall_Bookend_north</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<addTopAltitudeBias>true</addTopAltitudeBias>
-				<drawSize>(2,2)</drawSize>
-			</bookendGraphicNorth>
-		</building>
-	</ThingDef>
-	<ThingDef ParentName="ABooks_BookcaseBase">
-		<defName>ABooks_RuinedBookcase_Filled</defName>
-		<label>filled ruined bookcase</label>
-		<description>A wide bookcase for storing and displaying up to ten books. Books stored here will passively enhance academic work done nearby, and increase the beauty of the bookcase. The stored books will never deteriorate.</description>
-		<thingClass>AlphaBooks.Building_RuinedBookcase_Autofill</thingClass>
-		<graphicData>
-			<texPath>Things/Building/RuinedBookcase/ABooks_RuinedBookcase</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,2)</drawSize>
-		</graphicData>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Mass>8</Mass>
-		</statBases>
-		<size>(2,1)</size>
-		<building>
-			<bookendGraphicEast>
-				<texPath>Things/Building/Furniture/Bookcase/Bookcase_Bookend_east</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<addTopAltitudeBias>true</addTopAltitudeBias>
-				<drawSize>(2,3)</drawSize>
-			</bookendGraphicEast>
-			<bookendGraphicNorth>
-				<texPath>Things/Building/Furniture/Bookcase/Bookcase_Bookend_north</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<addTopAltitudeBias>true</addTopAltitudeBias>
-				<drawSize>(3,2)</drawSize>
-			</bookendGraphicNorth>
-		</building>
-	</ThingDef>
-	<ThingDef ParentName="ABooks_BookcaseBase">
-		<defName>ABooks_RuinedBookcase_Small_Filled</defName>
-		<label>filled small ruined bookcase</label>
-		<description>A narrow bookcase for storing and displaying up to five books. Books stored here will passively enhance academic work done nearby, and increase the beauty of the bookcase. The stored books will never deteriorate.</description>
-		<thingClass>AlphaBooks.Building_RuinedBookcase_Autofill</thingClass>
-		<graphicData>
-			<texPath>Things/Building/RuinedBookcase/ABooks_RuinedBookcaseSmall</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-		</graphicData>
-		<uiIconScale>0.5</uiIconScale>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-			<Mass>4</Mass>
-		</statBases>
-		<size>(1,1)</size>
-		<building>
-			<bookendGraphicEast>
-				<texPath>Things/Building/Furniture/Bookcase/BookcaseSmall_Bookend_east</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<addTopAltitudeBias>true</addTopAltitudeBias>
-				<drawSize>(2,2)</drawSize>
-			</bookendGraphicEast>
-			<bookendGraphicNorth>
-				<texPath>Things/Building/Furniture/Bookcase/BookcaseSmall_Bookend_north</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<addTopAltitudeBias>true</addTopAltitudeBias>
-				<drawSize>(2,2)</drawSize>
-			</bookendGraphicNorth>
-		</building>
-	</ThingDef>
-	<ThingDef ParentName="ABooks_BookcaseBase">
+
+	<ThingDef ParentName="BookcaseBase">
 		<defName>ABooks_BookPlinth</defName>
 		<label>book plinth</label>
-		<description>A small plinth to display a single open book. Books stored here will passively enhance academic work done nearby, and increase the beauty of the plinth. The stored books will never deteriorate.</description>
+		<description>A small plinth to display a single open book. Books stored here will passively enhance academic work done nearby, and increase the beauty of the plinth. The stored books will never deteriorate. Beauty of a book stored on a plinth is multiplied by 10.</description>
 		<thingClass>AlphaBooks.Building_BookPlinth</thingClass>
 		<graphicData>
 			<texPath>Things/Building/ABooks_BookPlinth</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<rotatable>false</rotatable>
 		<uiIconScale>0.5</uiIconScale>
 		<statBases>
 			<MaxHitPoints>25</MaxHitPoints>
 			<Mass>4</Mass>
+			 <WorkToBuild>250</WorkToBuild>
 		</statBases>
 		<size>(1,1)</size>
 		<costStuffCount>30</costStuffCount>
-		<stuffCategories>
+		<stuffCategories Inherit="false">
 			<li>Stony</li>
 		</stuffCategories>
 		<building>

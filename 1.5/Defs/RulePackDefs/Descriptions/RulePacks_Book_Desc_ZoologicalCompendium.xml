@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_ZoologicalCompendium_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Overall structure -->
+				<li>desc->[context] [excerpt]\n\n[writingQualitySentence] [ending]</li>
+				<!-- Excerpts -->
+				<li>excerpt->Behold such creatures as the [creatureAdjective] [creatureName], a marvel of nature. Its [notableTrait] makes it a [traitImpact] among all known fauna."</li>
+				<li>excerpt->Among the many creatures catalogued here, the [creatureAdjective] [creatureName] stands apart. Known for its [notableTrait], it has inspired [reaction]."</li>
+				<li>excerpt->Among all these, few beings evoke such awe as the [creatureAdjective] [creatureName], with its [notableTrait]. A [traitImpact] in its realm, it defies easy classification."</li>
+				<li>excerpt->The [creatureAdjective] [creatureName] is a creature of [notableTrait]. It has been part of [reaction], cementing its place in the annals of zoological history."</li>
+				<!-- Context -->
+				<li>context->"Drawn from decades of exploration, this compendium presents a plethora of incredible discoveries.</li>
+				<li>context->"Informed by meticulous observations, this tome seeks to record all the diverse animals of the Rim.</li>
+				<li>context->"Through the lens of science and wonder, this volume chronicles the vast variations of human biological creations.</li>
+				<li>context->"This work, a labor of curiosity and awe, encapsulates decades of exploration of the fauna of the Rim.</li>
+				<!-- Writing Quality Sentence -->
+				<li>writingQualitySentence(quality==6)->It is a masterful work of zoological scholarship, deserving of its place in any esteemed collection.</li>
+				<li>writingQualitySentence(quality==5)->It is a thoughtful and detailed chronicle, sure to enrich the mind of its reader.</li>
+				<li>writingQualitySentence(quality==4)->It is a competent study, providing valuable insights into the wonders of fauna.</li>
+				<li>writingQualitySentence(quality==3)->It is a functional but unremarkable volume, offering standard observations.</li>
+				<li>writingQualitySentence(quality==2)->It is a flawed work, rife with errors but retaining glimpses of intrigue.</li>
+				<li>writingQualitySentence(quality==1)->It is a haphazard attempt, lacking rigor and riddled with mistakes.</li>
+				<li>writingQualitySentence(quality==0)->It is a laughable failure, its inaccuracies overshadowing any merit.</li>
+				<!-- Ending -->
+				<li>ending->\n\nOnce studied, this book inspires its reader with animal related bonuses and is consumed in the process.</li>
+				<!-- Creature Details -->
+				<li>creatureAdjective->mighty</li>
+				<li>creatureAdjective->enigmatic</li>
+				<li>creatureAdjective->graceful</li>
+				<li>creatureAdjective->elusive</li>
+				<li>creatureAdjective->ferocious</li>
+				<li>creatureAdjective->mysterious</li>
+				<li>creatureAdjective->exotic</li>
+				<!-- Base Game Creatures -->
+				<li>creatureName->thrumbo</li>
+				<li>creatureName->megasloth</li>
+				<li>creatureName->muffalo</li>
+				<li>creatureName->boomalope</li>
+				<li>creatureName->warg</li>
+				<li>creatureName->megaspider</li>
+				<!-- Alpha Animals Creatures -->
+				<li>creatureName->bumbledrone</li>
+				<li>creatureName->cactipine</li>
+				<li>creatureName->nightling</li>
+				<li>creatureName->phoenix owlcat</li>
+				<li>creatureName->aerofleet</li>
+				<li>creatureName->sky eel</li>
+				<li>creatureName->gallatross</li>
+				<li>creatureName->arctic lion</li>
+				<li>creatureName->chameleon yak</li>
+				<li>creatureName->cinderlisk</li>
+				<li>creatureName->crystalline caracal</li>
+				<li>creatureName->gigantelope</li>
+				<li>creatureName->mammoth worm</li>
+				<li>notableTrait->resplendent coat</li>
+				<li>notableTrait->immense size</li>
+				<li>notableTrait->striking posture</li>
+				<li>notableTrait->natural ferocity</li>
+				<li>notableTrait->peculiar mating habits</li>
+				<li>notableTrait->ability to thrive in extremes</li>
+				<li>traitImpact->keystone species</li>
+				<li>traitImpact->terrifying predator</li>
+				<li>traitImpact->source of endless fascination</li>
+				<li>traitImpact->symbol of endurance</li>
+				<li>traitImpact->rarity in the natural world</li>
+				<li>reaction->songs and myths across cultures</li>
+				<li>reaction->the study of countless scholars</li>
+				<li>reaction->fear and respect in equal measure</li>
+				<li>reaction->prized trophies among hunters</li>
+				<li>reaction->the curiosity of naturalists</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

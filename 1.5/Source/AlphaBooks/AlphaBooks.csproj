@@ -323,6 +323,7 @@
     <Compile Include="Books\Book_Psycast.cs" />
     <Compile Include="Books\Book_Religious.cs" />
     <Compile Include="Books\Book_Skill.cs" />
+    <Compile Include="Buildings\Building_BookPlinth_Autofill.cs" />
     <Compile Include="Buildings\Building_BookPlinth.cs" />
     <Compile Include="Buildings\Building_RuinedBookcase.cs" />
     <Compile Include="Buildings\Building_RuinedBookcase_Autofill.cs" />

@@ -9,7 +9,7 @@ using Verse;
 
 namespace AlphaBooks
 {
-    public class Building_BookPlinth: Building_RuinedBookcase, IBeautyContainer
+    public class Building_BookPlinth_Autofill : Building_RuinedBookcase_Autofill, IBeautyContainer
     {
 
         public new float BeautyOffset

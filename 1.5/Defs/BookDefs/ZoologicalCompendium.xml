@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_ZoologicalCompendium</defName>
+		<label>zoological compendium</label>
+		<description>A zoological compendium</description>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_ZoologicalCompendium/ABooks_ZoologicalCompendium</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_ZoologicalCompendium/ABooks_ZoologicalCompendium</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_ZoologicalCompendium_Namer</nameMaker>
+				<descriptionMaker>ABooks_ZoologicalCompendium_Description</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_ZoologicalCompendium/ABooks_ZoologicalCompendium_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_ZoologicalCompendium/ABooks_ZoologicalCompendium_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						<descriptionForStages>
+							<li>+2% Tame Animal Chance>, +2% Train Animal Chance, +5% Animal Gather Speed, +5% Animal Gather Yield</li>
+							<li>+5% Tame Animal Chance>, +5% Train Animal Chance, +10% Animal Gather Speed, +10% Animal Gather Yield</li>
+							<li>+15% Tame Animal Chance>, +15% Train Animal Chance, +15% Animal Gather Speed, +15% Animal Gather Yield</li>
+							<li>+20% Tame Animal Chance>, +20% Train Animal Chance, +20% Animal Gather Speed, +25% Animal Gather Yield, +10% Hunting Stealth</li>
+							<li>+30% Tame Animal Chance>, +30% Train Animal Chance, +50% Animal Gather Speed, +40% Animal Gather Yield, +25% Hunting Stealth, +25% Bond Animal Chance Factor</li>
+							<li>+40% Tame Animal Chance>, +40% Train Animal Chance, +75% Animal Gather Speed, +50% Animal Gather Yield, +35% Hunting Stealth, +50% Bond Animal Chance Factor</li>
+							<li>+50% Tame Animal Chance>, +50% Train Animal Chance, +100% Animal Gather Speed, +75% Animal Gather Yield, +50% Hunting Stealth, +75% Bond Animal Chance Factor</li>
+						</descriptionForStages>
+						<ticks>180000</ticks>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_ZoologicalCompendium</hediffToAdd>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>
