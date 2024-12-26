@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+
+	<AlphaBooks.ChargeAbilityDef>
+		<defName>ABooks_ChargeAbilities_AlphaGenes</defName>
+		<chargeAbilities>			
+			
+			<li>ABooks_Detonation_Charges</li>
+			
+		</chargeAbilities>							
+	</AlphaBooks.ChargeAbilityDef>
+
+
+
+
+
+</Defs>

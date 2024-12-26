@@ -33,10 +33,12 @@
 		<label>greater fire spew</label>
 		<description>Spew flammable bile that ignites immediately in contact with oxygen, creating a dangerous conflagration that will set everything on its path on fire.</description>
 		<iconPath>UI/Widgets/ABooks_GreaterFireSpew</iconPath>
-		<cooldownTicksRange>3000</cooldownTicksRange>
+		
 		<cooldownPerCharge>true</cooldownPerCharge>
 		<aiCanUse>true</aiCanUse>
 		<warmupStartSound>FireSpew_Warmup</warmupStartSound>
+		 <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<range>16.9</range>
