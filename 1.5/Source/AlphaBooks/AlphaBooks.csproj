@@ -305,6 +305,8 @@
   <ItemGroup>
     <Compile Include="Abilities\CompAbilityEffect_DeleteWhenZeroCharges.cs" />
     <Compile Include="Abilities\Properties\CompProperties_DeleteWhenZeroCharges.cs" />
+    <Compile Include="BookReadResults\BookReadResult_PlaySound.cs" />
+    <Compile Include="BookReadResults\BookReadResult_SpawnThingsByQuality.cs" />
     <Compile Include="BookReadResults\BookReadResult_Biome.cs" />
     <Compile Include="BookReadResults\BookReadResult_CallRaid.cs" />
     <Compile Include="BookReadResults\BookReadResult_GivePsycast.cs" />

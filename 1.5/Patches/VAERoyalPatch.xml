@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Animals Expanded — Royal Animals</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ABooks_TheChickenBook"]/modExtensions/li[@Class="AlphaBooks.BookDefModExtension"]/readResults/li/thingsToSpawnByQuality/li[@name="TheEmuOne"]</xpath>
+			<value>
+				<li name="TheEmuOne">
+					<thing>VAERoy_Megachicken</thing>
+					<count>1</count>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
+

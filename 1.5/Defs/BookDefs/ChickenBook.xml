@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_TheChickenBook</defName>
+		<label>the chicken book</label>
+		<description>The chicken book. An unreadable mistery of a book. What is this about? Is it the cruel joke of an insane archotech?</description>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_TheChickenBook/ABooks_TheChickenBook</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_TheChickenBook/ABooks_TheChickenBook</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_TheChickenBook_Namer</nameMaker>
+				<descriptionMaker>ABooks_TheChickenBook_Description</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_TheChickenBook/ABooks_TheChickenBook_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_TheChickenBook/ABooks_TheChickenBook_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_Text">
+						<text>ABooks_Nonsense</text>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_SpawnThingsByQuality</doerClass>
+						<thingsToSpawnByQuality>
+							<li>
+								<thing>EggChickenUnfertilized</thing>
+								<count>1</count>
+							</li>
+							<li>
+								<thing>EggChickenFertilized</thing>
+								<count>2</count>
+							</li>
+							<li>
+								<thing>Chicken</thing>
+								<count>1</count>
+							</li>
+							<li>
+								<thing>Chicken</thing>
+								<count>2</count>
+							</li>
+							<li>
+								<thing>Chicken</thing>
+								<count>5</count>
+							</li>
+							<li>
+								<thing>Chicken</thing>
+								<count>7</count>
+							</li>
+							<li name="TheEmuOne">
+								<thing>Emu</thing>
+								<count>3</count>
+							</li>
+						
+						</thingsToSpawnByQuality>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_PlaySound</doerClass>
+						<sound>ABooks_Chicken</sound>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

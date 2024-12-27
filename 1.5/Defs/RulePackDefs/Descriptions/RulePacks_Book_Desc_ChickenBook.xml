@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_TheChickenBook_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Overall Structure -->
+				<li>desc->"[excerpt] [excerpt]"\n\n[writingQualitySentence] [ending]</li>
+				<!-- Excerpts -->
+				<li>excerpt->███cluck ███▌▌egg 0101▌▌feather-collapse ▌▌[TIME] inexhaustible nesting [REDACTED] GRAVITY ▌▌do not ███shell fractals███do not███[ERROR].</li>
+				<li>excerpt->Spiral yolk eternal ██causality folded ███hen-arch █[???]▌▌the over-chick bends ██clock █▌▌beyond the █gold ██egg ██shell ██.</li>
+				<li>excerpt->Fzzt. [ERROR: LEXICON INVALID] █▌The crow ███ becomes the ███ egg ███-forever collapsing fractal █▌▌▌space ▌▌▌▌rooster reign▌▌shell begins█.</li>
+				<li>excerpt->Glyphs ██light ██reading recursion ██void █▌▌▌▌▌endless ██feather █loop █▌▌▌do not █▌▌▌▌▌▌▌[CAUTION: ███void-roosting███].</li>
+				<li>excerpt->Word ███ egg ███▌ [ERROR █YOLKWRAP] ▌in █▌ fractal ██reality █▌▌always █▌▌hen never ▌shell███cease ██▌roost-time █error.</li>
+				<li>excerpt->Endless ▌▌▌▌▌▌cluck ██nest █▌yolk-divine █▌▌█clock █▌error ██▌GRAVITY feather infinite ██▌▌coops beyond ▌▌▌▌read NO.</li>
+				<li>excerpt->The ██words██escape ██roost ██over █▌▌██shell-crush██yolk-recursive█▌▌▌▌[███END OF TRANSMISSION█▌▌▌▌█▌▌▌▌▌▌▌▌▌▌▌].</li>
+				<li>excerpt->▌▌▌WINGS oscillating at ███frequencies UNKNOWN ██egg-temp -█THE ROOST loops █▌▌▌forbidden ███NO PECK█ 8-DIMENSIONAL █COOP▌▌CLUCK.</li>
+				<li>excerpt->Feather ███BREAKPOINT▌▌▌beak-vector anomaly ███THE NEST IS ███EXPANDING ██▌▌COORDINATES INVALID ▌▌[CHAOS-COCKS].</li>
+				<li>excerpt->██peck ██010101████NEST SINGULARITY▌▌OBSERVER █EJECT █DO NOT █REENTRY ██FEATHER-BEACON██ CLUCKING ███▌ERROR▌▌▌▌.</li>
+				<li>excerpt->The ███cosmic YOLK ███fracture █cluck▌▌FEATHER cascade ███INITIATE █▌▌▌GOLDEN BEAK██▌▌NULL ██DESTINY ████ERROR.</li>
+				<li>excerpt->███BEAK ███▌▌eggloop recursion ██████▌▌ABANDON ██PECK████INVALID ███SHELL ██▌▌▌█[CALCULATIONS] ███ENDLESS█▌▌▌</li>
+				<li>excerpt->WARNING ███▌▌▌OVAL-FORMATION ███DISALLOWED ▌▌▌▌[YOLK-REALM] ███CRITICAL ██EGGS ██████CORRUPTION ██CACKLE ████▌▌</li>
+				<li>excerpt->█clutch ██▌▌▌BEAK-CONTINUUM ███▌█ERROR ███coop █▌▌FEATHER-TIME ███CLUCK ███UNKNOWN ██INCUBATION █████NO ████▌▌▌.</li>
+				<li>excerpt->FEATHER ██▌▌▌PROTOCOL ████[REDACTED] ██eggvector ██▌▌singularity ████LOOP ███BROKEN █▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌▌█▌ERROR.</li>
+				<li>excerpt->▌▌▌cluck█cosmic EGG ██▌▌▌▌do ████NOT ███CRACK ██▌▌BEAK INVERSE ██▌▌▌NEST███▌▌▌THE ███▌▌END ██▌▌ERROR ██▌▌▌.</li>
+				<li>excerpt->██▌▌▌▌██▌[WING FRACTAL ████FORM ███FEATHERED ██INFINITY ██DO ██PECK ██THE ███[NESTORRORS] ██▌▌█▌███ERROR███▌▌▌.</li>
+				<li>excerpt->010101█[CLUCK]██▌▌RECURSION █████BEAK█EGG-COMPRESSION ███INVALID ██▌▌▌CONTAINS ███NO ████TIME ██FEATHER██▌▌BREAK▌▌▌.</li>
+				<!-- Writing Quality Sentence -->
+				<li>writingQualitySentence(quality==6)->Despite its near-indecipherable nature, scholars agree that the complexity of its nonsense is masterful.</li>
+				<li>writingQualitySentence(quality==5)->Even unreadable, its construction suggests a higher understanding of madness.</li>
+				<li>writingQualitySentence(quality==4)->Confusing as it is, there's an undeniable structure to its absurdity.</li>
+				<li>writingQualitySentence(quality==3)->Though incoherent, one might almost see a pattern in its chaos.</li>
+				<li>writingQualitySentence(quality==2)->It feels cobbled together from lost meaning, yet it clings to faint structure.</li>
+				<li>writingQualitySentence(quality==1)->Barely decipherable, it is unclear if this is even a book.</li>
+				<li>writingQualitySentence(quality==0)->Completely nonsensical, it seems like the ravings of a shattered machine.</li>
+				<!-- Ending -->
+				<li>ending->The effects of this book are unknown, though it is clear that it can only be read once.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

@@ -24,7 +24,7 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
-	<AbilityDef ParentName="AG_NoTargetAbilities">
+	<AbilityDef ParentName="ABooks_AG_NoTargetAbilities">
 		<defName>ABooks_Detonation_Charges</defName>
 		<label>detonation</label>
 		<cooldownTicksRange>1</cooldownTicksRange>

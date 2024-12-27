@@ -22,4 +22,5 @@
 	<ABooks_StatsReport_MultiplierByBiome>In the {0} biome: +20 %</ABooks_StatsReport_MultiplierByBiome>
 	<ABooks_CallRaids>Reader will learn some... very creative insults for an enemy faction, which will entice them to raid the colony with {0}x strength.</ABooks_CallRaids>
 	<ABooks_RandomAstronomicalIncident>Through an unknown mechanism, reading this book will trigger a random astronomical incident.</ABooks_RandomAstronomicalIncident>
+	<ABooks_Nonsense>The text is nonsensical and nearly unreadable. It is a mistery what effect reading it may have, if any.</ABooks_Nonsense>
 </LanguageData>

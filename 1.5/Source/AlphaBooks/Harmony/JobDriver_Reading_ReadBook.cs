@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using System;
+using System.Collections.Generic;
 using Verse;
 using Verse.AI;
 using static UnityEngine.GridBrushBase;
@@ -27,8 +28,7 @@ namespace AlphaBooks
                     foreach(BookReadResults result in extension.readResults)
                     {
                         result.doerClass.GetMethod("Notify_BookRead").Invoke(null, [__instance.pawn, __instance.Book, result.thoughtToGive,
-                            result.abilitiesToGive,
-                            result.chargesByQuality,result.hediffToAdd]);
+                            result.abilitiesToGive,result.chargesByQuality,result.hediffToAdd,result.thingsToSpawnByQuality, result.sound]);
                     }
                 }
 

@@ -22,7 +22,15 @@ namespace AlphaBooks
         public List<AbilityDef> abilitiesToGive;
         public List<int> chargesByQuality;
         public HediffDef hediffToAdd;
-       
+        public List<ThingAndCount> thingsToSpawnByQuality;
+        public SoundDef sound;
+
+    }
+
+    public class ThingAndCount
+    {
+        public ThingDef thing;
+        public int count;
 
     }
 }
