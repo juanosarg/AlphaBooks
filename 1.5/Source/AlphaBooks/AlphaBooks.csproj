@@ -341,6 +341,7 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\Frame_CompleteConstruction.cs" />
+    <Compile Include="Harmony\Toils_General_Open.cs" />
     <Compile Include="Harmony\SkillRecord_LearnRateFactor.cs" />
     <Compile Include="Harmony\JobDriver_Reading_ReadBook.cs" />
     <Compile Include="Harmony\SkillUI_GetSkillDescription.cs" />
