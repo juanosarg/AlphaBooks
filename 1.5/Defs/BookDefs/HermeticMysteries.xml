@@ -30,8 +30,16 @@
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-						<li Class="AlphaBooks.BookOutcomeProperties_Text">
-						<text>ABooks_Nothing</text>
+					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						<descriptionForStages>
+							<li>the capacity to increase the loot acquired from opening hermetic crates for 12 hours</li>
+							<li>the capacity to increase the loot acquired from opening hermetic crates for 18 hours</li>
+							<li>the capacity to increase the loot acquired from opening hermetic crates for 1 day</li>
+							<li>the capacity to increase the loot acquired from opening hermetic crates for 1.25 days</li>
+							<li>the capacity to increase the loot acquired from opening hermetic crates for 1.5 days</li>
+							<li>the capacity to increase the loot acquired from opening hermetic crates for 1.83 days</li>
+							<li>the capacity to increase the loot acquired from opening hermetic crates for 2 days</li>
+						</descriptionForStages>
 					</li>
 				</doers>
 			</li>
@@ -42,7 +50,10 @@
 		<modExtensions>
 			<li Class="AlphaBooks.BookDefModExtension">
 				<readResults>
-				
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_HermeticMysteries</hediffToAdd>
+					</li>
 					<li>
 						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
 					</li>

@@ -11,7 +11,7 @@
 				<li>desc->[intro] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
 				<li>desc->[conceptExploration]: [impactStatement]. [writingQualitySentence]. [maybe_date][ending]</li>
 				<li>desc->[intro] [conceptExploration] [contextStatement]. [writingQualitySentence]. [maybe_date][ending]</li>
-				<li>ending->\n\nOnce read, this tome will grant an improved ability to open hermetic crates for some time, and then it will be destroyed.</li>
+				<li>ending->\n\nWhoever crafted this tome was apparently confusing the two meanings of the word "hermetic". Confusingly, it seems to have worked... It appears the book will self-destruct after being read once.</li>
 				<!-- Introductory statements -->
 				<li>intro->This [writingQualityAdjective] [bookType] reveals the enigmatic interplay between</li>
 				<li>intro->A [writingQualityAdjective] exploration of the cryptic bond between</li>

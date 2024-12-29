@@ -3,6 +3,7 @@ using RimWorld;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UIElements;
 using Verse;
 using Verse.AI;
 using static UnityEngine.GridBrushBase;
@@ -17,11 +18,43 @@ namespace AlphaBooks
 
 
         [HarmonyPostfix]
-        public static void CheckForHermetic(ref Toil __result)
+        public static void CheckForHermetic(ref Toil __result, TargetIndex openableInd)
         {
+            Toil copyToil = __result;
+
             __result.AddFinishAction(delegate
             {
-               // Log.Message("Opened");
+                Log.Message("finish action");
+                if (copyToil.actor?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_HermeticMysteries) == true)
+                {
+                    Log.Message("actor has hediff");
+                    if (copyToil.actor.CurJob.GetTarget(openableInd).Thing.def == ThingDefOf.AncientHermeticCrate)
+                    {
+                        Log.Message("actor has target hermetic crate");
+                        ThingSetMakerParams parms = default(ThingSetMakerParams);
+                        parms.minSingleItemMarketValuePct = 0;
+                        parms.allowNonStackableDuplicates = true;
+                        List<Thing> list2 = InternalDefOf.ABooks_Resources.root.Generate(parms);
+                        if (list2 != null)
+                        {
+                 
+                            foreach (Thing thing in list2)
+                            {
+                                GenPlace.TryPlaceThing(thing, copyToil.actor.Position, copyToil.actor.Map, ThingPlaceMode.Near);
+
+                            }
+
+                        }
+                    }
+
+
+                }
+
+
+                    
+
+
+               
 
             });
 
