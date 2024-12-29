@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_HermeticMysteries_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>desc->[intro] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>desc->[conceptExploration]: [impactStatement]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>desc->[intro] [conceptExploration] [contextStatement]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>ending->\n\nOnce read, this tome will grant an improved ability to open hermetic crates for some time, and then it will be destroyed.</li>
+				<!-- Introductory statements -->
+				<li>intro->This [writingQualityAdjective] [bookType] reveals the enigmatic interplay between</li>
+				<li>intro->A [writingQualityAdjective] exploration of the cryptic bond between</li>
+				<li>intro->A timeless [bookType] chronicling the hidden connections of</li>
+				<li>intro->A [writingQualityAdjective] treatise uncovering the dual nature of</li>
+				<li>intro->An extraordinary [bookType] bridging the arcane and the mundane aspects of</li>
+				<li>intro->A hauntingly vivid exploration of the mysteries surrounding</li>
+				<!-- Concept Exploration -->
+				<li>conceptExploration->Hermes’ divine influence and the principle of sealed containers</li>
+				<li>conceptExploration->the hidden wisdom within hermetic seals</li>
+				<li>conceptExploration->the delicate art of unsealing that which was locked</li>
+				<li>conceptExploration->the ancient secrets encoded in sealed artifacts</li>
+				<li>conceptExploration->how the divine and the mechanical intertwine in acts of unlocking</li>
+				<li>conceptExploration->the cryptic knowledge that governs sealed treasures</li>
+				<!-- Context Statements -->
+				<li>contextStatement->through parables of Hermes and technical diagrams</li>
+				<li>contextStatement->,blending mythology and science</li>
+				<li>contextStatement->layering divine allegories and practical knowledge</li>
+				<li>contextStatement->with whispers of arcane truth and mechanical precision</li>
+				<li>contextStatement->through veiled instructions and cryptic poetry</li>
+				<!-- Impact Statements -->
+				<li>impactStatement->Its teachings will empower those who seek mastery over the sealed</li>
+				<li>impactStatement->It offers unparalleled insight for practitioners of the hermetic arts</li>
+				<li>impactStatement->Its lessons prepare the reader to approach crates with divine precision</li>
+				<li>impactStatement->This book is a key to unlocking what lies hidden in both mind and matter</li>
+				<li>impactStatement->It equips the reader with tools to master the riddles of containment</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective(quality==6)->masterfully crafted</li>
+				<li>writingQualityAdjective(quality==5)->brilliantly insightful</li>
+				<li>writingQualityAdjective(quality==4)->thought-provoking and precise</li>
+				<li>writingQualityAdjective(quality==3)->functional but uninspired</li>
+				<li>writingQualityAdjective(quality==2)->mediocre</li>
+				<li>writingQualityAdjective(quality==1)->barely comprehensible</li>
+				<li>writingQualityAdjective(quality==0)->incoherent jumble of a</li>
+				<li>writingQualitySentence(quality[greater_than]3)->It is [excellentDesc] [excellentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]4,quality[greater_than]1)->It is [decentDesc] [decentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]2)->It is [awfulDesc] [awfulExtra]</li>
+				<!-- Excellent descriptors -->
+				<li>excellentDesc->a masterwork of arcane and practical knowledge</li>
+				<li>excellentDesc->an invaluable guide to the hermetic mysteries</li>
+				<li>excellentDesc->an expertly crafted blend of divine and practical wisdom</li>
+				<li>excellentDesc->a deeply original examination of unlocking and containment</li>
+				<li>excellentDesc->rich with esoteric knowledge and practical advice</li>
+				<li>excellentExtra->that bridges the divine and mechanical realms</li>
+				<li>excellentExtra->that inspires mastery over the cryptic and the sealed</li>
+				<li>excellentExtra->that offers profound insight into the art of unsealing</li>
+				<!-- Decent descriptors -->
+				<li>decentDesc->a passable guide to hermetic theory</li>
+				<li>decentDesc->interesting but unevenly constructed</li>
+				<li>decentDesc->helpful in some aspects but overly cryptic</li>
+				<li>decentDesc->focused on narrow interpretations of the hermetic craft</li>
+				<li>decentDesc->occasionally insightful but often inconsistent</li>
+				<li>decentExtra->and may assist those with prior knowledge</li>
+				<li>decentExtra->though its applications are sometimes unclear</li>
+				<li>decentExtra->but its teachings lack cohesive structure</li>
+				<!-- Awful descriptors -->
+				<li>awfulDesc->a chaotic mix of myths and meaningless instructions</li>
+				<li>awfulDesc->a nonsensical guide with no practical value</li>
+				<li>awfulDesc->a confusing jumble of contradictory advice</li>
+				<li>awfulDesc->an impractical mess of cryptic references</li>
+				<li>awfulDesc->an incoherent ramble with no discernible wisdom</li>
+				<li>awfulExtra->and utterly useless for anyone seeking practical guidance</li>
+				<li>awfulExtra->and actively misleading for those seeking clarity</li>
+				<!-- Date -->
+				<li>maybe_date-></li>
+				<li>maybe_date->The tome was first crafted [date_form].</li>
+				<li>maybe_date->Its origin is shrouded in mystery, much like its contents.</li>
+				<li>date_form->in ancient times</li>
+				<li>date_form->on the [date]</li>
+				<li>date_form->during [date_season]</li>
+				<!-- Book Types -->
+				<li>bookType(p=4)->arcane manual</li>
+				<li>bookType(p=3)->cryptic guide</li>
+				<li>bookType(p=2)->sealed treatise</li>
+				<li>bookType(p=1)->esoteric manuscript</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>
