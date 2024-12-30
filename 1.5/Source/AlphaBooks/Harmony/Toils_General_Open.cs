@@ -24,16 +24,19 @@ namespace AlphaBooks
 
             __result.AddFinishAction(delegate
             {
-                Log.Message("finish action");
+               
                 if (copyToil.actor?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_HermeticMysteries) == true)
                 {
-                    Log.Message("actor has hediff");
+                    
                     if (copyToil.actor.CurJob.GetTarget(openableInd).Thing.def == ThingDefOf.AncientHermeticCrate)
                     {
-                        Log.Message("actor has target hermetic crate");
+                       
                         ThingSetMakerParams parms = default(ThingSetMakerParams);
+                       
+                        parms.totalMarketValueRange = new FloatRange(450, 550);
                         parms.minSingleItemMarketValuePct = 0;
                         parms.allowNonStackableDuplicates = true;
+                        parms.countRange = new IntRange(1, 5);
                         List<Thing> list2 = InternalDefOf.ABooks_Resources.root.Generate(parms);
                         if (list2 != null)
                         {
