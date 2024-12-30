@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_BotanicalCompendium_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>title->[prefix] [subject_primary]</li>
+				<li>title->[subject_primary]: [core]</li>
+				<li>title->[prefix] [subject_primary]: [core]</li>
+				<li>title->[subject_primary] [suffix]</li>
+				<li>title->[core] of [subject_primary]</li>
+				<!-- Prefixes -->
+				<li>prefix->The Study of</li>
+				<li>prefix->The Secrets of</li>
+				<li>prefix->A Guide to</li>
+				<li>prefix->The Mysteries of</li>
+				<li>prefix->The Life Cycle of</li>
+				<li>prefix->Exploring</li>
+				<!-- Cores -->
+				<li>core->A Botanical Perspective</li>
+				<li>core->An Anomalous Phenomenon</li>
+				<li>core->Uses and Lore</li>
+				<li>core->A Survivalist's Guide</li>
+				<li>core->Medicinal and Nutritional Insights</li>
+				<li>core->Rimfront Observations</li>
+				<li>core->An Unexpected Growth</li>
+				<li>core->The Pioneer’s Companion</li>
+				<!-- Suffixes -->
+				<li>suffix->in the Harshest Biomes</li>
+				<li>suffix->of the Rim</li>
+				<li>suffix->in Wild Landscapes</li>
+				<li>suffix->and Their Significance</li>
+				<li>suffix->to Colonists</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

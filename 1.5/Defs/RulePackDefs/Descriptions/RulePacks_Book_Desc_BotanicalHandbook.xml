@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_BotanicalCompendium_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Root structure -->
+				<li>desc->[intro], [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>desc->[intro]. [contextStatement] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<!-- Introductory statements -->
+				<li>intro->This [writingQualityAdjective] handbook explores the fascinating world of the [subject_primary]</li>
+				<li>intro->An indispensable [bookType] detailing the peculiarities of the [subject_primary]</li>
+				<li>intro->A [writingQualityAdjective] compendium unraveling the mysteries of the [subject_primary]</li>
+				<li>intro->A timeless [bookType] dedicated to understanding the [subject_primary]</li>
+				<li>intro->A [writingQualityAdjective] guide to the life cycle of the [subject_primary]</li>
+				<li>intro->An illuminating [bookType] focusing on the significance of the [subject_primary]</li>
+				<!-- Concept exploration -->
+				<li>conceptExploration->its biological traits and adaptations</li>
+				<li>conceptExploration->its medicinal and survival uses</li>
+				<li>conceptExploration->its enigmatic role in Rim ecosystems</li>
+				<li>conceptExploration->its significance to colonists and wildlife</li>
+				<li>conceptExploration->the lore surrounding its growth and utility</li>
+				<li>conceptExploration->its potential to thrive in hostile environments</li>
+				<li>conceptExploration->its role as a vital resource on the Rim</li>
+				<!-- Context Statements -->
+				<li>contextStatement->Drawing from firsthand observations, this [bookType] sheds light on</li>
+				<li>contextStatement->Compiled from scattered field notes, it unveils</li>
+				<li>contextStatement->Based on Rimfront expeditions, it reveals</li>
+				<li>contextStatement->Inspired by ancient records and modern findings, it delves into</li>
+				<li>contextStatement->Combining anecdotal evidence and rigorous study, it examines</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective(quality==6)->masterfully written</li>
+				<li>writingQualityAdjective(quality==5)->thoroughly researched</li>
+				<li>writingQualityAdjective(quality==4)->engaging and detailed</li>
+				<li>writingQualityAdjective(quality==3)->serviceable but basic</li>
+				<li>writingQualityAdjective(quality==2)->poorly organized</li>
+				<li>writingQualityAdjective(quality==1)->frustratingly vague</li>
+				<li>writingQualityAdjective(quality==0)->maddening mess of a</li>
+				<li>writingQualitySentence(quality[greater_than]3)->It is [excellentDesc] [excellentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]4,quality[greater_than]1)->It is [decentDesc] [decentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]2)->It is [awfulDesc] [awfulExtra]</li>
+				<!-- Excellent descriptors -->
+				<li>excellentDesc->a remarkable achievement in botanical study</li>
+				<li>excellentDesc->a definitive guide for understanding [subject_primary]</li>
+				<li>excellentDesc->an invaluable resource for plant enthusiasts</li>
+				<li>excellentExtra->that captivates readers with its insights</li>
+				<li>excellentExtra->that offers both inspiration and practical knowledge</li>
+				<!-- Decent descriptors -->
+				<li>decentDesc->a functional but uneven study of the [subject_primary]</li>
+				<li>decentDesc->a decent guide for novice botanists</li>
+				<li>decentDesc->a modest yet useful resource on [subject_primary]</li>
+				<li>decentExtra->with some gaps in detail</li>
+				<li>decentExtra->that could use additional research</li>
+				<!-- Awful descriptors -->
+				<li>awfulDesc->an incomprehensible attempt at cataloging the [subject_primary]</li>
+				<li>awfulDesc->a clumsy and ineffective study of [subject_primary]</li>
+				<li>awfulDesc->a frustratingly vague treatment of the [subject_primary]</li>
+				<li>awfulExtra->that offers little value to its reader</li>
+				<li>awfulExtra->with glaring errors and omissions</li>
+				<!-- Date -->
+				<li>maybe_date->The work was compiled [date_form].</li>
+				<li>maybe_date->Published [date_form], it remains relevant today.</li>
+				<li>maybe_date->Its origins trace back to [date_form].</li>
+				<li>date_form->recently</li>
+				<li>date_form->in a forgotten age</li>
+				<li>date_form->on the Rim</li>
+				<li>date_form->during the early days of colonization</li>
+				<!-- Book Types -->
+				<li>bookType(p=3)->compendium</li>
+				<li>bookType(p=2)->guide</li>
+				<li>bookType(p=1)->handbook</li>
+				<!-- Ending -->
+				<li>ending->\n\nReading this handbook will increase plant harvest yield by 10% for three days before it is consumed.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>
