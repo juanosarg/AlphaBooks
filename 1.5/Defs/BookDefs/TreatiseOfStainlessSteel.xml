@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_TreatiseOfStainlessSteel</defName>
+		<label>treatise of stainless steel</label>
+		<description>A treatise of stainless steel</description>
+		<thingClass>AlphaBooks.Book_AlwaysNormalQuality</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_TreatiseOfStainlessSteel/ABooks_TreatiseOfStainlessSteel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_TreatiseOfStainlessSteel/ABooks_TreatiseOfStainlessSteel</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_TreatiseOfStainlessSteel_Namer</nameMaker>
+				<descriptionMaker>ABooks_TreatiseOfStainlessSteel_Description</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_TreatiseOfStainlessSteel/ABooks_TreatiseOfStainlessSteel_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_TreatiseOfStainlessSteel/ABooks_TreatiseOfStainlessSteel_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_Text">
+						<text>ABooks_StainlessSteel</text>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_TreatiseOfStainlessSteel</hediffToAdd>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

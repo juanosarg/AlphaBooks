@@ -51,7 +51,15 @@ namespace AlphaBooks
                 }
 
             }
+            if (worker?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_TreatiseOfStainlessSteel) == true)
+            {
 
+                if (product?.def.MadeFromStuff == true && product.Stuff ==ThingDefOf.Steel)
+                {
+                    product.SetStuffDirect(InternalDefOf.ABooks_StainlessSteel);
+                }
+
+            }
         }
     }
 

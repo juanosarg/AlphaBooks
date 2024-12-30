@@ -62,6 +62,13 @@ namespace AlphaBooks
                     __result.SetStuffDirect(ThingDefOf.Gold);
                 }
             }
+            if (AlphaBooks_Frame_CompleteConstruction_Patch.crafter?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_TreatiseOfStainlessSteel) == true)
+            {
+                if (def.MadeFromStuff == true && __result.Stuff == ThingDefOf.Steel)
+                {
+                    __result.SetStuffDirect(InternalDefOf.ABooks_StainlessSteel);
+                }
+            }
 
         }
 

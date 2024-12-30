@@ -46,6 +46,7 @@ namespace AlphaBooks
         public static HediffDef ABooks_InstructionManual;
         public static HediffDef ABooks_MidasTome;
         public static HediffDef ABooks_HermeticMysteries;
+        public static HediffDef ABooks_TreatiseOfStainlessSteel;
 
         public static ThingSetMakerDef ABooks_Resources;
 
@@ -64,6 +65,7 @@ namespace AlphaBooks
         public static ThingDef MealFine_Veg;
         public static ThingDef MealLavish_Meat;
         public static ThingDef MealLavish_Veg;
+        public static ThingDef ABooks_StainlessSteel;
 
 
     }

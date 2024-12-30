@@ -319,6 +319,7 @@
     <Compile Include="BookReadResults\BookReadResult_DestroyBook.cs" />
     <Compile Include="BookReadResults\BookReadResult_Religious.cs" />
     <Compile Include="BookReadResults\BookReadResult_TrainingManual.cs" />
+    <Compile Include="Books\Book_AlwaysNormalQuality.cs" />
     <Compile Include="Books\Book_Plant.cs" />
     <Compile Include="Books\Book_NotAutoReadable.cs" />
     <Compile Include="Books\Book_Hediff.cs" />
