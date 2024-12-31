@@ -69,6 +69,13 @@ namespace AlphaBooks
                     __result.SetStuffDirect(InternalDefOf.ABooks_StainlessSteel);
                 }
             }
+            if (AlphaBooks_Frame_CompleteConstruction_Patch.crafter?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_DurathreadTechniques) == true)
+            {
+                if (def.MadeFromStuff == true && __result.Stuff == ThingDefOf.Cloth)
+                {
+                    __result.SetStuffDirect(InternalDefOf.ABooks_Durathread);
+                }
+            }
 
         }
 

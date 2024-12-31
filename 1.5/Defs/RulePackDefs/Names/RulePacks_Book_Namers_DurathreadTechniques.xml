@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_DurathreadTechniques_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title->[titleBasic]</li>
+				
+				<li>titleBasic->Folder of Durathread techniques</li>
+				
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

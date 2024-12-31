@@ -73,7 +73,7 @@
 				<li>bookType(p=2)->guide</li>
 				<li>bookType(p=1)->handbook</li>
 				<!-- Ending -->
-				<li>ending->\n\nReading this handbook will increase plant harvest yield by 10% for three days before it is consumed.</li>
+				<li>ending->\n\nReading this handbook will increase plant skills for three days before it is consumed.</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

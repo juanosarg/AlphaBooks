@@ -40,7 +40,7 @@ namespace AlphaBooks
             for (int i = HeldBooks.Count; i < MaximumBooks; i++)
             {
                 ThingDef bookToAdd;
-                if (Rand.Chance(0.25f))
+                if (Rand.Chance(0.1f))
                 {
                     bookToAdd = books.RandomElement();
                 }

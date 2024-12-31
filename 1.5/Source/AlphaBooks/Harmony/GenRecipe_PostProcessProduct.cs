@@ -60,6 +60,15 @@ namespace AlphaBooks
                 }
 
             }
+            if (worker?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_DurathreadTechniques) == true)
+            {
+
+                if (product?.def.MadeFromStuff == true && product.Stuff == ThingDefOf.Cloth)
+                {
+                    product.SetStuffDirect(InternalDefOf.ABooks_Durathread);
+                }
+
+            }
         }
     }
 

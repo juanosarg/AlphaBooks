@@ -303,8 +303,11 @@
     <Publicize Include="Assembly-CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\CompAbilityCornucopia.cs" />
     <Compile Include="Abilities\CompAbilityEffect_DeleteWhenZeroCharges.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_AbilityCornucopia.cs" />
     <Compile Include="Abilities\Properties\CompProperties_DeleteWhenZeroCharges.cs" />
+    <Compile Include="BookReadResults\BookReadResult_Condiment.cs" />
     <Compile Include="BookReadResults\BookReadResult_PlaySound.cs" />
     <Compile Include="BookReadResults\BookReadResult_SpawnThingsByQuality.cs" />
     <Compile Include="BookReadResults\BookReadResult_Biome.cs" />
@@ -320,6 +323,7 @@
     <Compile Include="BookReadResults\BookReadResult_Religious.cs" />
     <Compile Include="BookReadResults\BookReadResult_TrainingManual.cs" />
     <Compile Include="Books\Book_AlwaysNormalQuality.cs" />
+    <Compile Include="Books\Book_Condiment.cs" />
     <Compile Include="Books\Book_Plant.cs" />
     <Compile Include="Books\Book_NotAutoReadable.cs" />
     <Compile Include="Books\Book_Hediff.cs" />
@@ -331,10 +335,13 @@
     <Compile Include="Buildings\Building_BookPlinth.cs" />
     <Compile Include="Buildings\Building_RuinedBookcase.cs" />
     <Compile Include="Buildings\Building_RuinedBookcase_Autofill.cs" />
+    <Compile Include="Comps\CompRandomRaidSpawner.cs" />
+    <Compile Include="Comps\Properties\CompProperties_RandomRaidSpawner.cs" />
     <Compile Include="DefExtensions\BookDefModExtension.cs" />
     <Compile Include="Defs\ChargeAbilityDef.cs" />
     <Compile Include="Defs\AstronomicalIncidentWhitelistDef.cs" />
     <Compile Include="Defs\QuestWhitelistDef.cs" />
+    <Compile Include="Dev Mode\GenerateRuinedLibraryQuest.cs" />
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
     <Compile Include="Harmony\BookUtility_IsValidBook.cs" />
     <Compile Include="Harmony\Command_Ability_BGTexture.cs" />
@@ -347,11 +354,16 @@
     <Compile Include="Harmony\SkillRecord_LearnRateFactor.cs" />
     <Compile Include="Harmony\JobDriver_Reading_ReadBook.cs" />
     <Compile Include="Harmony\SkillUI_GetSkillDescription.cs" />
+    <Compile Include="Harmony\Verb_CastAbility_DrawHighlight.cs" />
     <Compile Include="HediffComps\HediffComp_AddBiome.cs" />
+    <Compile Include="HediffComps\HediffComp_AddCondiment.cs" />
     <Compile Include="HediffComps\HediffComp_DeleteAfterTime.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_AddCondiment.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_AddBiome.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_DeleteAfterTime.cs" />
+    <Compile Include="PlaceWorkers\PlaceWorker_ShowSpawnerRadius.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Condiment.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Plant.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Biome.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_CallRaids.cs" />
@@ -366,6 +378,7 @@
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_ThoughtByQuality.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Biome.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_CallRaids.cs" />
+    <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Condiment.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_GainPsycast.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_GiveAbility.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Hediff.cs" />
@@ -376,10 +389,14 @@
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Religious.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Skill.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_ThoughtByQuality.cs" />
+    <Compile Include="Settings\AlphaBooks_Settings.cs" />
+    <Compile Include="Settings\AlphaBooks_SettingsController.cs" />
+    <Compile Include="Settings\SettingsHelper.cs" />
     <Compile Include="StaticCollections\StaticCollections.cs" />
     <Compile Include="StatParts\Multiplier_ByBiome.cs" />
     <Compile Include="StatParts\TempMax_ByBiome.cs" />
     <Compile Include="StatParts\TempMin_ByBiome.cs" />
+    <Compile Include="WorldComponents\WorldComponent_LibraryQuests.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -24,7 +24,7 @@ namespace AlphaBooks
         public override void CompPostTick(ref float severityAdjustment)
         {
             Pawn pawn = this.parent.pawn;
-            if (pawn.IsHashIntervalTick(200) && biomeDef!=null)
+            if (pawn.IsHashIntervalTick(2000) && biomeDef!=null)
             {
                 StaticCollections.AddPawnAndBiomeToList(this.parent.pawn, biomeDef);
             }

@@ -14,6 +14,7 @@ namespace AlphaBooks
 
         public static HashSet<AbilityDef> chargeAbilities = new HashSet<AbilityDef>();
         public static Dictionary<Pawn,BiomeDef> pawnsAndBiomes = new Dictionary<Pawn, BiomeDef>();
+        public static Dictionary<Pawn, ThingDef> pawnsAndCondiments = new Dictionary<Pawn, ThingDef>();
         public static List<ThingDef> allowedMeals = new List<ThingDef>() { InternalDefOf.MealSimple, InternalDefOf.MealFine, InternalDefOf.MealFine_Meat, InternalDefOf.MealFine_Veg };
 
         
@@ -36,6 +37,19 @@ namespace AlphaBooks
             if (pawnsAndBiomes.ContainsKey(thing))
             {
                 pawnsAndBiomes.Remove(thing);
+            }
+        }
+
+        public static void AddPawnAndCondimentToList(Pawn thing, ThingDef condiment)
+        {
+            pawnsAndCondiments[thing] = condiment;
+        }
+
+        public static void RemovePawnAndCondimentFromList(Pawn thing)
+        {
+            if (pawnsAndCondiments.ContainsKey(thing))
+            {
+                pawnsAndCondiments.Remove(thing);
             }
         }
 

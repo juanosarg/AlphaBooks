@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<SitePartDef>
+		<defName>ABooks_RuinedLibrary</defName>
+		<label>ruined library</label>
+		<description>A recently-discovered ruined library.</description>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>World/ABooks_RuinedLibrary</expandingIconTexture>
+		<tags>
+			<li>ABooks_RuinedLibrary</li>
+		</tags>
+	</SitePartDef>
+	<GenStepDef>
+		<defName>ABooks_RuinedLibrary</defName>
+		<linkWithSite>ABooks_RuinedLibrary</linkWithSite>
+		<order>450</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+			<structureLayoutDefs>
+				<li>ABooks_Library_Alpha</li>
+				<li>ABooks_Library_Beta</li>
+				<li>ABooks_Library_Gamma</li>
+			</structureLayoutDefs>
+			<filthTypes>
+				<li>Filth_Dirt</li>
+				<li>Filth_Trash</li>
+				<li>Filth_RubbleBuilding</li>
+			</filthTypes>
+		</genStep>
+	</GenStepDef>
+</Defs>

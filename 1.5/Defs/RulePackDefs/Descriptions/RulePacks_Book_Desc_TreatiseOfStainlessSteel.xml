@@ -32,34 +32,22 @@
 				<li>contextStatement->Blending scientific rigor with practical insights, it reveals</li>
 				<li>contextStatement->Born from necessity and curiosity, this work explains</li>
 				<!-- Writing Quality -->
-				<li>writingQualityAdjective(quality==6)->masterfully detailed</li>
-				<li>writingQualityAdjective(quality==5)->thoroughly researched</li>
-				<li>writingQualityAdjective(quality==4)->engaging and insightful</li>
-				<li>writingQualityAdjective(quality==3)->functional but basic</li>
-				<li>writingQualityAdjective(quality==2)->poorly structured</li>
-				<li>writingQualityAdjective(quality==1)->frustratingly obscure</li>
-				<li>writingQualityAdjective(quality==0)->incomprehensible jumble</li>
-				<li>writingQualitySentence(quality[greater_than]3)->It is [excellentDesc] [excellentExtra]</li>
-				<li>writingQualitySentence(quality[less_than]4,quality[greater_than]1)->It is [decentDesc] [decentExtra]</li>
-				<li>writingQualitySentence(quality[less_than]2)->It is [awfulDesc] [awfulExtra]</li>
-				<!-- Excellent descriptors -->
-				<li>excellentDesc->a triumph of engineering knowledge</li>
-				<li>excellentDesc->an indispensable resource for colonists</li>
-				<li>excellentDesc->a profound exploration of material science</li>
-				<li>excellentExtra->that inspires innovation</li>
-				<li>excellentExtra->that captivates with its depth</li>
+				<li>writingQualityAdjective->masterfully detailed</li>
+				<li>writingQualityAdjective->thoroughly researched</li>
+				<li>writingQualityAdjective->engaging and insightful</li>
+				<li>writingQualityAdjective->functional but basic</li>
+				
+			
+				<li>writingQualitySentence->It is [decentDesc] [decentExtra]</li>
+	
+			
 				<!-- Decent descriptors -->
 				<li>decentDesc->a reasonable but incomplete guide</li>
 				<li>decentDesc->a basic overview for novice metallurgists</li>
 				<li>decentDesc->a serviceable introduction to stainless steel</li>
 				<li>decentExtra->that leaves room for improvement</li>
 				<li>decentExtra->with gaps in detail</li>
-				<!-- Awful descriptors -->
-				<li>awfulDesc->an incoherent attempt at education</li>
-				<li>awfulDesc->a clumsy and ineffective manual</li>
-				<li>awfulDesc->a confusing and poorly structured text</li>
-				<li>awfulExtra->that frustrates more than it enlightens</li>
-				<li>awfulExtra->with glaring inaccuracies</li>
+			
 				<!-- Date -->
 				<li>maybe_date->Published [date_form], it remains relevant today.</li>
 				<li>maybe_date->Compiled [date_form], it reflects timeless knowledge.</li>

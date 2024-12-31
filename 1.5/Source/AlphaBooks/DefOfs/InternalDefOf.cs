@@ -6,6 +6,7 @@ using UnityEngine;
 using Verse;
 using RimWorld;
 using static RimWorld.Planet.WorldGenStep_Roads;
+using System.Net;
 
 namespace AlphaBooks
 {
@@ -47,15 +48,23 @@ namespace AlphaBooks
         public static HediffDef ABooks_MidasTome;
         public static HediffDef ABooks_HermeticMysteries;
         public static HediffDef ABooks_TreatiseOfStainlessSteel;
+        public static HediffDef ABooks_DurathreadTechniques;
+        public static HediffDef ABooks_Condiment;
 
         public static ThingSetMakerDef ABooks_Resources;
 
+        public static AbilityDef ABooks_Cornucopia_Charges;
 
         [MayRequireIdeology]
         public static ThoughtDef ABooks_ReligiousBookThought;
+        public static ThoughtDef ABooks_RaidedLibrary;
 
         public static ThingCategoryDef Books;
+        [MayRequire("VanillaExpanded.VCookE")]
+        public static ThingCategoryDef VCE_Condiments;
 
+        [MayRequire("VanillaExpanded.VCookE")]
+        public static ThingDef VCE_DigestibleResurrectorNanites;
         public static ThingDef ABooks_RuinedBook;
         public static ThingDef ABooks_BurnedBook;
         public static ThingDef MealLavish;
@@ -66,6 +75,9 @@ namespace AlphaBooks
         public static ThingDef MealLavish_Meat;
         public static ThingDef MealLavish_Veg;
         public static ThingDef ABooks_StainlessSteel;
+        public static ThingDef ABooks_Durathread;
+
+        public static QuestScriptDef Abooks_OpportunitySite_RuinedLibrary;
 
 
     }

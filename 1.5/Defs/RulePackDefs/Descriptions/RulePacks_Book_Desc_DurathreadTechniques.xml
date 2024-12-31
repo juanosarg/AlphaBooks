@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_DurathreadTechniques_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>desc->[intro] [conceptExploration]. [writingQualitySentence] [ending]</li>
+				<!-- Introductory Statements -->
+				<li>intro->This [writingQualityAdjective] collection of techniques unlocks</li>
+				<li>intro->An innovative [bookType] revealing the secrets of</li>
+				<li>intro->A [writingQualityAdjective] guide to mastering</li>
+				<li>intro->A meticulous compilation dedicated to</li>
+				<li>intro->An indispensable resource for those seeking to harness</li>
+				<!-- Concept Exploration -->
+				<li>conceptExploration->the unparalleled durability of durathread</li>
+				<li>conceptExploration->the creation of textiles tougher than any cloth</li>
+				<li>conceptExploration->methods for weaving strength and resilience into every stitch</li>
+				<li>conceptExploration->the cutting-edge fabric engineering of durathread</li>
+				<li>conceptExploration->the unique properties of this extraordinary material</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective->masterfully curated</li>
+				<li>writingQualityAdjective->brilliantly detailed</li>
+				<li>writingQualityAdjective->well-constructed</li>
+				<li>writingQualityAdjective->functional</li>
+				<li>writingQualityAdjective->mediocre</li>
+				<li>writingQualitySentence->Its clarity and precision make it [excellentDesc].</li>
+				<li>writingQualitySentence->Its content is [decentDesc].</li>
+				<li>excellentDesc->a benchmark for textile engineering texts</li>
+				<li>excellentDesc->an invaluable guide to mastering advanced materials</li>
+				<li>excellentDesc->a shining example of craft documentation</li>
+				<!-- Decent Descriptors -->
+				<li>decentDesc->serviceable but lacks inspiration</li>
+				<li>decentDesc->practical, though limited in scope</li>
+				<li>decentDesc->adequate but lacks depth</li>
+				<!-- Ending -->
+				<li>ending->\n\nThis book will always be of Normal quality, and will be destroyed after being read.</li>
+				<!-- Book Types -->
+				<li>bookType(p=4)->manual</li>
+				<li>bookType(p=3)->handbook</li>
+				<li>bookType(p=2)->guide</li>
+				<li>bookType(p=1)->treatise</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

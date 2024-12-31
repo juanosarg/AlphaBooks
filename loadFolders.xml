@@ -10,6 +10,8 @@
 		<li IfModActive="VanillaExpanded.VEE">1.5/Mods/VanillaEventsExpanded</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/Mods/Biotech</li>
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/Mods/Anomaly</li>
+		<li IfModActive="VanillaExpanded.VCookE">1.5/Mods/VanillaCookingExpanded</li>
+		<li IfModActive="VanillaExpanded.VFEPropsandDecor">1.5/Mods/Props</li>
 	</v1.5>
 </loadFolders>
 

@@ -30,7 +30,7 @@ namespace AlphaBooks
             Faction faction = Find.FactionManager.RandomRaidableEnemyFaction(allowHidden: false, allowDefeated: false, allowNonHumanlike: true);
 
             StorytellerComp storytellerComp = Find.Storyteller.storytellerComps.First((StorytellerComp x) => x is StorytellerComp_OnOffCycle || x is StorytellerComp_RandomMain);
-            IncidentParms parms = storytellerComp.GenerateParms(IncidentCategoryDefOf.ThreatBig, Find.CurrentMap);
+            IncidentParms parms = storytellerComp.GenerateParms(IncidentCategoryDefOf.ThreatBig, pawn.Map);
             parms.forced = true;
             parms.target = pawn.Map;
             parms.points = points;

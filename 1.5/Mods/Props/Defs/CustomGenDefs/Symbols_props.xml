@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<KCSG.SymbolDef>
+		<defName>VFEPD_Banner_Burntumber_North</defName>
+		<thing>VFEPD_Banner</thing>
+		<color>Structure_UmberBurnt</color>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>VCHE_FakePipes_Darkbrown</defName>
+		<thing>VCHE_FakePipes</thing>
+		<color>Structure_BrownDark</color>
+	</KCSG.SymbolDef>
+</Defs>

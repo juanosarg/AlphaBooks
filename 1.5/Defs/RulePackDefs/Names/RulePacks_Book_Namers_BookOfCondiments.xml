@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_BookOfCondiments_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Basic Titles -->
+				<li>title->[titleBasic]</li>
+				<li>title(p=2)->[titleAuthored]</li>
+				<!-- Basic -->
+				<li>titleBasic->The Alchemy of [subject_primary]</li>
+				<li>titleBasic->[subject_primary]: A Culinary Chronicle</li>
+				<li>titleBasic->Mastering the Art of [subject_primary]</li>
+				<li>titleBasic->The Hidden Power of [subject_primary]</li>
+				<li>titleBasic->A Treatise on [subject_primary]</li>
+				<li>titleBasic->The Secrets of [subject_primary]</li>
+				<li>titleBasic->[subject_primary]: A Guide for Connoisseurs</li>
+				<li>titleBasic->Exploring the Wonders of [subject_primary]</li>
+				<li>titleBasic->The Mysteries of [subject_primary]</li>
+				<li>titleBasic->[subject_primary]: A Handbook of Flavor</li>
+				<!-- Authored -->
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Compendium of [subject_primary]</li>
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Exploration of [subject_primary]</li>
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Musings on [subject_primary]</li>
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Guide to [subject_primary]</li>
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Study of [subject_primary]</li>
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Art of [subject_primary]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

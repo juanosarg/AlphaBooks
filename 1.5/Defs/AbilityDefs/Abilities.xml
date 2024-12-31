@@ -73,4 +73,35 @@
 			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
 		</comps>
 	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>ABooks_Cornucopia_Charges</defName>
+		<label>cornucopia</label>
+		<description>Releases a cloud of mechanites that grows plants to maturity in a given radius.</description>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Widgets/ABooks_PlantGrowth</iconPath>
+
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>1</warmupTime>
+			<range>20</range>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+				<canTargetItems>True</canTargetItems>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="AlphaBooks.CompProperties_AbilityCornucopia">
+			
+				<area>3</area>
+			</li>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+	</AbilityDef>
 </Defs>

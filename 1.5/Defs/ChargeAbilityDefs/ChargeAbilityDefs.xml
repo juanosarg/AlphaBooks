@@ -10,6 +10,7 @@
 			
 			<li>ABooks_GreaterFireSpew_Charges</li>
 			<li>ABooks_SharpshooterCommand_Charges</li>
+			<li>ABooks_Cornucopia_Charges</li>
 			
 		</chargeAbilities>							
 	</AlphaBooks.ChargeAbilityDef>
