@@ -345,6 +345,7 @@
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
     <Compile Include="Harmony\BookUtility_IsValidBook.cs" />
     <Compile Include="Harmony\Command_Ability_BGTexture.cs" />
+    <Compile Include="Harmony\Dialog_ManageReadingPolicies_PolicyGlobalFilter.cs" />
     <Compile Include="Harmony\GenRecipe_MakeRecipeProducts.cs" />
     <Compile Include="Harmony\GenRecipe_PostProcessProduct.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
