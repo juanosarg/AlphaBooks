@@ -8,7 +8,7 @@
 		<rulePack>
 			<rulesStrings>
 				<!-- Roots -->
-				<li>desc->This [writingQualityAdjective] [bookType] [follows] a [trainer] as [heOrShe] [storyStruggles]. [writingQualitySentence]. [maybe_date]\n\nOnce read, this book will grant a boost to [subject_primary] skill gain for a day, and then it will be destroyed.</li>
+				<li>desc->This [writingQualityAdjective] [bookType] [follows] a [trainer] as [heOrShe] [storyStruggles]. [writingQualitySentence]. [maybe_date]\n\nOnce read, this book will grant a boost to [subject_primary] skill gain and then it will be destroyed.</li>
 				<!-- Root: Story struggle variant -->
 				<li>follows->shares the techniques of</li>
 				<li>follows->highlights the teachings of</li>
