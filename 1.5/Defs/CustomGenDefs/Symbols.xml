@@ -86,4 +86,15 @@
 		<thing>ABooks_RuinedBookcase_Small_Filled</thing>
 		<rotation>West</rotation>
 	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+  <defName>ABooks_RuinedBookcase_Small_East</defName>
+  <thing>ABooks_RuinedBookcase_Small</thing>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>ABooks_RuinedBookcase_Small_Filled_South</defName>
+  <thing>ABooks_RuinedBookcase_Small_Filled</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
 </Defs>

@@ -5,7 +5,7 @@
 		<label>stainless steel</label>
 		<description>A durable, corrosion-resistant alloy known for its strength and immunity to fire, making it an invaluable upgrade over standard steel in harsh environments.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Steel</texPath>
+			<texPath>Things/Item/Resource/ABooks_StainlessSteel</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Metal_Drop</soundInteract>
@@ -57,7 +57,7 @@
 		<label>durathread</label>
 		<description>An advanced textile, stronger and more resilient than traditional cloth, offering enhanced durability for crafting while maintaining versatility.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/Cloth</texPath>
+			<texPath>Things/Item/Resource/ABooks_Durathread</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(121,138,147)</color>
 		</graphicData>
