@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_ReligiousText</defName>
 		<label>religious text</label>
-		<description>A religious text</description>
+		<description>A religious text detailing the tenets and doctrines of a particular ideological structure.</description>
 		<thingClass>AlphaBooks.Book_Religious</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_ReligiousText/ABooks_ReligiousText</texPath>

@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_HermeticMysteries</defName>
 		<label>hermetic mysteries</label>
-		<description>A compendium of hermetic mysteries</description>
+		<description>A compendium of hermetic mysteries. Very obscure and seemingly nonsensical.</description>
 		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_HermeticMysteries/ABooks_HermeticMysteries</texPath>

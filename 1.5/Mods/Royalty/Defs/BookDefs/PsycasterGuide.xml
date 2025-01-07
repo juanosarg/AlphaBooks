@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_PsycasterGuide</defName>
 		<label>psycaster guide</label>
-		<description>A psycaster guide</description>
+		<description>A psycaster guide detailing a particular psycast, as well as some general psychic phenomena.</description>
 		<thingClass>AlphaBooks.Book_Psycast</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_PsycasterGuide/ABooks_PsycasterGuide</texPath>
