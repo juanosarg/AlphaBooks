@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_InstructionManual</defName>
 		<label>instructions manual</label>
-		<description>An instructions manual</description>
+		<description>An instructions manual to assemble furniture. You WILL have a spare bolt.</description>
 		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_InstructionManual/ABooks_InstructionManual</texPath>

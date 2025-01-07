@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_BookOfPortents</defName>
 		<label>book of portents</label>
-		<description>A book of portents</description>
+		<description>A book covering astrological and mystical topics, enhanced by uncanny archotech knowledge.</description>
 		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_BookOfPortents/ABooks_BookOfPortents</texPath>

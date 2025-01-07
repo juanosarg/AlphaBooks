@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_RestaurantGuide</defName>
 		<label>restaurant guide</label>
-		<description>A restaurant guide</description>
+		<description>A famed restaurant guide with recommendations for gourmet restaurants and popular refined eateries.</description>
 		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_RestaurantGuide/ABooks_RestaurantGuide</texPath>

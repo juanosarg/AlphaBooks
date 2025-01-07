@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_MidasTome</defName>
 		<label>midas tome</label>
-		<description>A midas tome</description>
+		<description>A mysterious archotech tome with uncanny crafting abilities.</description>
 		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_MidasTome/ABooks_MidasTome</texPath>

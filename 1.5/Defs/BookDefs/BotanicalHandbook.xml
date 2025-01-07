@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_BotanicalCompendium</defName>
 		<label>botanical handbook</label>
-		<description>A botanical handbook</description>
+		<description>A botanical handbook containing detailed information and pictures about local and foreign flora.</description>
 		<thingClass>AlphaBooks.Book_Plant</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_BotanicalCompendium/ABooks_BotanicalCompendium</texPath>

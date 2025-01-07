@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_PoliticalPamphlet</defName>
 		<label>political pamphlet</label>
-		<description>A political pamphlet</description>
+		<description>A political pamphlet insulting everything and everyone. Not what you'd call a nuanced text.</description>
 		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_PoliticalPamphlet/ABooks_PoliticalPamphlet</texPath>

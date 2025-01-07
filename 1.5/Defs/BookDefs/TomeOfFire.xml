@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_TomeOfFire</defName>
 		<label>tome of fire</label>
-		<description>A tome of fire</description>
+		<description>An archotech tome of psycasting powers, allowing non-psychic people access to powerful fire-based skills.</description>
 		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_TomeOfFire/ABooks_TomeOfFire</texPath>

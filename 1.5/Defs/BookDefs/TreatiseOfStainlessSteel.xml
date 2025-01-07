@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_TreatiseOfStainlessSteel</defName>
 		<label>treatise of stainless steel</label>
-		<description>A treatise of stainless steel</description>
+		<description>A treatise detailing the many uses in crafting of stainless steel.</description>
 		<thingClass>AlphaBooks.Book_AlwaysNormalQuality</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_TreatiseOfStainlessSteel/ABooks_TreatiseOfStainlessSteel</texPath>

@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_OfficeBinder</defName>
 		<label>office binder</label>
-		<description>An office binder</description>
+		<description>An office binder full of inane Post-It notes. Most of what's inside is useless.</description>
 		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_OfficeBinder/ABooks_OfficeBinder</texPath>

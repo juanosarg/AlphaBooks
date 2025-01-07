@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_DurathreadTechniques</defName>
 		<label>folder of durathread techniques</label>
-		<description>A folder of durathread techniques</description>
+		<description>A folder with some detailed graphics explaining how to use durathread in crafting.</description>
 		<thingClass>AlphaBooks.Book_AlwaysNormalQuality</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_DurathreadTechniques/ABooks_DurathreadTechniques</texPath>

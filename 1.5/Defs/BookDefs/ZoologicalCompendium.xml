@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_ZoologicalCompendium</defName>
 		<label>zoological compendium</label>
-		<description>A zoological compendium</description>
+		<description>A zoological compendium containing lots of information and pictures of exotic fauna.</description>
 		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_ZoologicalCompendium/ABooks_ZoologicalCompendium</texPath>

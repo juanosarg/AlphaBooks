@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_SurvivalGuide</defName>
 		<label>survival guide</label>
-		<description>A survival guide</description>
+		<description>A complex guide detailing a lot of useful tips to better survive a specific biome.</description>
 		<thingClass>AlphaBooks.Book_Biome</thingClass>
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_SurvivalGuide/ABooks_SurvivalGuide</texPath>
