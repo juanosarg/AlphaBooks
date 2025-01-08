@@ -4,6 +4,7 @@ using Verse;
 using Verse.AI;
 using System.Collections.Generic;
 using System;
+using System.Collections;
 
 namespace AlphaBooks
 {
@@ -23,13 +24,13 @@ namespace AlphaBooks
         [HarmonyPostfix]
         public static void ModifyLearnFactor(SkillRecord __instance, ref float __result)
         {
-            foreach(var item in skillDefList) { 
-                if(__instance.def == item.Key)
-                {
-                    __result *= __instance.pawn.GetStatValue(item.Value);
-                    break;
-                }
+           
+            skillDefList.TryGetValue(__instance.def, out StatDef value);
+            if (value != null)
+            {
+                __result *= __instance.pawn.GetStatValue(value);
             }
+
 
         }
 
