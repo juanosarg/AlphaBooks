@@ -238,6 +238,30 @@
 			<isInert>true</isInert>
 		</building>
 	</ThingDef>
+	 <ThingDef ParentName="ABooks_RuinedBase">
+        <defName>ABooks_Filth_Paper</defName>
+        <label>discarded paper</label>
+        <statBases>
+            <Beauty>-10</Beauty>
+            <Cleanliness>-5</Cleanliness>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Mass>0.1</Mass>
+        </statBases>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Floor</altitudeLayer>
+		<passability>Standable</passability>
+		<fillPercent>0</fillPercent>
+        <graphicData>
+            <texPath>Things/Filth/Paper</texPath>
+			<drawSize>2</drawSize>
+			<graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+       <building>
+			<isInert>true</isInert>
+		</building>
+        
+    </ThingDef>
+	
 	<ThingDef ParentName="ABooks_RuinedBase">
 		<defName>ABooks_RuinedWall</defName>
 		<label>ruined wooden wall</label>
@@ -475,4 +499,6 @@
 			<li>AlphaBooks.PlaceWorker_ShowSpawnerRadius</li>
 		</placeWorkers>
 	</ThingDef>
+	
+	
 </Defs>

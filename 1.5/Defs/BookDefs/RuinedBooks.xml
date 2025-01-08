@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_RuinedBook</defName>
 		<label>ruined book</label>
-		<description>A ruined book</description>
+		<description>A ruined book. Completely useless and barely holding together.</description>
 		
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_RuinedBook/ABooks_RuinedBook</texPath>
@@ -54,7 +54,7 @@
 	<ThingDef ParentName="BookBase">
 		<defName>ABooks_BurnedBook</defName>
 		<label>burned book</label>
-		<description>A burned book</description>
+		<description>A burned book. Completely useless and barely holding together.</description>
 		
 		<graphicData>
 			<texPath>Things/Item/Book/ABooks_BurnedBook/ABooks_BurnedBook</texPath>

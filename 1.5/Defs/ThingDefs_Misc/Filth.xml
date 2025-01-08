@@ -1,24 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    <ThingDef ParentName="BaseFilth">
-        <defName>ABooks_Filth_Paper</defName>
-        <label>discarded paper</label>
-        <statBases>
-            <Beauty>-10</Beauty>
-            <Cleanliness>-5</Cleanliness>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Filth/Paper</texPath>
-			<drawSize>2</drawSize>
-        </graphicData>
-        <filth>
-            <disappearsInDays>50~75</disappearsInDays>
-            <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
-            <cleaningSound>Interact_CleanFilth_Scattered</cleaningSound>
-            <rainWashes>false</rainWashes>
-            <canFilthAttach>true</canFilthAttach>
-            <maxThickness>1</maxThickness>
-        </filth>
-        
-    </ThingDef>
+   
 </Defs>

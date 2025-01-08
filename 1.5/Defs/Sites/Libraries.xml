@@ -26,6 +26,8 @@
 				<li>Filth_Dirt</li>
 				<li>Filth_Trash</li>
 				<li>Filth_RubbleBuilding</li>
+				<li>ABooks_Filth_Paper</li>
+				<li>Filth_Blood</li>
 			</filthTypes>
 		</genStep>
 	</GenStepDef>

@@ -97,4 +97,10 @@
   <thing>ABooks_RuinedBookcase_Small_Filled</thing>
   <rotation>South</rotation>
 </KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>ABooks_Filth_Paper</defName>
+  <thing>ABooks_Filth_Paper</thing>
+
+</KCSG.SymbolDef>
 </Defs>
