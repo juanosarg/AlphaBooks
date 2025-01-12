@@ -44,7 +44,7 @@ namespace AlphaBooks
             }
             if (worker?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_MidasTome) == true)
             {
-
+                product = product.GetInnerIfMinified();
                 if (product?.def.MadeFromStuff==true)
                 {
                     product.SetStuffDirect(ThingDefOf.Gold);
@@ -53,7 +53,7 @@ namespace AlphaBooks
             }
             if (worker?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_TreatiseOfStainlessSteel) == true)
             {
-
+                product = product.GetInnerIfMinified();
                 if (product?.def.MadeFromStuff == true && product.Stuff ==ThingDefOf.Steel)
                 {
                     product.SetStuffDirect(InternalDefOf.ABooks_StainlessSteel);
@@ -62,7 +62,7 @@ namespace AlphaBooks
             }
             if (worker?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_DurathreadTechniques) == true)
             {
-
+                product = product.GetInnerIfMinified();
                 if (product?.def.MadeFromStuff == true && product.Stuff == ThingDefOf.Cloth)
                 {
                     product.SetStuffDirect(InternalDefOf.ABooks_Durathread);
