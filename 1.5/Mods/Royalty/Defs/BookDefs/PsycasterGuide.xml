@@ -57,6 +57,10 @@
 						<doerClass>AlphaBooks.BookReadResult_GivePsycast</doerClass>
 					</li>
 					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_PsycasterGuide</hediffToAdd>
+					</li>
+					<li>
 						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
 					</li>
 				</readResults>
