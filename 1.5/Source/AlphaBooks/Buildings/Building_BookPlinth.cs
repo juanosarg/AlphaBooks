@@ -18,7 +18,11 @@ namespace AlphaBooks
             {
                 if (cachedBeauty < 0f)
                 {
-                    cachedBeauty = 10*HeldBooks.Aggregate(0f, (float beauty, Book book) => beauty + book.GetBeauty(this.GetRoom().PsychologicallyOutdoors));
+                    float bookBeauty = HeldBooks.Aggregate(0f, (float beauty, Book book) => beauty + book.GetBeauty(this.GetRoom().PsychologicallyOutdoors));
+                    if (bookBeauty > 0f)
+                    {
+                        cachedBeauty = 10 * bookBeauty;
+                    }else cachedBeauty = bookBeauty; 
                 }
                 return cachedBeauty - 0.001f;
             }

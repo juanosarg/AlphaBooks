@@ -13,6 +13,7 @@
 		<uiIconPath>Things/Item/Book/ABooks_RuinedBook/ABooks_RuinedBook</uiIconPath>
 		<statBases>
 			<MarketValue>2</MarketValue>
+			<Beauty>-2</Beauty>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Book">
@@ -64,6 +65,7 @@
 		<uiIconPath>Things/Item/Book/ABooks_BurnedBook/ABooks_BurnedBook</uiIconPath>
 		<statBases>
 			<MarketValue>2</MarketValue>
+			<Beauty>-2</Beauty>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Book">
