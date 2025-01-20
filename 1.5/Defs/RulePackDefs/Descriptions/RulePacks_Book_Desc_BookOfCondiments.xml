@@ -79,7 +79,7 @@
 				<li>date_form->in a bygone culinary renaissance</li>
 				<li>date_form->in the [date]</li>
 				<!-- Ending -->
-				<li>ending->\n\nOnce read, this book will grant permanent mastery over the art of using [subject_primary], but will be destroyed in the process.</li>
+				<li>ending->\n\nOnce read, this book will grant mastery over the art of using [subject_primary] for some time, but will be destroyed in the process.</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
