@@ -22,6 +22,11 @@ namespace AlphaBooks
                 __result = false;
             }
 
+            if (StaticCollections.ruinedBooks.Contains(thing.def) && AlphaBooks_Mod.settings.ABooks_DisableReadRuinedBooks)
+            {
+                __result = false;
+            }
+
         }
 
 

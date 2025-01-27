@@ -30,5 +30,9 @@
 	<ABooks_DisableQuests_Description>Disables Ruined Library quests from triggering. Bear in mind these quests are independent of any other quests or storyteller events (raids, manhunters, etc).</ABooks_DisableQuests_Description>
 	<ABooks_QuestRate>Ruined Library quests multiplier (lower means getting the event more often)</ABooks_QuestRate>
 	<ABooks_QuestRateTooltip>The frequency of the Ruined Library quest being offered is multiplied by this number (with a multiplier of 1, it is offered every between 15 and 30 days at random). Numbers below 1 decrease the time, while numbers above it increase it. Note that this event doesn't "replace" normal quests, it works independently.</ABooks_QuestRateTooltip>
+	<ABooks_UsefulBookMultiplier>Multiplier to number of "useful" books in ruined libraries (less means scarcer)</ABooks_UsefulBookMultiplier>
+	<ABooks_UsefulBookMultiplierTooltip>The amount of books that aren't ruined or burned that can be found in library quests will be multiplied by this number. 0.1 means books will be ten times as scarcer, while 10 means no ruined books at all.</ABooks_UsefulBookMultiplierTooltip>
+	<ABooks_DisableReadRuinedBooks>Disable colonists auto-reading ruined books</ABooks_DisableReadRuinedBooks>
+	<ABooks_DisableReadRuinedBooksTooltip>By default colonists will auto-read ruined books, destroying them. By enabling this you'll allow these books to be stored indefinitely, for example for their research bonus.</ABooks_DisableReadRuinedBooksTooltip>
 	<ABooks_Reset>Reset</ABooks_Reset>
 </LanguageData>

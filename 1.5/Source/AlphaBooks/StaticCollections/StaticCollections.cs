@@ -16,8 +16,9 @@ namespace AlphaBooks
         public static Dictionary<Pawn,BiomeDef> pawnsAndBiomes = new Dictionary<Pawn, BiomeDef>();
         public static Dictionary<Pawn, ThingDef> pawnsAndCondiments = new Dictionary<Pawn, ThingDef>();
         public static List<ThingDef> allowedMeals = new List<ThingDef>() { InternalDefOf.MealSimple, InternalDefOf.MealFine, InternalDefOf.MealFine_Meat, InternalDefOf.MealFine_Veg };
+        public static HashSet<ThingDef> ruinedBooks = new HashSet<ThingDef>() { InternalDefOf.ABooks_RuinedBook, InternalDefOf.ABooks_BurnedBook };
 
-        
+
         public static void AddMealToList(ThingDef thing)
         {
 

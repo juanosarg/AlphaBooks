@@ -15,7 +15,10 @@ namespace AlphaBooks
         public const float ABooks_QuestRateBase = 1;
         public float ABooks_QuestRate = ABooks_QuestRateBase;
         public bool ABooks_DisableQuests = false;
-     
+
+        public const float ABooks_UsefulBookMultiplierBase = 1;
+        public float ABooks_UsefulBookMultiplier = ABooks_UsefulBookMultiplierBase;
+        public bool ABooks_DisableReadRuinedBooks = false;
 
 
         private static Vector2 scrollPosition = Vector2.zero;
@@ -26,7 +29,9 @@ namespace AlphaBooks
 
             Scribe_Values.Look(ref ABooks_QuestRate, "ABooks_QuestRate", ABooks_QuestRateBase);
             Scribe_Values.Look(ref ABooks_DisableQuests, "ABooks_DisableQuests", false);
-          
+            Scribe_Values.Look(ref ABooks_UsefulBookMultiplier, "ABooks_UsefulBookMultiplier", ABooks_UsefulBookMultiplierBase);
+            Scribe_Values.Look(ref ABooks_DisableReadRuinedBooks, "ABooks_DisableReadRuinedBooks", false);
+
 
 
         }
@@ -60,7 +65,14 @@ namespace AlphaBooks
                 ABooks_QuestRate = ABooks_QuestRateBase;
             }
             listingStandard.CheckboxLabeled("ABooks_DisableQuests".Translate(), ref ABooks_DisableQuests, "ABooks_DisableQuests_Description".Translate());
-         
+
+            var usefulbooksRateLabel = listingStandard.LabelPlusButton("ABooks_UsefulBookMultiplier".Translate() + ": " + ABooks_UsefulBookMultiplier, "ABooks_UsefulBookMultiplierTooltip".Translate());
+            ABooks_UsefulBookMultiplier = (float)Math.Round(listingStandard.Slider(ABooks_UsefulBookMultiplier, 0.1f, 10f), 1);
+            if (listingStandard.Settings_Button("ABooks_Reset".Translate(), new Rect(0f, usefulbooksRateLabel.position.y + 35, 180f, 29f)))
+            {
+                ABooks_UsefulBookMultiplier = ABooks_UsefulBookMultiplierBase;
+            }
+            listingStandard.CheckboxLabeled("ABooks_DisableReadRuinedBooks".Translate(), ref ABooks_DisableReadRuinedBooks, "ABooks_DisableReadRuinedBooksTooltip".Translate());
 
 
 

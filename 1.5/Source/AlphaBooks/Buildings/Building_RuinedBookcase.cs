@@ -11,7 +11,6 @@ namespace AlphaBooks
     public class Building_RuinedBookcase : Building_Bookcase
     {
 
-        public HashSet<ThingDef> ruinedBooks = new HashSet<ThingDef>() { InternalDefOf.ABooks_RuinedBook,InternalDefOf.ABooks_BurnedBook};
 
         public override IEnumerable<Gizmo> GetGizmos()
         {
@@ -35,16 +34,16 @@ namespace AlphaBooks
         }
         public void RandomizeBooks()
         {
-            List<ThingDef> books = DefDatabase<ThingDef>.AllDefs.Where(x => x.thingCategories?.Contains(InternalDefOf.Books) == true && !ruinedBooks.Contains(x)).ToList();
+            List<ThingDef> books = DefDatabase<ThingDef>.AllDefs.Where(x => x.thingCategories?.Contains(InternalDefOf.Books) == true && !StaticCollections.ruinedBooks.Contains(x)).ToList();
 
             for (int i = HeldBooks.Count; i < MaximumBooks; i++)
             {
                 ThingDef bookToAdd;
-                if (Rand.Chance(0.1f))
+                if (Rand.Chance(0.1f*AlphaBooks_Mod.settings.ABooks_UsefulBookMultiplier))
                 {
                     bookToAdd = books.RandomElement();
                 }
-                else bookToAdd = ruinedBooks.RandomElement();
+                else bookToAdd = StaticCollections.ruinedBooks.RandomElement();
 
                 Book item = BookUtility.MakeBook(bookToAdd, ArtGenerationContext.Outsider);
                 innerContainer.TryAdd(item);
