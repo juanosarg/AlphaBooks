@@ -34,7 +34,7 @@ namespace AlphaBooks
                     int num = (int)((1f - plant.Growth) * plant.def.plant.growDays);
                     plant.Age += num;
                     plant.Growth = 1f;
-                    Find.CurrentMap.mapDrawer.SectionAt(plant.Position).RegenerateAllLayers();
+                    plant.Map.mapDrawer.SectionAt(plant.Position).RegenerateAllLayers();
 
                 }
                 
