@@ -23,7 +23,7 @@ namespace AlphaBooks
             {
                 BookDefModExtension extension = __instance.Book.def.GetModExtension<BookDefModExtension>();
 
-                if (extension?.readResults.NullOrEmpty() == false)
+                if (extension?.readResults.NullOrEmpty() == false && __instance.pawn.jobs.curDriver.ticksLeftThisToil <= 0)
                 {
                     foreach(BookReadResults result in extension.readResults)
                     {
