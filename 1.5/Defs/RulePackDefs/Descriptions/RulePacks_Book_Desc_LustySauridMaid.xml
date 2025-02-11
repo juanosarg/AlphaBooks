@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_LustySauridMaid_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Root Structures -->
+				<li>desc->[intro]\n\n[excerpt].\n\n[writingQualitySentence] [ending]</li>
+				<li>desc->[excerpt].\n\n[writingQualitySentence] [ending]</li>
+				<!-- Introductory statements -->
+				<li>intro->A scandalously theatrical performance, featuring the well-known Licks-Her-Plates in a tale of service, duty, and rising tensions.</li>
+				<li>intro->A ribald drama chronicling the intimate misadventures of Licks-Her-Plates, a humble maid with an unwavering dedication to her craft.</li>
+				<li>intro->A controversial and widely banned play, famous for its thinly veiled metaphors and the outrageous performance of Licks-Her-Plates.</li>
+				<li>intro->A shockingly well-rehearsed performance of The Lusty Saurid Maid, known for its suggestive wordplay and infamous subtext.</li>
+				<!-- Excerpts -->
+				<li>excerpt->**Act II, Scene III**\n\n**LORD CRESTTAIL:** "Ah, Licks-Her-Plates, your hands are deft, yet the dish remains untouched! Have you not learned the *proper* method?"\n\n**LICKS-HER-PLATES:** "My lord, I assure you, my technique is most thorough. With but a flick of my tongue, all residue vanishes!"</li>
+				<li>excerpt->**Act I, Scene V**\n\n**LORD CRESTTAIL:** "Licks-Her-Plates, the sauce clings stubbornly to the platter! Surely, you must work harder!"\n\n**LICKS-HER-PLATES:** "My lord, if I were to work any harder, the plate itself would surrender!"</li>
+				<li>excerpt->**Act III, Scene II**\n\n**LICKS-HER-PLATES:** "My lord, you request much from one so humble as I, yet I shall persist!"\n\n**LORD CRESTTAIL:** "Your persistence is admirable, dear maid. Yet, tell me—when shall you finish?"\n\n**LICKS-HER-PLATES:** "When the task is complete, and not a drop remains!"</li>
+				<li>excerpt->**Act IV, Scene I**\n\n**LORD CRESTTAIL:** "Such grace, such fervor! Tell me, is this your first time handling such... sizable requests?"\n\n**LICKS-HER-PLATES:** "Oh no, my lord! I have long trained my tongue upon many an elaborate feast!"</li>
+				<li>excerpt->**Act V, Scene IV**\n\n**LICKS-HER-PLATES:** "My lord, the meal is finished, yet you still watch me so intently?"\n\n**LORD CRESTTAIL:** "It is not the meal I admire, dear maid, but the *dedication* with which you serve!"</li>
+				<li>excerpt->**Act I, Scene II**\n\n**LORD CRESTTAIL:** "Licks-Her-Plates, the silverware is still unpolished! Have you been neglecting your duties?"\n\n**LICKS-HER-PLATES:** "My lord, I have worked tirelessly! But no matter how much I rub, the residue remains most stubborn!"</li>
+				<li>excerpt->**Act II, Scene IV**\n\n**LICKS-HER-PLATES:** "My lord, I fear the goblet overflows!"\n\n**LORD CRESTTAIL:** "Then you must drink deeply, dear maid. Waste not a single drop!"</li>
+				<li>excerpt->**Act III, Scene I**\n\n**LORD CRESTTAIL:** "Such dedication! You have cleaned my plate spotless, yet you continue?"\n\n**LICKS-HER-PLATES:** "Oh yes, my lord! I shall not rest until all is gleaming and pristine!"</li>
+				<li>excerpt->**Act IV, Scene III**\n\n**LICKS-HER-PLATES:** "My lord, this feast is never-ending! How shall I endure?"\n\n**LORD CRESTTAIL:** "Endurance, dear maid, is the mark of true service. Now, onto the next course!"</li>
+				<li>excerpt->**Act V, Scene I**\n\n**LORD CRESTTAIL:** "Licks-Her-Plates, you serve with such grace! But tell me, does your duty ever tire you?"\n\n**LICKS-HER-PLATES:** "My lord, service is my purpose, and my passion!"</li>
+				<li>excerpt->**Final Act, Scene V**\n\n**LICKS-HER-PLATES:** "At last, my lord, the feast is done. Every plate is spotless, every goblet dry!"\n\n**LORD CRESTTAIL:** "And yet, dear maid, I find myself unsatisfied... Shall we begin again?"\n\n**[Curtains close.]**</li>
+				<li>excerpt->**Act II, Scene III**\n\n**LORD CRESTTAIL:** "Licks-Her-Plates, your technique is... remarkable. So thorough, so devoted!"\n\n**LICKS-HER-PLATES:** "Oh, my lord! I have spent years perfecting my craft! No spot is too stubborn, no stain too deep!"</li>
+				<li>excerpt->**Act III, Scene II**\n\n**LICKS-HER-PLATES:** "My lord, you present me with yet another dish? But I have only just finished polishing your goblet!"\n\n**LORD CRESTTAIL:** "Ah, but this one requires... special attention. A delicate touch, a careful hand... Do you think you can manage it, dear maid?"\n\n**LICKS-HER-PLATES:** "Oh my lord, I shall give it my all!"</li>
+				<li>excerpt->**Act IV, Scene I**\n\n**LORD CRESTTAIL:** "Licks-Her-Plates, you work so tirelessly. Surely, you must long to rest?"\n\n**LICKS-HER-PLATES:** "Rest? Oh no, my lord! The heat of the kitchen, the weight of my duties... it only makes me work harder!"\n\n**LORD CRESTTAIL:** "Ah, such dedication... Come, let me test your endurance further!"</li>
+				<li>excerpt->**Act IV, Scene V**\n\n**LICKS-HER-PLATES:** "My lord, this roast is so thick! However shall I handle it?"\n\n**LORD CRESTTAIL:** "With patience, dear maid. Take your time, savor the process... Let every bite be perfection!"</li>
+				<li>excerpt->**Final Act, Scene II**\n\n**LICKS-HER-PLATES:** "My lord, I have polished, scrubbed, and served without pause! Is there nothing left to tend to?"\n\n**LORD CRESTTAIL:** "Oh, my dear maid… there is *always* more to be done." \n\n**[Lights dim.]**</li>
+				<!-- Writing Quality Statements -->
+				<li>writingQualitySentence(quality[greater_than]3)->It is a performance of [excellentDesc] [excellentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]4,quality[greater_than]1)->It is [decentDesc] [decentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]2)->It is [awfulDesc] [awfulExtra]</li>
+				<!-- Excellent descriptors -->
+				<li>excellentDesc->unparalleled wit and playful double meanings</li>
+				<li>excellentDesc->hilariously suggestive subtext, performed with impeccable comedic timing</li>
+				<li>excellentDesc->a masterful blend of farce and bawdy humor</li>
+				<li>excellentDesc->a legendary script known for its clever wordplay</li>
+				<li>excellentExtra->, ensuring it remains a controversial yet celebrated work</li>
+				<li>excellentExtra->, making audiences laugh, blush, and debate its true meaning for generations</li>
+				<!-- Decent descriptors -->
+				<li>decentDesc->a serviceable tale with a few chuckle-worthy moments</li>
+				<li>decentDesc->entertaining, if somewhat repetitive in its humor</li>
+				<li>decentDesc->passably humorous, though lacking the finesse of finer plays</li>
+				<li>decentDesc->an amusing, if unsubtle, work of dramatic exaggeration</li>
+				<li>decentExtra->, appealing mainly to those who enjoy the obvious nature of its humor</li>
+				<li>decentExtra->, though its humor wears thin after repeated readings</li>
+				<!-- Awful descriptors -->
+				<li>awfulDesc->an incoherent mess of strained innuendos</li>
+				<li>awfulDesc->a blatant, clumsy attempt at crude humor</li>
+				<li>awfulDesc->devoid of wit, relying entirely on the lowest forms of wordplay</li>
+				<li>awfulDesc->a humorless, tedious ordeal that drags on far too long</li>
+				<li>awfulExtra->, making it a challenge to sit through without second-hand embarrassment</li>
+				<li>awfulExtra->, ensuring that only the most desperate for amusement would willingly endure it</li>
+				<!-- Ending -->
+				<li>ending->\n\nDespite its controversial nature, The Lusty Saurid Maid remains an infamous part of literature on the Rim.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

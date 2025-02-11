@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_LustySauridMaid_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title->The Lusty Saurid Maid, Volume [volumeNumber]</li>
+			
+				<!-- Basic Titles -->
+				<li>volumeNumber->1</li>
+				<li>volumeNumber->2</li>
+				<li>volumeNumber->5</li>
+				<li>volumeNumber->7</li>
+				<li>volumeNumber->14</li>
+				<li>volumeNumber->24</li>
+				<li>volumeNumber->35</li>
+				<li>volumeNumber->47</li>
+				<li>volumeNumber->59</li>
+				<li>volumeNumber->53</li>
+				<li>volumeNumber->65</li>
+				<li>volumeNumber->87</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

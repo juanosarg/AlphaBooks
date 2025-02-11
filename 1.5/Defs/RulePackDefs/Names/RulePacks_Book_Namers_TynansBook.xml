@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_TynansBook_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+    <li>title->[bookPrefix] to [subject]</li>
+	<li>title->[bookPrefix] to [funnySubject]</li>
+	<li>bookPrefix->Designing Games: A Guide</li>
+    <!-- Subject Examples -->
+    <li>subject->Building Experiences</li>
+    <li>subject->Crafting Worlds</li>
+    <li>subject->Mastering Engagement</li>
+    <li>subject->Memorable Mechanics</li>
+    <li>subject->Engineering Fun</li>
+    <li>subject->Curating Stories</li>
+    <li>subject->Balancing Systems</li>
+    <li>subject->Optimizing Flow</li>
+    <li>subject->Designing Challenges</li>
+    <li>subject->the Art of Iteration</li>
+    <li>subject->User-Centered Design</li>
+    <li>subject->Simulating Immersion</li>
+ 
+    <li>subject->Engineering Experiences</li>
+
+    <!-- Fun twist with "X" -->
+   
+    <li>funnySubject->The Use of the Letter Ñ</li>
+    <li>funnySubject->Avoiding Game Breaking Bugs</li>
+    <li>funnySubject->Exploitative Mechanics</li>
+    <li>funnySubject->Player Tantrums</li>
+    <li>funnySubject->Eating Without a Table</li>
+    <li>funnySubject->Warcrimes</li>
+    <li>funnySubject->Deliberate Confusion</li>
+</rulesStrings>
+
+		</rulePack>
+	</RulePackDef>
+</Defs>
