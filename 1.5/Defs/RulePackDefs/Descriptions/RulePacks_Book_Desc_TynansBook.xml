@@ -9,7 +9,7 @@
 			<rulesStrings>
 				<li>desc->[intro] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
 				<li>desc->[conceptExploration]: [impactStatement]. [writingQualitySentence]. [maybe_date][ending]</li>
-				<li>desc->[intro] [contextStatement] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				
 				<li>ending->\n\nThe lessons within are profound, though the book may be difficult to fully comprehend depending on your quality of understanding.</li>
 				<!-- Introductory Statements -->
 				<li>intro->A thought-provoking [writingQualityAdjective] guide to the fine art of</li>
