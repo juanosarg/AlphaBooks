@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_BookOfPortents</defName>
+		<label>book of portents</label>
+		<description>A book covering astrological and mystical topics, enhanced by uncanny archotech knowledge.</description>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_BookOfPortents/ABooks_BookOfPortents</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_BookOfPortents/ABooks_BookOfPortents</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_BookOfPortents_Namer</nameMaker>
+				<descriptionMaker>ABooks_BookOfPortents_Description</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_BookOfPortents/ABooks_BookOfPortents_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_BookOfPortents/ABooks_BookOfPortents_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_ThoughtByQuality">
+						<ticks>120000</ticks>
+						<moodByQuality>
+							<li>-5</li>
+							<li>-2</li>
+							<li>1</li>
+							<li>5</li>
+							<li>10</li>
+							<li>12</li>
+							<li>15</li>
+						</moodByQuality>
+					</li>
+					<li Class="AlphaBooks.BookOutcomeProperties_Text">
+						<text>ABooks_RandomAstronomicalIncident</text>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_ThoughtByQuality</doerClass>	
+						<thoughtToGive>ABooks_BookOfPortentsThought</thoughtToGive>						
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_RandomAstronomicalIncident</doerClass>					
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_RuinedBook_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>desc->This [writingQualityAdjective] [bookType] [follows] a [trainer] as [heOrShe] [storyStruggles]. [writingQualitySentence]. [maybe_date].</li>
+				<!-- Root: Story struggle variant -->
+				<li>follows->shares _______echniques of</li>
+				<li>follows->highli_______he teachings of</li>
+				<li>follows->document_______ining of</li>
+				<li>follows->expl_______he methods of</li>
+				<li>heOrShe->he</li>
+				<li>heOrShe->she</li>
+				<li>storyStruggles->___________</li>
+				<li>storyStruggles->_____________________</li>
+				<li>storyStruggles->_______</li>
+				<li>storyStruggles->_________________________________________</li>
+
+				<li>trainer->_______</li>
+				<li>trainer->coach</li>
+				<li>trainer->_______</li>
+				<li>trainer->instructor</li>
+				<li>trainer->_______</li>
+				<li>trainer->expert</li>
+				<li>trainer->_______</li>
+				<li>trainer->master</li>
+				<li>trainer->_______</li>
+				<li>trainer->practitioner</li>
+				<!-- Writing quality -->
+				<li>writingQualityAdjective(quality==6)->master_______ crafted</li>
+				<li>writingQualityAdjective(quality==5)->int_______ligent and per_______ptive</li>
+				<li>writingQualityAdjective(quality==4)->articulate _______considered</li>
+				<li>writingQualityAdjective(quality==3)->de_______y composed</li>
+				<li>writingQualityAdjective(quality==2)->aver_______at best</li>
+				<li>writingQualityAdjective(quality==1)->poorly e_______uted</li>
+				<li>writingQualityAdjective(quality==0)->ba_______y readable</li>
+				<li>writingQualitySentence(quality[greater_than]4)->It is [excellentDesc] [excellentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]5,quality[greater_than]1)->It is [decentDesc] [decentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]2)->It is [awfulDesc] [awfulExtra]</li>
+				<li>excellentDesc->a thoughtf_______ation of skill-building</li>
+				<li>excellentDesc->deeply insightfu_______rocess of learning</li>
+				<li>excellentDesc->tight_______illed with practical wisdom</li>
+				<li>excellentDesc->creative_______piring</li>
+				<li>excellentDesc->a remark_______nal and well-_______ guide</li>
+				<li>excellentDesc->filled w_______ing anecdotes from_______nced trainers</li>
+				<li>excellentExtra->. Each s_______ upon the last i_______cal way</li>
+				<li>excellentExtra->. It is_______g read that m_______nstant improvement</li>
+				<li>excellentExtra->. Its a_______hly actiona_______ effective</li>
+				<li>decentDesc->a dece_______ng guide</li>
+				<li>decentDesc->interes_______informative,_______olid advice</li>
+				<li>decentDesc->focuse_______ngle effective _______ng technique</li>
+				<li>decentDesc->occasion_______ging with relat_______examples</li>
+				<li>decentDesc->appea_______hose looking to _______their skills</li>
+				<li>decentExtra-> but it_______strategies</li>
+				<li>decentExtra-> but s_______es feel outd_______ed</li>
+				<li>decentExtra-> but it_______ are sometim_______clear</li>
+				<li>decentExtra-> but it focuse_______ily on theory_______ practice</li>
+				<li>decentExtra-> but i_______ercomplica_______mple ideas</li>
+				<li>awfulDesc->writt_______meone with li_______derstandin_______raining</li>
+				<li>awfulDesc->fille_______elevant perso_______cdotes</li>
+				<li>awfulDesc->vag_______tructured</li>
+				<li>awfulDesc->lac_______clear, acti_______ce</li>
+				<li>awfulDesc->riddl_______ontrad_______tatements</li>
+				<li>awfulExtra-> and _______ice is o_______erproductive</li>
+				<li>awfulExtra-> and it_______ address key_______ding principles</li>
+				<li>awfulExtra-> and it incl_______sical or unh_______ethods</li>
+				<!-- Date -->
+				<li>maybe_date-></li>
+				<li>maybe_date->The boo_______shed [date_form].</li>
+				<li>maybe_date->The te_______rinted [date_form].</li>
+				<li>maybe_date->It's uncle_______hen the bo_______s written.</li>
+				<li>date_form->rece_______y</li>
+				<li>date_form->man_______ries ago</li>
+				<li>date_form->o_______e [date]</li>
+				<li>date_form->in_______ [date_season]</li>
+				<!-- Misc rules -->
+				<li>bookType(p=4)->trai_______anual</li>
+				<li>bookType(p=2)->stud_______de</li>
+				<li>bookType->refe_______ok</li>
+				<li>bookType->edu_______ide</li>
+				<li>bookType->lear_______urce</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

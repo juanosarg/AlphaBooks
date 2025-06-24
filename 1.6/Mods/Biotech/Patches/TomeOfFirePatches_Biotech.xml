@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ABooks_TomeOfFire"]/comps/li[@Class="CompProperties_Book"]/doers/li[@Class="AlphaBooks.BookOutcomeProperties_GiveAbility"]/abilitiesToGive</xpath>
+		<value>
+			<li>ABooks_FireSpew_Charges</li>
+			<li>ABooks_FireBurst_Charges</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="ABooks_TomeOfFire"]/modExtensions/li[@Class="AlphaBooks.BookDefModExtension"]/readResults/li/abilitiesToGive</xpath>
+		<value>
+			<li>ABooks_FireSpew_Charges</li>
+			<li>ABooks_FireBurst_Charges</li>
+		</value>
+	</Operation>
+</Patch>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_AberrantGrimoire</defName>
+		<label>aberrant grimoire</label>
+		<description>An aberrant grimoire containing unnatural knowledge.</description>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_AberrantGrimoire/ABooks_AberrantGrimoire</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_AberrantGrimoire/ABooks_AberrantGrimoire</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_AberrantGrimoire_Namer</nameMaker>
+				<descriptionMaker>ABooks_AberrantGrimoire_Description</descriptionMaker>
+				<ageYearsRange>2000~3000</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_AberrantGrimoire/ABooks_AberrantGrimoire_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_AberrantGrimoire/ABooks_AberrantGrimoire_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_GiveAbility">
+						<abilitiesToGive>
+							<li>ABooks_CorrosiveSpray_Charges</li>
+							<li>ABooks_UnnaturalHealing_Charges</li>
+							<li>ABooks_ShapeFlesh_Charges</li>
+							<li>ABooks_TransmuteSteel_Charges</li>
+							<li>ABooks_PsychicSlaughter_Charges</li>
+							<li>ABooks_ReleaseDeadlifeDust_Charges</li>
+							<li>ABooks_MetalbloodInjection_Charges</li>
+							<li>ABooks_VoidTerror_Charges</li>
+						</abilitiesToGive>
+						<charges>true</charges>
+						<chargesByQuality>
+							<li>1</li>
+							<li>1</li>
+							<li>1</li>
+							<li>2</li>
+							<li>2</li>
+							<li>2</li>
+							<li>3</li>
+						</chargesByQuality>
+						<propagateRulesForTitle>false</propagateRulesForTitle>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveAbility</doerClass>
+						<abilitiesToGive>
+							<li>ABooks_CorrosiveSpray_Charges</li>
+							<li>ABooks_UnnaturalHealing_Charges</li>
+							<li>ABooks_ShapeFlesh_Charges</li>
+							<li>ABooks_TransmuteSteel_Charges</li>
+							<li>ABooks_PsychicSlaughter_Charges</li>
+							<li>ABooks_ReleaseDeadlifeDust_Charges</li>
+							<li>ABooks_MetalbloodInjection_Charges</li>
+							<li>ABooks_VoidTerror_Charges</li>
+						</abilitiesToGive>
+						<chargesByQuality>
+							<li>1</li>
+							<li>1</li>
+							<li>1</li>
+							<li>2</li>
+							<li>2</li>
+							<li>2</li>
+							<li>3</li>
+						</chargesByQuality>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BookcaseBase">
+		<defName>ABooks_BookPlinth</defName>
+		<label>book plinth</label>
+		<description>A small plinth to display a single open book. Books stored here will passively enhance academic work done nearby, and increase the beauty of the plinth. The stored books will never deteriorate. Beauty of a book stored on a plinth is multiplied by 10.</description>
+		<thingClass>AlphaBooks.Building_BookPlinth</thingClass>
+		<graphicData>
+			<texPath>Things/Building/ABooks_BookPlinth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<rotatable>false</rotatable>
+		<uiIconScale>0.5</uiIconScale>
+		<statBases>
+			<MaxHitPoints>25</MaxHitPoints>
+			<Mass>4</Mass>
+			 <WorkToBuild>250</WorkToBuild>
+		</statBases>
+		<size>(1,1)</size>
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories Inherit="false">
+			<li>Stony</li>
+		</stuffCategories>
+		<building>
+			<storageGroupTag>Bookcase</storageGroupTag>
+			<maxItemsInCell>1</maxItemsInCell>
+			<blueprintClass>Blueprint_StorageWithRoomHighlight</blueprintClass>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+			<fixedStorageSettings>
+				<filter>
+					<categories Inherit="False">
+						<li>Books</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>Books</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+	</ThingDef>
+</Defs>

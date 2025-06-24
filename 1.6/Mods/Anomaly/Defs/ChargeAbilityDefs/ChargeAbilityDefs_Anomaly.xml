@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AlphaBooks.ChargeAbilityDef>
+		<defName>ABooks_ChargeAbilities_Anomaly</defName>
+		<chargeAbilities>
+			
+			<li>ABooks_UnnaturalHealing_Charges</li>
+			<li>ABooks_ShapeFlesh_Charges</li>
+			<li>ABooks_TransmuteSteel_Charges</li>
+			<li>ABooks_PsychicSlaughter_Charges</li>
+			<li>ABooks_ReleaseDeadlifeDust_Charges</li>
+			<li>ABooks_CorrosiveSpray_Charges</li>
+			<li>ABooks_MetalbloodInjection_Charges</li>
+			<li>ABooks_VoidTerror_Charges</li>
+		</chargeAbilities>
+	</AlphaBooks.ChargeAbilityDef>
+</Defs>

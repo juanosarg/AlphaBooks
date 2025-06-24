@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_ZoologicalCompendium_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title->[titleBasic]</li>
+				<li>title(p=2)->[titleAuthored]</li>
+				<!-- Basic Titles -->
+				<li>titleBasic(p=6)->Compendium of [randAdjective] Fauna</li>
+				<li>titleBasic(p=6)->[randAdjective] Creatures: A Study</li>
+				<li>titleBasic->A Study of [randAdjective] Beasts</li>
+				<li>titleBasic->The [randAdjective] Bestiary</li>
+				<li>titleBasic->A Guide to Remarkable Creatures</li>
+				<li>titleBasic->Wonders of the Animal Kingdom</li>
+				<li>titleBasic->The [randAdjective] Zoo: A Chronicle of Beasts</li>
+				<li>titleBasic->Observations on [randAdjective] Animals</li>
+				<li>titleBasic->Catalogue of Marvelous Beasts</li>
+				<li>titleBasic->Field Notes on Feral Creatures</li>
+				<!-- Authored Titles -->
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Compendium of Beasts</li>
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Zoological Observations</li>
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Bestiary of Creatures</li>
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Chronicle of [randAdjective] Creatures</li>
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Guide to Fauna</li>
+				<li>titleAuthored->[ANYPAWN_nameDef]’s Notes on the [randAdjective] Wild</li>
+				<!-- Random Adjectives -->
+				<li>randAdjective->exotic</li>
+				<li>randAdjective->enigmatic</li>
+				<li>randAdjective->marvelous</li>
+				<li>randAdjective->feral</li>
+				<li>randAdjective->wild</li>
+				<li>randAdjective->untamed</li>
+				<li>randAdjective->mystical</li>
+				<li>randAdjective->rare</li>
+				<li>randAdjective->majestic</li>
+				<li>randAdjective->ancient</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_PsycasterGuide_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title->[titleBasic]</li>
+				<li>title(p=2)->[titleAuthored]</li>
+				<!-- Basic -->
+				<li>titleBasic(p=6)->[randAdjective] [subject_primary] Psycaster Guide</li>
+				<li>titleBasic(p=6)->[randNoun] and [subject_primary] Psycasting Techniques</li>
+				<li>titleBasic->The Psycaster’s Handbook: Mastering [subject_primary]</li>
+				<li>titleBasic->Essential Psycasting Skills in [subject_primary]</li>
+				<li>titleBasic->A Beginner’s Guide to [subject_primary] Psycasting</li>
+				<li>titleBasic->Advanced Psycasting Lessons: [subject_primary]</li>
+				<li>titleBasic->Harnessing the Archotech Mind: [subject_primary]</li>
+				<li>titleBasic->Psycasting Mastery: The Art of [subject_primary]</li>
+				<li>titleBasic->Unlocking Potential: Psycasting [subject_primary]</li>
+				<li>titleBasic->From Novice to Expert: Psycaster Techniques in [subject_primary]</li>
+				<!-- Authored -->
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Psycasting Guide to [subject_primary]</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Manual of Psycaster Skills: [subject_primary]</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Treatise on [subject_primary] Psycasting</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Handbook of Psycasting: [subject_primary]</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Notes on Advanced [subject_primary]</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Teachings of [subject_primary] Psycasting</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Insights into [subject_primary] Mastery</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

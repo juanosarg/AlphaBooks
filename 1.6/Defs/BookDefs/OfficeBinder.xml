@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_OfficeBinder</defName>
+		<label>office binder</label>
+		<description>An office binder full of inane Post-It notes. Most of what's inside is useless.</description>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_OfficeBinder/ABooks_OfficeBinder</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_OfficeBinder/ABooks_OfficeBinder</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_OfficeBinder_Namer</nameMaker>
+				<descriptionMaker>ABooks_OfficeBinder_Description</descriptionMaker>
+				<ageYearsRange>10~20</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_OfficeBinder/ABooks_OfficeBinder_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_OfficeBinder/ABooks_OfficeBinder_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						<descriptionForStages>
+							<li>a huge headache</li>
+							<li>a huge headache</li>
+							<li>a huge headache</li>
+							<li>a huge headache</li>
+							<li>a huge headache</li>
+							<li>a huge headache</li>
+							<li>a huge headache</li>
+						
+						</descriptionForStages>
+						<ticks>60000</ticks>
+					</li>
+					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						<descriptionForStages>
+							<li>+5% Negotiation ability, +5% Arrest success chance, +1% Trade price improvement, +5% Social impact</li>
+							<li>+8% Negotiation ability, +8% Arrest success chance, +5% Trade price improvement, +8% Social impact</li>
+							<li>+10% Negotiation ability, +10% Arrest success chance, +10% Trade price improvement, +10% Social impact</li>
+							<li>+20% Negotiation ability, +20% Arrest success chance, +20% Trade price improvement, +20% Social impact</li>
+							<li>+30% Negotiation ability, +30% Arrest success chance, +30% Trade price improvement, +30% Social impact</li>
+							<li>+40% Negotiation ability, +40% Arrest success chance, +40% Trade price improvement, +40% Social impact</li>
+							<li>+50% Negotiation ability, +50% Arrest success chance, +50% Trade price improvement, +50% Social impact</li>
+						
+						</descriptionForStages>
+						<ticks>180000</ticks>
+					</li>
+					
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_Headache</hediffToAdd>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_OfficeBinder</hediffToAdd>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

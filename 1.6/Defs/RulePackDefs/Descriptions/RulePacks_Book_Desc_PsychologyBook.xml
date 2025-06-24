@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_PsychologyBook_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>desc->[intro] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>desc->[conceptExploration]: [impactStatement]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>desc->[intro] [contextStatement] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>ending->\n\nOnce read, this book will grant mood management and social boosts for three days, and then it will be destroyed.</li>
+				<!-- Introductory statements -->
+				<li>intro->This [writingQualityAdjective] [bookType] offers a profound look into</li>
+				<li>intro->A [writingQualityAdjective] guide to navigating</li>
+				<li>intro->A timeless [bookType] chronicling the challenges of</li>
+				<li>intro->A [writingQualityAdjective] account of survival amidst</li>
+				<li>intro->An extraordinary [bookType] exploring</li>
+				<li>intro->A hauntingly vivid exploration of</li>
+				<!-- Concept Exploration -->
+				<li>conceptExploration->the interplay between fear and leadership</li>
+				<li>conceptExploration->the effects of solitude on the psyche</li>
+				<li>conceptExploration->the ethics of decision-making in life-or-death scenarios</li>
+				<li>conceptExploration->how desperation shapes relationships</li>
+				<li>conceptExploration->the role of trust in survival</li>
+				<li>conceptExploration->adapting to the crushing isolation of the Rim</li>
+				<li>conceptExploration->the conflict between survival instincts and morality</li>
+				<li>conceptExploration->the delicate balance of hope and despair</li>
+				<li>conceptExploration->how collective struggle builds—or destroys—communities</li>
+				<li>conceptExploration->the psychology of work in an unforgiving world</li>
+				<!-- Context Statements -->
+				<li>contextStatement->vivid anecdotes from the Rim, it examines</li>
+				<li>contextStatement->decades of colonial experiences, this book explores</li>
+				<li>contextStatement->the records of countless stranded colonists, it reveals</li>
+				<li>contextStatement->real stories from the frontier, this book uncovers</li>
+				<li>contextStatement->the struggles of Rim pioneers, it explains</li>
+				<!-- Impact Statements -->
+				<li>impactStatement->Its insights will reshape how you understand human behavior under duress</li>
+				<li>impactStatement->It provides vital tools for any colonist navigating a harsh frontier</li>
+				<li>impactStatement->It sheds light on the darkest corners of the human mind</li>
+				<li>impactStatement->This book is a critical resource for leaders in peril</li>
+				<li>impactStatement->The lessons within are essential for any striving to endure the Rim</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective(quality==6)->masterfully crafted</li>
+				<li>writingQualityAdjective(quality==5)->brilliantly insightful</li>
+				<li>writingQualityAdjective(quality==4)->thought-provoking and precise</li>
+				<li>writingQualityAdjective(quality==3)->functional but uninspired</li>
+				<li>writingQualityAdjective(quality==2)->mediocre</li>
+				<li>writingQualityAdjective(quality==1)->barely comprehensible</li>
+				<li>writingQualityAdjective(quality==0)->incoherent ramble of a</li>
+				<li>writingQualitySentence(quality[greater_than]3)->It is [excellentDesc] [excellentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]4,quality[greater_than]1)->It is [decentDesc] [decentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]2)->It is [awfulDesc] [awfulExtra]</li>
+				<!-- Excellent descriptors -->
+				<li>excellentDesc->a masterwork of psychological insight</li>
+				<li>excellentDesc->an invaluable resource for understanding survival psychology</li>
+				<li>excellentDesc->an expertly constructed guide for colony leaders</li>
+				<li>excellentDesc->a deeply original exploration of psychological survival on the Rim</li>
+				<li>excellentDesc->rich with practical advice and vivid storytelling</li>
+				<li>excellentExtra->that reveals the true essence of human psychology</li>
+				<li>excellentExtra->that inspires resilience even in the darkest times</li>
+				<li>excellentExtra->that equips readers for the challenges of frontier life</li>
+				<!-- Decent descriptors -->
+				<li>decentDesc->a passable guide to psychological resilience</li>
+				<li>decentDesc->interesting but unpolished</li>
+				<li>decentDesc->helpful in some areas but lacking depth</li>
+				<li>decentDesc->focused on a few narrow concepts</li>
+				<li>decentDesc->occasionally insightful but uneven</li>
+				<li>decentExtra->and may be of use to less experienced readers</li>
+				<li>decentExtra->, it fails to address the larger picture of survival</li>
+				<li>decentExtra->though its theories can be inconsistent</li>
+				<!-- Awful descriptors -->
+				<li>awfulDesc->a haphazard collection of half-baked ideas</li>
+				<li>awfulDesc->a confusing mess of unfounded theories</li>
+				<li>awfulDesc->entirely impractical and poorly researched</li>
+				<li>awfulDesc->filled with irrelevant anecdotes and fluff</li>
+				<li>awfulDesc->a chaotic jumble of contradictory theories</li>
+				<li>awfulExtra->and utterly useless for anyone facing real psychological challenges</li>
+				<li>awfulExtra->and actively harmful for anyone seeking real insight into psychology</li>
+				<!-- Date -->
+				<li>maybe_date-></li>
+				<li>maybe_date->The book was published [date_form].</li>
+				<li>maybe_date->The text was first recorded [date_form].</li>
+				<li>maybe_date->Its origins are lost to time, like so many on the Rim.</li>
+				<li>date_form->recently</li>
+				<li>date_form->generations ago</li>
+				<li>date_form->on the [date]</li>
+				<li>date_form->during [date_season]</li>
+				<!-- Book Types -->
+				<li>bookType(p=4)->psychological study</li>
+				<li>bookType(p=3)->field guide</li>
+				<li>bookType(p=2)->colonial manual</li>
+				<li>bookType(p=1)->survival treatise</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

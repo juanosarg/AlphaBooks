@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>ABooks_SelfHelpBookThought</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>awful self-help book</label>
+				<description>What WAS that book? That was nonsense.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>poor self-help book</label>
+				<description>Well, that was underwhelming. I’m not sure it’ll make much difference.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>normal self-help book</label>
+				<description>That self-help book had some helpful tips.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>good self-help book</label>
+				<description>Some great advice in there. I think this could really help me.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>excellent self-help book</label>
+				<description>That was genuinely insightful. I’ve got a fresh perspective on life now.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>masterwork self-help book</label>
+				<description>I feel like I’ve unlocked the secrets of the universe. This book was transformative!</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+			<li>
+				<label>legendary self-help book</label>
+				<description>This book is life-changing. I see everything with new clarity now!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>ABooks_BookOfPortentsThought</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>awful book of portents</label>
+				<description>Who actually believes in all that nonsense? That was a coincidence.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>poor book of portents</label>
+				<description>That was just merely a coincidence. Astrology isn't real.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>normal book of portents</label>
+				<description>I don't hold much belief in astrology, but at least it was an interesting read.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>good book of portents</label>
+				<description>Even though I don't believe in astrology, it's clear that book held some hidden Archotech mechanism.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+			<li>
+				<label>excellent book of portents</label>
+				<description>We all know astrology isn't real, but Archotech shenanigans surely are!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>masterwork book of portents</label>
+				<description>Through Archotech intervention, something that was merely a fantasy seems to have turned into reality!</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+			<li>
+				<label>legendary book of portents</label>
+				<description>There are hidden miracles of archotechnology that defy even human logic, and we have witnessed one of them!</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>ABooks_RaidedLibrary</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>raided library</label>
+				<description>The thrill of adventuring is exhilarating.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

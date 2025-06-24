@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RulePackDef>
+		<defName>ABooks_SelfHelp_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title->[titleBasic]</li>
+				<li>title(p=2)->[titleAuthored]</li>
+				<!-- Basic -->
+				<li>titleBasic(p=6)->[randAdjective] Self-Help Guide</li>
+				<li>titleBasic(p=6)->[randNoun] and Personal Growth</li>
+				<li>titleBasic->Unlocking Your Potential</li>
+				<li>titleBasic->The Path to Inspiration</li>
+				<li>titleBasic->A Beginner’s Guide to Inspiration</li>
+				<li>titleBasic->Inspirational Techniques for Self-Improvement</li>
+				<li>titleBasic->Inspiration Through Self-Reflection</li>
+				<li>titleBasic->Survival, Inspiration and Growth</li>
+				<li>titleBasic->The Journey to Inspiration</li>
+				<li>titleBasic->Practice Makes Perfect: A Guide to Inspiration</li>
+				<!-- Authored -->
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Guide to Inspiration</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Self-Help Manual</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Book of Inspiration</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Inspirational Handbook</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Lessons in Inspiration</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Notes on Inspiration</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Strategies for Inspiration</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

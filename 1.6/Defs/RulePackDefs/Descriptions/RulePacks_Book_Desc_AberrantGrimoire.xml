@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_AberrantGrimoire_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Root -->
+				<li>desc->[intro] [conceptExploration]. [writingQualitySentence]. [ending]</li>
+				<li>desc->[intro] [conceptExploration]: [impactStatement]. [writingQualitySentence]. [ending]</li>
+				<li>desc->[introWithContext] [conceptExploration]. [writingQualitySentence]. [ending]</li>
+				<li>ending->\n\nThis grimoire unlocks abilities known only to creepjoiners and similar servants of the Void, granting forbidden skills and insights to the reader, but it can only be read once.</li>
+				<!-- Introductory statements -->
+				<li>intro->This [writingQualityAdjective] grimoire emanates a sense of</li>
+				<li>intro->A [writingQualityAdjective] artifact shrouded in</li>
+				<li>intro->A [writingQualityAdjective] compendium of</li>
+				<li>intro->This eldritch and [writingQualityAdjective] tome whispers</li>
+				<li>intro->Bound in shadow and mystery, this [writingQualityAdjective] grimoire reveals</li>
+				<li>introWithContext->Through vague and incomprehensible script, this [writingQualityAdjective] tome unveils</li>
+				<li>introWithContext->Drawing upon otherworldly power, this [writingQualityAdjective] artifact details</li>
+				<li>introWithContext->Scrawled by an unseen hand, this [writingQualityAdjective] grimoire conveys</li>
+				<li>introWithContext->Imbued with a mind of its own, this [writingQualityAdjective] tome dictates</li>
+				<!-- Concept Exploration -->
+				<li>conceptExploration->the dark arts embraced by creepjoiners</li>
+				<li>conceptExploration->the sinister practices of those who serve the unknown</li>
+				<li>conceptExploration->esoteric rites whispered only to the most devout of the aberrant</li>
+				<li>conceptExploration->unnatural wisdom meant to unsettle the mortal mind</li>
+				<li>conceptExploration->the profane knowledge of realms best left untouched</li>
+				<!-- Impact Statements -->
+				<li>impactStatement->Its influence lingers, twisting the soul of any who dare comprehend it</li>
+				<li>impactStatement->Those who read it rarely escape unscathed by its revelations</li>
+				<li>impactStatement->Its pages promise power, though at an inscrutable cost</li>
+				<li>impactStatement->It unlocks abilities few would dare to wield, and fewer still could survive</li>
+				<li>impactStatement->Its knowledge is both a gift and a curse, binding the reader inextricably to its secrets</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective(quality==6)->peerless and terrifying</li>
+				<li>writingQualityAdjective(quality==5)->hauntingly profound</li>
+				<li>writingQualityAdjective(quality==4)->unsettling yet coherent</li>
+				<li>writingQualityAdjective(quality==3)->cryptic but legible</li>
+				<li>writingQualityAdjective(quality==2)->disjointed and unnerving</li>
+				<li>writingQualityAdjective(quality==1)->fractured and chaotic</li>
+				<li>writingQualityAdjective(quality==0)->maddening jumble of a</li>
+				<li>writingQualitySentence(quality[greater_than]3)->Its quality is [excellentDesc] [excellentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]4,quality[greater_than]1)->Its quality is [decentDesc] [decentExtra]</li>
+				<li>writingQualitySentence(quality[less_than]2)->Its quality is [awfulDesc] [awfulExtra]</li>
+				<!-- Excellent Descriptors -->
+				<li>excellentDesc->unparalleled in its delivery of forbidden knowledge</li>
+				<li>excellentDesc->a masterpiece of arcane instruction</li>
+				<li>excellentDesc->a testament to the depths of otherworldly wisdom</li>
+				<li>excellentExtra->that leaves an indelible mark on its reader</li>
+				<li>excellentExtra->that transcends mortal understanding</li>
+				<li>excellentExtra->that distills the essence of creepjoiner power</li>
+				<!-- Decent Descriptors -->
+				<li>decentDesc->serviceable in detailing its grim purpose</li>
+				<li>decentDesc->adequate but lacking the full gravitas of its intent</li>
+				<li>decentDesc->sufficient for conveying its arcane truths</li>
+				<li>decentExtra->but lacks the clarity needed for full understanding</li>
+				<li>decentExtra->though it fails to inspire dread as it should</li>
+				<li>decentExtra->though its structure is less than perfect</li>
+				<!-- Awful Descriptors -->
+				<li>awfulDesc->an incoherent cacophony of meaningless symbols</li>
+				<li>awfulDesc->barely comprehensible, even to the insane</li>
+				<li>awfulDesc->more confusing than enlightening</li>
+				<li>awfulExtra->and utterly unfit for mortal comprehension</li>
+				<li>awfulExtra->and a danger to sanity without any reward</li>
+				<li>awfulExtra->with no redeeming qualities beyond its sinister aura</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

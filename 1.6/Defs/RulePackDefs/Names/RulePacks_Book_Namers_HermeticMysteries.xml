@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_HermeticMysteries_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title->[titleBasic]</li>
+				<li>title(p=2)->[titleAuthored]</li>
+				<!-- Basic Titles -->
+				<li>titleBasic->Secrets of the Sealed Hermetica</li>
+				<li>titleBasic->The Mysteries of Locked Wisdom</li>
+				<li>titleBasic->Hermes and the Art of Closure</li>
+				<li>titleBasic->The Sealed Truths of Hermes</li>
+				<li>titleBasic->Vaulted Mysteries</li>
+				<li>titleBasic->Encoded Hermetic Revelations</li>
+				<li>titleBasic->Chambers of Hermetic Wisdom</li>
+				<li>titleBasic->Hermes' Hidden Locks</li>
+				<li>titleBasic->The Key to Hermetic Secrets</li>
+				<li>titleBasic->Hermetic Riddles Deciphered</li>
+				<!-- Authored Titles -->
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Treatise on Hermetic Locks</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Codex of Hermetic Wisdom</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Secrets of Sealed Mysteries</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Hermetic Compendium</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Enigma of the Sealed Chambers</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Revelations of Hermetic Mastery</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

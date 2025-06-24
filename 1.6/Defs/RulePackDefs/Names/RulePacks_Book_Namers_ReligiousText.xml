@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_ReligiousText_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title(p=4)->[religiousTextNameBasic]</li>
+				<li>title(p=2)->[religiousTextNameGrandiose]</li>
+				<li>title->[religiousTextNameSimple]</li>
+				<li>title->[religiousTextNameAuthored]</li>
+				<!-- Basic -->
+				<li>religiousTextNameBasic(p=6)->The Path of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic(p=6)->The Code of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic(p=6)->The Teachings of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic(p=6)->The Writings of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->Sacred Writ of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->The Doctrine of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->The Scripture of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->The Hymns of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->The Revelations of the [altStructureNameBasic]</li>
+				<li>religiousTextNameBasic->The Holy Word of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose(p=6)->The Eternal Wisdom of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose(p=6)->The Unveiling Truth of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Celestial Testament of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Divine Mandate of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Chronicles of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Eternal Teachings of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Prophecies of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Immutable Laws of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Holy Edict of the [altStructureNameBasic]</li>
+				<li>religiousTextNameGrandiose->The Sacred Covenant of the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple(p=6)->The [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple(p=6)->Reflections on the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The Path of the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->Meditations on the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The Scrolls of the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The Words of the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The Wisdom of the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->Verses of the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The Testament of the [altStructureNameBasic]</li>
+				<li>religiousTextNameSimple->The Laws of the [altStructureNameBasic]</li>
+				<!-- Authored -->
+				<li>religiousTextNameAuthored(p=6)->The Revelations of [ANYPAWN_nameIndef] on the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored(p=6)->[ANYPAWN_nameIndef]’s Chronicle of the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Testament to the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Reflections on the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Visions of the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Hymns of the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->The Philosophy of [ANYPAWN_nameIndef] on the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->The Sacred Writings of [ANYPAWN_nameIndef] on the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->The Prophecies of [ANYPAWN_nameIndef] on the [altStructureNameBasic]</li>
+				<li>religiousTextNameAuthored->[ANYPAWN_nameIndef]’s Divine Insights into the [altStructureNameBasic]</li>
+				<li>altStructureNameBasic->[subject_primary] System</li>
+				<li>altStructureNameBasic->[subject_primary] Framework</li>
+				<li>altStructureNameBasic->[subject_primary] Doctrine</li>
+				<li>altStructureNameBasic->[subject_primary] Order</li>
+				<li>altStructureNameBasic->[subject_primary] Schema</li>
+				<li>altStructureNameBasic->[subject_primary] Organization</li>
+				<li>altStructureNameBasic->[subject_primary] Body</li>
+				<li>altStructureNameBasic->[subject_primary] Institution</li>
+				<li>altStructureNameBasic->[subject_primary] Network</li>
+				<li>altStructureNameBasic->[subject_primary] Hierarchy</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

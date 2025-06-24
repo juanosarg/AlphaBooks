@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_MedicalJournal</defName>
+		<label>medical journal</label>
+		<description>A medical journal detailing new surgical procedures and techniques.</description>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_MedicalJournal/ABooks_MedicalJournal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_MedicalJournal/ABooks_MedicalJournal</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_MedicalJournal_Namer</nameMaker>
+				<descriptionMaker>ABooks_MedicalJournal_Description</descriptionMaker>
+				<ageYearsRange>100~2000</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_MedicalJournal/ABooks_MedicalJournal_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_MedicalJournal/ABooks_MedicalJournal_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+						<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						<descriptionForStages>
+							<li>+25% Medical tend speed, -25% Medical tend quality, +25% Medical operation speed, -25% Medical surgery success chance</li>
+							<li>+10% Medical tend speed, -15% Medical tend quality, +10% Medical operation speed, -10% Medical surgery success chance</li>
+							<li>+5% Medical tend speed, +5% Medical tend quality, +5% Medical operation speed</li>
+							<li>+10% Medical tend speed, +5% Medical tend quality, +10% Medical operation speed, +5% Medical surgery success chance</li>
+							<li>+20% Medical tend speed, +15% Medical tend quality, +20% Medical operation speed, +15% Medical surgery success chance</li>
+							<li>+35% Medical tend speed, +20% Medical tend quality, +35% Medical operation speed, +20% Medical surgery success chance</li>
+							<li>+50% Medical tend speed, +25% Medical tend quality, +50% Medical operation speed, +25% Medical surgery success chance</li>
+						
+						</descriptionForStages>
+						<ticks>180000</ticks>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_MedicalJournal</hediffToAdd>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

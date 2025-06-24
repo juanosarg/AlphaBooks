@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+
+	<AlphaBooks.QuestWhitelistDef>
+		<defName>ABooks_QuestWhitelist_Ideology</defName>
+		<whiteListedQuests>			
+			
+			<li>OpportunitySite_AncientComplex</li>
+			<li>OpportunitySite_WorkSite</li>
+		
+			
+		</whiteListedQuests>							
+	</AlphaBooks.QuestWhitelistDef>
+
+
+
+
+
+</Defs>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_TynansBook_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>desc->[intro] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>desc->[conceptExploration]: [impactStatement]. [writingQualitySentence]. [maybe_date][ending]</li>
+				
+				<li>ending->\n\nThe lessons within are profound, though the book may be difficult to fully comprehend depending on your quality of understanding.</li>
+				<!-- Introductory Statements -->
+				<li>intro->A thought-provoking [writingQualityAdjective] guide to the fine art of</li>
+				<li>intro->An engaging [writingQualityAdjective] exploration of the world of</li>
+				<li>intro->An inspiring [writingQualityAdjective] manual that details the delicate balance of</li>
+				<!-- Concept Exploration -->
+				<li>conceptExploration->game design fundamentals that somehow work even when they shouldn’t</li>
+				<li>conceptExploration->the intricacies of balancing player freedom and strict mechanics</li>
+				<li>conceptExploration->making the impossible seem effortless in the realm of interactive design</li>
+				<li>conceptExploration->keeping players interested even in mundane systems</li>
+				<li>conceptExploration->understanding why players are unpredictable, and why that’s okay</li>
+				<li>conceptExploration->how to embrace chaos and turn it into fun, through sheer force of will</li>
+				<!-- Context Statements -->
+				<li>contextStatement->gleaned from years of experience in the field of game development, this book offers</li>
+				<li>contextStatement->compiled from both the successes and the disasters of game design, this guide explores</li>
+				<li>contextStatement->based on real-world development struggles, it explores</li>
+				<li>contextStatement->offering candid reflections on what went right (and what went wrong), this guide</li>
+				<li>contextStatement->full of expert insight, this book unveils</li>
+				<!-- Impact Statements -->
+				<li>impactStatement->Its wisdom will guide you through the frustrating but rewarding world of game creation</li>
+				<li>impactStatement->It presents insights on turning the chaos of game development into polished experiences</li>
+				<li>impactStatement->A must-have for anyone hoping to make a game that doesn’t break halfway through</li>
+				<li>impactStatement->This book will make you think about design in ways you didn’t know were possible</li>
+				<li>impactStatement->The advice here will help you conquer even the most complicated game systems</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective(quality==6)->masterfully crafted</li>
+				<li>writingQualityAdjective(quality==5)->brilliantly insightful</li>
+				<li>writingQualityAdjective(quality==4)->precise</li>
+				<li>writingQualityAdjective(quality==3)->functional</li>
+				<li>writingQualityAdjective(quality==2)->controversial copy of the original</li>
+				<li>writingQualityAdjective(quality==1)->poorly made copy of the original</li>
+				<li>writingQualityAdjective(quality==0)->but outrageously butchered translation of the original</li>
+				<!-- Writing Quality Sentences -->
+				<li>writingQualitySentence(quality[greater_than]3)->It is [excellentDesc] that offers surprising clarity amidst its dense complexity</li>
+				<li>writingQualitySentence(quality[less_than]4,quality[greater_than]1)->It is [decentDesc] that, despite its rough edges, conveys a decent grasp of the subject matter</li>
+				<li>writingQualitySentence(quality[less_than]2)->It is [awfulDesc] and most of the meaning of the original masterpiece has been lost</li>
+				<!-- Excellent Descriptors -->
+				<li>excellentDesc->a brilliant compendium of game design wisdom</li>
+				<li>excellentDesc->an invaluable resource for any aspiring game creator</li>
+				<li>excellentDesc->a thoughtfully constructed guide, rich with insight,</li>
+				<li>excellentDesc->a truly insightful and well-rounded exploration</li>
+				<li>excellentDesc->a masterpiece in the art of design theory</li>
+				<!-- Decent Descriptors -->
+				<li>decentDesc->a solid primer on the basics of game design</li>
+				<li>decentDesc->informative, a very complete guide</li>
+				<!-- Awful Descriptors -->
+				<li>awfulDesc->a very poor translation</li>
+				<li>awfulDesc->a poorly maintained tenth-hand copy</li>
+				<li>awfulDesc->a translation of a translation of a translation</li>
+				<li>awfulDesc->not a good copy, probably made by someone who was unfamiliar with it,</li>
+				<li>awfulDesc->a poorly made revision, introducing many biases that weren't there to begin with,</li>
+				<!-- Date -->
+				<li>maybe_date->The book was last revised [date_form].</li>
+				<li>maybe_date->Originally written [date_form], it has somehow remained relevant.</li>
+				<li>date_form->recently</li>
+				<li>date_form->several years ago</li>
+				<li>date_form->during the height of game design experimentation</li>
+				<li>date_form->back in the early days of game development theory</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_PsychologyBook</defName>
+		<label>psychology book</label>
+		<description>A psychology book dealing with the more complex aspects of the human mind.</description>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_PsychologyBook/ABooks_PsychologyBook</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_PsychologyBook/ABooks_PsychologyBook</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_PsychologyBook_Namer</nameMaker>
+				<descriptionMaker>ABooks_PsychologyBook_Description</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_PsychologyBook/ABooks_PsychologyBook_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_PsychologyBook/ABooks_PsychologyBook_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						<descriptionForStages>
+							<li>-1% Mental break threshold</li>
+							<li>-5% Mental break threshold</li>
+							<li>-10% Mental break threshold, 10% Thought Nullification</li>
+							<li>-15% Mental break threshold, 15% Thought Nullification</li>
+							<li>-20% Mental break threshold, 25% Thought Nullification</li>
+							<li>-25% Mental break threshold, 35% Thought Nullification, 5% Mood base override, blocks mental breaks</li>
+							<li>-25% Mental break threshold, 50% Thought Nullification, 10% Mood base override, blocks mental breaks</li>
+						
+						</descriptionForStages>
+						<ticks>180000</ticks>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_PsychologicalInsights</hediffToAdd>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

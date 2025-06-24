@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_RestaurantGuide_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Description -->
+				<li>desc->[intro] [contentOverview]. [qualityStatement] [maybe_date][ending]</li>
+				<li>desc->[intro] [contentOverview] [quirkStatement]. [qualityStatement] [maybe_date][ending]</li>
+				<li>desc->[intro] [contextStatement] [contentOverview]. [qualityStatement] [maybe_date][ending]</li>
+				<li>desc->[intro] [contentOverview]. [quirkStatement]. [qualityStatement] [maybe_date][ending]</li>
+				<!-- Introductory statements -->
+				<li>intro->This [writingQualityAdjective] [bookType] spans the stars, cataloging</li>
+				<li>intro->A [writingQualityAdjective] guide to frontier culinary excellence, featuring</li>
+				<li>intro->A [writingQualityAdjective] anthology of stellar dining experiences, focused on</li>
+				<li>intro->A [writingQualityAdjective] [bookType] charting the vast cosmos of</li>
+				<li>intro->A [writingQualityAdjective] exploration of gastronomic wonder, spotlighting</li>
+				<!-- Content Overview -->
+				<li>contentOverview->the finest eateries on habitable worlds</li>
+				<li>contentOverview->hidden culinary gems across remote star systems</li>
+				<li>contentOverview->outposts that serve unexpectedly exquisite meals</li>
+				<li>contentOverview->galactic hubs renowned for their fusion cuisines</li>
+				<li>contentOverview->rare ingredients and innovative preparation methods</li>
+				<li>contentOverview->the evolving tastes of colonists and settlers</li>
+				<li>contentOverview->dining establishments that survived—and thrived—through cosmic cataclysms</li>
+				<!-- Quirk Statements -->
+				<li>quirkStatement->Includes reviews of dishes that defy gravity and logic</li>
+				<li>quirkStatement->Highlights the strange but delightful delicacies of Rim chefs</li>
+				<li>quirkStatement->Cautions readers about the potential toxicity of some exotic fare</li>
+				<li>quirkStatement->Features a controversial ranking of hydroponic-grown ingredients</li>
+				<li>quirkStatement->Includes a section on dining etiquette with mechanoid hosts</li>
+				<li>quirkStatement->Notable for its unusually harsh reviews of asteroid mining canteens</li>
+				<!-- Context Statements -->
+				<li>contextStatement->decades of culinary exploration, this is a guide to</li>
+				<li>contextStatement->the experiences of countless gastronomic pioneers, it details</li>
+				<li>contextStatement->meticulous surveys and taste tests across the Rim, it details</li>
+				<li>contextStatement->centuries of frontier dining trends, this edition explores</li>
+				<li>contextStatement->artifacts of culinary anthropology, this book chronicles</li>
+				<!-- Quality Statements -->
+				<li>qualityStatement(quality==6)->It is [excellentDesc], earning it widespread acclaim among connoisseurs.</li>
+				<li>qualityStatement(quality==5)->It is [decentDesc], showcasing the pinnacle of culinary critique.</li>
+				<li>qualityStatement(quality==4)->It is [decentDesc], offering solid insights for exotic food lovers.</li>
+				<li>qualityStatement(quality==3)->It is [functionalDesc], with reliable but uninspired recommendations.</li>
+				<li>qualityStatement(quality==2)->It is [mediocreDesc], flawed yet containing some useful tips.</li>
+				<li>qualityStatement(quality==1)->It is [poorDesc], riddled with errors but still vaguely readable.</li>
+				<li>qualityStatement(quality==0)->It is [terribleDesc], more confusing than helpful.</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective(quality==6)->masterfully written</li>
+				<li>writingQualityAdjective(quality==5)->exquisitely crafted</li>
+				<li>writingQualityAdjective(quality==4)->thoughtful and engaging</li>
+				<li>writingQualityAdjective(quality==3)->serviceable</li>
+				<li>writingQualityAdjective(quality==2)->unpolished</li>
+				<li>writingQualityAdjective(quality==1)->haphazardly assembled</li>
+				<li>writingQualityAdjective(quality==0)->chaotically composed</li>
+				<!-- Excellent descriptors -->
+				<li>excellentDesc->a masterpiece of culinary journalism</li>
+				<li>excellentDesc->an essential resource for food enthusiasts</li>
+				<li>excellentDesc->a shining example of gastronomic literature</li>
+				<li>excellentDesc->a tour de force of dining recommendations</li>
+				<!-- Decent descriptors -->
+				<li>decentDesc->a commendable effort in culinary critique</li>
+				<li>decentDesc->an informative, if uneven, guide</li>
+				<li>decentDesc->a valuable companion for cosmic travelers</li>
+				<li>decentDesc->a worthy addition to any gastronome's library</li>
+				<!-- Functional descriptors -->
+				<li>functionalDesc->a serviceable reference for hungry spacefarers</li>
+				<li>functionalDesc->a basic yet practical guide</li>
+				<li>functionalDesc->an acceptable handbook for dining exploration</li>
+				<!-- Mediocre descriptors -->
+				<li>mediocreDesc->a disappointing attempt at culinary commentary</li>
+				<li>mediocreDesc->a lackluster compilation of average insights</li>
+				<li>mediocreDesc->an underwhelming review of the cosmos’ offerings</li>
+				<!-- Poor descriptors -->
+				<li>poorDesc->a confusing, poorly executed effort</li>
+				<li>poorDesc->a frustratingly incomplete collection of reviews</li>
+				<li>poorDesc->a forgettable foray into culinary critique</li>
+				<!-- Terrible descriptors -->
+				<li>terribleDesc->an incomprehensible disaster of a guide</li>
+				<li>terribleDesc->a nonsensical and deeply flawed document</li>
+				<li>terribleDesc->a bafflingly unhelpful collection of drivel</li>
+				<!-- Date -->
+				<li>maybe_date-></li>
+				<li>maybe_date->First published [date_form].</li>
+				<li>maybe_date->Its origins trace back to [date_form].</li>
+				<li>maybe_date->The text emerged during [date_season].</li>
+				<li>date_form->in the year 5500</li>
+				<li>date_form->a few years ago</li>
+			
+				<!-- Ending -->
+				<li>ending->\n\nOnce read, this book will provide the capacity to increase the category of meals (simple to fine, etc), and then be destroyed.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

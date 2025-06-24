@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_TreatiseOfStainlessSteel_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Root structure -->
+				<li>desc->[intro]. [contextStatement] [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<li>desc->[intro] and [conceptExploration]. [writingQualitySentence]. [maybe_date][ending]</li>
+				<!-- Introductory statements -->
+				<li>intro->This [writingQualityAdjective] treatise delves into the enduring legacy of stainless steel</li>
+				<li>intro->An indispensable [bookType] exploring the properties and applications of stainless steel</li>
+				<li>intro->A [writingQualityAdjective] text chronicling the creation and utility of stainless steel</li>
+				<li>intro->A timeless [bookType] dedicated to the study of stainless steel</li>
+				<li>intro->A comprehensive [bookType] unlocking the potential of stainless steel</li>
+				<li>intro->This [writingQualityAdjective] work reveals the secrets behind crafting stainless steel</li>
+				<!-- Concept exploration -->
+				<li>conceptExploration->its resistance to corrosion and practical versatility</li>
+				<li>conceptExploration->its significance in tools, architecture, and machinery</li>
+				<li>conceptExploration->its unique ability to withstand harsh conditions</li>
+				<li>conceptExploration->the scientific principles behind its creation</li>
+				<li>conceptExploration->its transformative impact on advanced colonies</li>
+				<li>conceptExploration->its mysterious resilience and adaptability</li>
+				<li>conceptExploration->its applications in industrial and survival contexts</li>
+				<!-- Context statements -->
+				<li>contextStatement->Compiled from ancient manufacturing notes and cutting-edge discoveries, this [bookType] examines</li>
+				<li>contextStatement->Drawing from Old Earth engineering traditions, it illuminates</li>
+				<li>contextStatement->Inspired by Rim tinkering and ingenuity, it explores</li>
+				<li>contextStatement->Blending scientific rigor with practical insights, it reveals</li>
+				<li>contextStatement->Born from necessity and curiosity, this work explains</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective->masterfully detailed</li>
+				<li>writingQualityAdjective->thoroughly researched</li>
+				<li>writingQualityAdjective->engaging and insightful</li>
+				<li>writingQualityAdjective->functional but basic</li>
+				
+			
+				<li>writingQualitySentence->It is [decentDesc] [decentExtra]</li>
+	
+			
+				<!-- Decent descriptors -->
+				<li>decentDesc->a reasonable but incomplete guide</li>
+				<li>decentDesc->a basic overview for novice metallurgists</li>
+				<li>decentDesc->a serviceable introduction to stainless steel</li>
+				<li>decentExtra->that leaves room for improvement</li>
+				<li>decentExtra->with gaps in detail</li>
+			
+				<!-- Date -->
+				<li>maybe_date->Published [date_form], it remains relevant today.</li>
+				<li>maybe_date->Compiled [date_form], it reflects timeless knowledge.</li>
+				<li>maybe_date->Its origins trace back to [date_form].</li>
+				<li>date_form->recently</li>
+				<li>date_form->in a forgotten age</li>
+				<li>date_form->on the Rim</li>
+				<li>date_form->during the peak of industrial expansion</li>
+				<!-- Book Types -->
+				<li>bookType(p=3)->treatise</li>
+				<li>bookType(p=2)->manual</li>
+				<li>bookType(p=1)->guide</li>
+				<!-- Ending -->
+				<li>ending->\n\nThis book will always be of Normal quality, and will be destroyed after being read.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BookBase">
+		<defName>ABooks_SelfHelpBook</defName>
+		<label>self-help book</label>
+		<description>A self-help book filled with useless platitudes and trite clichés.</description>
+		<thingClass>AlphaBooks.Book_NotAutoReadable</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Book/ABooks_SelfHelp/ABooks_SelfHelp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Item/Book/ABooks_SelfHelp/ABooks_SelfHelp</uiIconPath>
+		<statBases>
+			<MarketValue>160</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Book">
+				<nameMaker>ABooks_SelfHelp_Namer</nameMaker>
+				<descriptionMaker>ABooks_SelfHelp_Description</descriptionMaker>
+				<ageYearsRange>100~200</ageYearsRange>
+				<openGraphic>
+					<texPath>Things/Item/Book/ABooks_SelfHelp/ABooks_SelfHelp_Open</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.7</drawSize>
+				</openGraphic>
+				<verticalGraphic>
+					<texPath>Things/Item/Book/ABooks_SelfHelp/ABooks_SelfHelp_Vertical</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<addTopAltitudeBias>true</addTopAltitudeBias>
+				</verticalGraphic>
+				<doers>
+					<li Class="AlphaBooks.BookOutcomeProperties_RandomInspiration"/>
+					<li Class="AlphaBooks.BookOutcomeProperties_ThoughtByQuality">
+						<ticks>120000</ticks>
+						<moodByQuality>
+							<li>-5</li>
+							<li>-2</li>
+							<li>1</li>
+							<li>5</li>
+							<li>10</li>
+							<li>12</li>
+							<li>15</li>
+						</moodByQuality>
+					</li>
+				</doers>
+			</li>
+		</comps>
+		<thingSetMakerTags Inherit="false">
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<modExtensions>
+			<li Class="AlphaBooks.BookDefModExtension">
+				<readResults>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_RandomInspiration</doerClass>					
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_ThoughtByQuality</doerClass>	
+						<thoughtToGive>ABooks_SelfHelpBookThought</thoughtToGive>						
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
+					</li>
+				</readResults>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

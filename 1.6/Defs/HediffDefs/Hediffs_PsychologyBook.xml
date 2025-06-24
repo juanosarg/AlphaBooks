@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>ABooks_PsychologicalInsights</defName>
+		<label>psychological insights</label>
+		<description>Reading a psychology book has made this person more mentally resilient. From normal quality and higher, part of the reader's thoughts will be nullified. From masterwork and higher, all mental breaks will be disabled.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<comps>
+			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<label>awful</label>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<MentalBreakThreshold>0.99</MentalBreakThreshold>
+				</statFactors>
+			</li>
+			<li>
+				<label>poor</label>
+				<minSeverity>0.1</minSeverity>
+				<statFactors>
+					<MentalBreakThreshold>0.95</MentalBreakThreshold>
+				</statFactors>
+			</li>
+			<li>
+				<label>normal</label>
+				<minSeverity>0.2</minSeverity>
+				<pctAllThoughtNullification>0.1</pctAllThoughtNullification>
+				<statFactors>
+					<MentalBreakThreshold>0.9</MentalBreakThreshold>
+				</statFactors>
+			</li>
+			<li>
+				<label>good</label>
+				<minSeverity>0.3</minSeverity>
+				<pctAllThoughtNullification>0.15</pctAllThoughtNullification>
+				<statFactors>
+					<MentalBreakThreshold>0.85</MentalBreakThreshold>
+				</statFactors>
+			</li>
+			<li>
+				<label>excellent</label>
+				<pctAllThoughtNullification>0.25</pctAllThoughtNullification>
+				<minSeverity>0.4</minSeverity>
+				<statFactors>
+					<MentalBreakThreshold>0.8</MentalBreakThreshold>
+				</statFactors>
+			</li>
+			<li>
+				<label>masterwork</label>
+				<minSeverity>0.5</minSeverity>
+				<blocksMentalBreaks>true</blocksMentalBreaks>	
+				<pctAllThoughtNullification>0.35</pctAllThoughtNullification>
+				<overrideMoodBase>0.95</overrideMoodBase>
+				<statFactors>
+					<MentalBreakThreshold>0.75</MentalBreakThreshold>
+				</statFactors>
+			</li>
+			<li>
+				<label>legendary</label>
+				<minSeverity>0.6</minSeverity>
+				<blocksMentalBreaks>true</blocksMentalBreaks>				
+				<pctAllThoughtNullification>0.5</pctAllThoughtNullification>
+				<overrideMoodBase>0.9</overrideMoodBase>
+				<statFactors>					
+					<MentalBreakThreshold>0.75</MentalBreakThreshold>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

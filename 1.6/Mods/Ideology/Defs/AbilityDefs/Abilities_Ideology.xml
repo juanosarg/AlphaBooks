@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef>
+		<defName>ABooks_Convert_Charges</defName>
+		<label>convert</label>
+		<description>Attempt to convert someone to the speaker's ideoligion. This will reduce the target's certainty in their own beliefs. The certainty reduction depends on the speaker's negotiation ability.</description>
+		
+		<iconPath>UI/Abilities/Convert</iconPath>
+		<warmupMoteSocialSymbol>Things/Mote/SpeechSymbols/Convert</warmupMoteSocialSymbol>
+		<warmupSound>MoralistAbility_Warmup</warmupSound>
+		<hotKey>Misc12</hotKey>
+		<charges>3</charges>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<hasExternallyHandledCooldown>true</hasExternallyHandledCooldown>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<uiOrder>1</uiOrder>
+		<showWhenDrafted>false</showWhenDrafted>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<comps>
+			<li Class="CompProperties_AbilityConvert">
+				<successMessage>{INITIATOR_labelShort} has converted {RECIPIENT_labelShort} to {IDEO}.</successMessage>
+				<failMessage>{INITIATOR_labelShort} failed to convert {RECIPIENT_labelShort}. {RECIPIENT_labelShort} was upset by the attempt, but {RECIPIENT_possessive} certainty fell from {CERTAINTYBEFORE} to {CERTAINTYAFTER}.</failMessage>
+				<failedThoughtInitiator>FailedConvertAbilityInitiator</failedThoughtInitiator>
+				<failedThoughtRecipient>FailedConvertAbilityRecipient</failedThoughtRecipient>
+				<convertPowerFactor>2</convertPowerFactor>
+				<sound>MoralistAbility_Resolve</sound>
+			</li>
+			<li Class="CompProperties_AbilityMustBeCapableOf">
+				<workTags>
+					<li>Social</li>
+				</workTags>
+			</li>
+			<li Class="CompProperties_AbilityShowTargetIdeoCertainty"/>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>False</drawAimPie>
+			<range>-1</range>
+			<warmupTime>3.0</warmupTime>
+			<targetParams>
+				<canTargetBuildings>False</canTargetBuildings>
+			
+				<neverTargetHostileFaction>True</neverTargetHostileFaction>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
+</Defs>

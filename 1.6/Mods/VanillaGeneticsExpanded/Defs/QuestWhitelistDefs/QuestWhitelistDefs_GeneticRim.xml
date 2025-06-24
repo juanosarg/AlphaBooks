@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+
+	<AlphaBooks.QuestWhitelistDef>
+		<defName>ABooks_QuestWhitelist_GeneticRim</defName>
+		<whiteListedQuests>			
+			
+			<li>GR_OpportunitySite_AbandonedLab</li>
+			
+		</whiteListedQuests>							
+	</AlphaBooks.QuestWhitelistDef>
+
+
+
+
+
+</Defs>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_InstructionManual_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+    <!-- Description -->
+    <li>desc->[intro] [contentOverview]. [quirkStatement]. [qualityStatement][ending]</li>
+    <li>desc->[intro] [contentOverview]. [quirkStatement]. [qualityStatement][ending]</li>
+
+    <!-- Introductory statements -->
+    <li>intro->This [writingQualityAdjective] [manualType] promises to guide you through</li>
+    <li>intro->A [writingQualityAdjective] [manualType] designed to simplify</li>
+    <li>intro->A [writingQualityAdjective] attempt at explaining</li>
+    <li>intro->A [writingQualityAdjective] masterpiece of convoluted instructions, covering</li>
+    
+    <!-- Content Overview -->
+    <li>contentOverview->the assembly of your modular furniture</li>
+    <li>contentOverview->the baffling process of building your newest acquisition</li>
+    <li>contentOverview->every nut, bolt, and mysterious doodad</li>
+    <li>contentOverview->how to turn a pile of wood and screws into a usable object</li>
+    <li>contentOverview->the construction of what might eventually resemble furniture</li>
+    
+  
+    <!-- Quirk Statements -->
+    <li>quirkStatement->There will always be at least one piece left over, just to keep you guessing</li>
+    <li>quirkStatement->Prepare to argue over which piece was mislabeled</li>
+    <li>quirkStatement->Includes cryptic diagrams that seem to require a degree in hieroglyphics</li>
+    <li>quirkStatement->Features a full page dedicated to tools you definitely don’t own</li>
+    <li>quirkStatement->Half the steps are mysteriously missing, but that’s part of the charm</li>
+    <li>quirkStatement->The end result may not match the picture, but it’ll hold together (probably)</li>
+    <li>quirkStatement->Somehow, all parts fit... except that one</li>
+
+    <!-- Quality Statements -->
+    <li>qualityStatement(quality==6)->It's a triumph of clarity and wit, truly the best of its kind.</li>
+    <li>qualityStatement(quality==5)->It's a solid, well-constructed guide, with only minor frustrations.</li>
+    <li>qualityStatement(quality==4)->It's a functional guide, though it may leave you scratching your head at times.</li>
+    <li>qualityStatement(quality==3)->It's a decent attempt, though occasional vagueness will slow you down.</li>
+    <li>qualityStatement(quality==2)->It's frustratingly vague, leaving much to trial and error.</li>
+    <li>qualityStatement(quality==1)->It's confusing and incomplete, but still faintly useful.</li>
+    <li>qualityStatement(quality==0)->It's a baffling mess, less helpful than a random assortment of pictures.</li>
+
+    <!-- Writing Quality -->
+    <li>writingQualityAdjective(quality==6)->brilliantly crafted</li>
+    <li>writingQualityAdjective(quality==5)->thoughtfully written</li>
+    <li>writingQualityAdjective(quality==4)->competently assembled</li>
+    <li>writingQualityAdjective(quality==3)->serviceable</li>
+    <li>writingQualityAdjective(quality==2)->rough around the edges</li>
+    <li>writingQualityAdjective(quality==1)->awkwardly written</li>
+    <li>writingQualityAdjective(quality==0)->barely coherent</li>
+
+    <!-- Manual Type -->
+    <li>manualType->assembly manual</li>
+    <li>manualType->instruction guide</li>
+    <li>manualType->DIY booklet</li>
+    <li>manualType->how-to manual</li>
+
+    <!-- Ending -->
+    <li>ending->\n\nOnce read, this manual will improve construction speed for basic furniture, and then crumble into loose screws.</li>
+</rulesStrings>
+
+		</rulePack>
+	</RulePackDef>
+</Defs>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>ABooks_RestaurantGuide_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title->Michelin Guide - [year] Edition: [subtitle]</li>
+				
+				<li>subtitle->Best Restaurants</li>
+				<li>subtitle->Top Dining Spots</li>
+				<li>subtitle->Where to Eat</li>
+				<li>subtitle->3-Star Approved</li>
+				<li>subtitle->Fine Dining Across the Rim</li>
+				<li>subtitle->Top Culinary Havens</li>
+				<li>subtitle->Stellar Eateries Reviewed</li>
+				<li>subtitle->Guide to Rim Cuisine</li>
+				<li>subtitle->Eating Well on the Rim</li>
+				<li>subtitle->Colonists’ Picks</li>
+			
+				<li>year->5500</li>
+				<li>year->5499</li>
+				<li>year->5498</li>
+				<li>year->5497</li>
+				<li>year->5496</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

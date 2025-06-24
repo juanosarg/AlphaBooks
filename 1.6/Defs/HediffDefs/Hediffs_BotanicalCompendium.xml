@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<HediffDef>
+		<defName>ABooks_BotanicalCompendium</defName>
+		<label>botanical expertise</label>
+		<description>Reading a botanical compendium has increased the botanical abilities of this person.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<comps>
+			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<label>awful</label>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<PlantWorkSpeed>1.01</PlantWorkSpeed>
+					<PlantHarvestYield>1.01</PlantHarvestYield>				
+					<DrugHarvestYield>1.01</DrugHarvestYield>
+				
+					
+				</statFactors>
+			</li>
+			<li>
+				<label>poor</label>
+				<minSeverity>0.1</minSeverity>
+				<statFactors>
+					<PlantWorkSpeed>1.02</PlantWorkSpeed>
+					<PlantHarvestYield>1.02</PlantHarvestYield>				
+					<DrugHarvestYield>1.02</DrugHarvestYield>
+				
+				</statFactors>
+			</li>
+			<li>
+				<label>normal</label>
+				<minSeverity>0.2</minSeverity>
+				<statFactors>
+					<PlantWorkSpeed>1.05</PlantWorkSpeed>
+					<PlantHarvestYield>1.05</PlantHarvestYield>				
+					<DrugHarvestYield>1.05</DrugHarvestYield>
+				
+				</statFactors>
+			</li>
+			<li>
+				<label>good</label>
+				<minSeverity>0.3</minSeverity>
+				<statFactors>
+					<PlantWorkSpeed>1.15</PlantWorkSpeed>
+					<PlantHarvestYield>1.15</PlantHarvestYield>				
+					<DrugHarvestYield>1.15</DrugHarvestYield>
+				</statFactors>
+			</li>
+			<li>
+				<label>excellent</label>
+				<minSeverity>0.4</minSeverity>
+				<statFactors>
+					<PlantWorkSpeed>1.3</PlantWorkSpeed>
+					<PlantHarvestYield>1.3</PlantHarvestYield>				
+					<DrugHarvestYield>1.3</DrugHarvestYield>
+				</statFactors>
+			</li>
+			<li>
+				<label>masterwork</label>
+				<minSeverity>0.5</minSeverity>
+				<statFactors>
+					<PlantWorkSpeed>1.4</PlantWorkSpeed>
+					<PlantHarvestYield>1.4</PlantHarvestYield>				
+					<DrugHarvestYield>1.4</DrugHarvestYield>
+				</statFactors>
+			</li>
+			<li>
+				<label>legendary</label>
+				<minSeverity>0.6</minSeverity>
+				<statFactors>
+					<PlantWorkSpeed>1.5</PlantWorkSpeed>
+					<PlantHarvestYield>1.5</PlantHarvestYield>				
+					<DrugHarvestYield>1.5</DrugHarvestYield>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>ABooks_ReligiousFervor</defName>
+		<label>religious fervor</label>
+		<description>Reading a religious text has strengthened the ideological conviction of this person.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<comps>
+			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
+				<disappearsAfterTicks>120000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<label>awful</label>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<CertaintyLossFactor>0.99</CertaintyLossFactor>
+					<SocialIdeoSpreadFrequencyFactor>1.05</SocialIdeoSpreadFrequencyFactor>
+					<ConversionPower>1.01</ConversionPower>
+				</statFactors>
+			</li>
+			<li>
+				<label>poor</label>
+				<minSeverity>0.1</minSeverity>
+				<statFactors>
+					<CertaintyLossFactor>0.9</CertaintyLossFactor>
+					<SocialIdeoSpreadFrequencyFactor>1.2</SocialIdeoSpreadFrequencyFactor>
+					<ConversionPower>1.05</ConversionPower>
+				</statFactors>
+			</li>
+			<li>
+				<label>normal</label>
+				<minSeverity>0.2</minSeverity>
+				<statFactors>
+					<CertaintyLossFactor>0.8</CertaintyLossFactor>
+					<SocialIdeoSpreadFrequencyFactor>1.4</SocialIdeoSpreadFrequencyFactor>
+					<ConversionPower>1.1</ConversionPower>
+				</statFactors>
+			</li>
+			<li>
+				<label>good</label>
+				<minSeverity>0.3</minSeverity>
+				<statFactors>
+					<CertaintyLossFactor>0.65</CertaintyLossFactor>
+					<SocialIdeoSpreadFrequencyFactor>1.6</SocialIdeoSpreadFrequencyFactor>
+					<ConversionPower>1.2</ConversionPower>
+				</statFactors>
+			</li>
+			<li>
+				<label>excellent</label>
+				<minSeverity>0.4</minSeverity>
+				<statFactors>
+					<CertaintyLossFactor>0.5</CertaintyLossFactor>
+					<SocialIdeoSpreadFrequencyFactor>1.75</SocialIdeoSpreadFrequencyFactor>
+					<ConversionPower>1.3</ConversionPower>
+				</statFactors>
+			</li>
+			<li>
+				<label>masterwork</label>
+				<minSeverity>0.5</minSeverity>
+				<statFactors>
+					<CertaintyLossFactor>0.4</CertaintyLossFactor>
+					<SocialIdeoSpreadFrequencyFactor>2</SocialIdeoSpreadFrequencyFactor>
+					<ConversionPower>1.4</ConversionPower>
+				</statFactors>
+			</li>
+			<li>
+				<label>legendary</label>
+				<minSeverity>0.6</minSeverity>
+				<statFactors>
+					<CertaintyLossFactor>0.25</CertaintyLossFactor>
+					<SocialIdeoSpreadFrequencyFactor>3</SocialIdeoSpreadFrequencyFactor>
+					<ConversionPower>1.5</ConversionPower>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

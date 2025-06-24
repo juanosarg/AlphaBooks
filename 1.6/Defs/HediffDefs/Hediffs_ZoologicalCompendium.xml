@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<HediffDef>
+		<defName>ABooks_ZoologicalCompendium</defName>
+		<label>biological expertise</label>
+		<description>Reading a zoological compendium has increased the animal handling abilities of this person.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<comps>
+			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
+				<disappearsAfterTicks>180000</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<label>awful</label>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<TameAnimalChance>1.02</TameAnimalChance>
+					<TrainAnimalChance>1.02</TrainAnimalChance>				
+					<AnimalGatherSpeed>1.05</AnimalGatherSpeed>
+					<AnimalGatherYield>1.05</AnimalGatherYield>
+				
+					
+				</statFactors>
+			</li>
+			<li>
+				<label>poor</label>
+				<minSeverity>0.1</minSeverity>
+				<statFactors>
+					<TameAnimalChance>1.05</TameAnimalChance>
+					<TrainAnimalChance>1.05</TrainAnimalChance>					
+					<AnimalGatherSpeed>1.1</AnimalGatherSpeed>
+					<AnimalGatherYield>1.1</AnimalGatherYield>
+				
+				</statFactors>
+			</li>
+			<li>
+				<label>normal</label>
+				<minSeverity>0.2</minSeverity>
+				<statFactors>
+					<TameAnimalChance>1.15</TameAnimalChance>
+					<TrainAnimalChance>1.15</TrainAnimalChance>				
+					<AnimalGatherSpeed>1.15</AnimalGatherSpeed>
+					<AnimalGatherYield>1.15</AnimalGatherYield>
+				
+				</statFactors>
+			</li>
+			<li>
+				<label>good</label>
+				<minSeverity>0.3</minSeverity>
+				<statFactors>
+					<TameAnimalChance>1.2</TameAnimalChance>
+					<TrainAnimalChance>1.2</TrainAnimalChance>				
+					<AnimalGatherSpeed>1.2</AnimalGatherSpeed>
+					<AnimalGatherYield>1.25</AnimalGatherYield>
+					<HuntingStealth>1.1</HuntingStealth>
+				</statFactors>
+			</li>
+			<li>
+				<label>excellent</label>
+				<minSeverity>0.4</minSeverity>
+				<statFactors>
+					<TameAnimalChance>1.3</TameAnimalChance>
+					<TrainAnimalChance>1.3</TrainAnimalChance>
+					<BondAnimalChanceFactor>1.25</BondAnimalChanceFactor>
+					<AnimalGatherSpeed>1.5</AnimalGatherSpeed>
+					<AnimalGatherYield>1.4</AnimalGatherYield>
+					<HuntingStealth>1.25</HuntingStealth>
+				</statFactors>
+			</li>
+			<li>
+				<label>masterwork</label>
+				<minSeverity>0.5</minSeverity>
+				<statFactors>
+					<TameAnimalChance>1.4</TameAnimalChance>
+					<TrainAnimalChance>1.4</TrainAnimalChance>
+					<BondAnimalChanceFactor>1.5</BondAnimalChanceFactor>
+					<AnimalGatherSpeed>1.75</AnimalGatherSpeed>
+					<AnimalGatherYield>1.5</AnimalGatherYield>
+					<HuntingStealth>1.35</HuntingStealth>
+				</statFactors>
+			</li>
+			<li>
+				<label>legendary</label>
+				<minSeverity>0.6</minSeverity>
+				<statFactors>
+					<TameAnimalChance>1.5</TameAnimalChance>
+					<TrainAnimalChance>1.5</TrainAnimalChance>
+					<BondAnimalChanceFactor>1.75</BondAnimalChanceFactor>
+					<AnimalGatherSpeed>2</AnimalGatherSpeed>
+					<AnimalGatherYield>1.75</AnimalGatherYield>
+					<HuntingStealth>1.5</HuntingStealth>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

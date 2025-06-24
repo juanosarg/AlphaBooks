@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_PoliticalPamphlet_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Base Structure -->
+				<li>title->[mainTitle]: [subtitle]</li>
+				<li>title->[mainTitle]!</li>
+				<li>title->[mainTitle]: [topic]</li>
+				<li>title->[mainTitle] and the [issue]</li>
+				<li>title->[mainTitle]: A Call for [action]</li>
+				<li>title->[mainTitle]: The Case for [ideal]</li>
+				<li>title->[action] [mainTitle]</li>
+				<!-- Titles -->
+				<li>mainTitle->The People's Voice</li>
+				<li>mainTitle->The New Dawn</li>
+				<li>mainTitle->Liberty Now</li>
+				<li>mainTitle->The Revolution</li>
+				<li>mainTitle->The Truth</li>
+				<li>mainTitle->Power to the People</li>
+				<li>mainTitle->United for Justice</li>
+				<li>mainTitle->Breaking the Chains</li>
+				<li>mainTitle->For the Common Good</li>
+				<li>mainTitle->A Better Tomorrow</li>
+				<li>mainTitle->The Fight for Freedom</li>
+				<li>mainTitle->Progress and Equality</li>
+				<li>mainTitle->Reclaiming Our Future</li>
+				<li>mainTitle->Equality for All</li>
+				<!-- Subtitles -->
+				<li>subtitle->Voices from the [subject_primary]</li>
+				<li>subtitle->A Manifesto for [ideal]</li>
+				<li>subtitle->A Guide to [change]</li>
+				<li>subtitle->Defying the Status Quo</li>
+				<li>subtitle->A Plan for [topic]</li>
+				<li>subtitle->A New [ideal]</li>
+				<li>subtitle->Challenging [problem]</li>
+				<li>subtitle->A Blueprint for [action]</li>
+				<li>subtitle->The Path Forward</li>
+				<li>subtitle->In Defense of [ideal]</li>
+				<li>subtitle->A Call for [change]</li>
+				<li>subtitle->Ending [issue]</li>
+				<!-- Actions -->
+				<li>action->Demanding Change</li>
+				<li>action->Rising Up</li>
+				<li>action->Taking Action</li>
+				<li>action->Reclaiming Power</li>
+				<li>action->Challenging Injustice</li>
+				<li>action->Building Unity</li>
+				<li>action->Fighting Back</li>
+				<li>action->Standing Strong</li>
+				<li>action->Breaking Free</li>
+				<li>action->Demanding Equality</li>
+				<li>action->Envisioning Justice</li>
+				<!-- Topics -->
+				<li>topic->Justice and Freedom</li>
+				<li>topic->Economic Equality</li>
+				<li>topic->Social Reforms</li>
+				<li>topic->Worker's Rights</li>
+				<li>topic->The Environment</li>
+				<li>topic->The Fight Against Corruption</li>
+				<li>topic->Civil Liberties</li>
+				<li>topic->Education for All</li>
+				<li>topic->Healthcare Rights</li>
+				<li>topic->The Power of Community</li>
+				<li>topic->Overcoming Oppression</li>
+				<!-- Problems -->
+				<li>problem->Corruption</li>
+				<li>problem->Oppression</li>
+				<li>problem->Inequality</li>
+				<li>problem->Tyranny</li>
+				<li>problem->Greed</li>
+				<li>problem->Poverty</li>
+				<li>problem->Environmental Destruction</li>
+				<li>problem->Exploitation</li>
+				<li>problem->Ignorance</li>
+				<!-- Issues -->
+				<li>issue->Systemic Injustice</li>
+				<li>issue->Inequity</li>
+				<li>issue->Overreach of Power</li>
+				<li>issue->Environmental Degradation</li>
+				<li>issue->Economic Disparity</li>
+				<li>issue->Social Division</li>
+				<li>issue->The Cost of Apathy</li>
+				<li>issue->The Silence of the Masses</li>
+				<!-- Ideals -->
+				<li>ideal->Equality</li>
+				<li>ideal->Freedom</li>
+				<li>ideal->Justice</li>
+				<li>ideal->Solidarity</li>
+				<li>ideal->Prosperity</li>
+				<li>ideal->Sustainability</li>
+				<li>ideal->Empowerment</li>
+				<li>ideal->Unity</li>
+				<li>ideal->Compassion</li>
+				<!-- Changes -->
+				<li>change->Reform</li>
+				<li>change->Revolution</li>
+				<li>change->Equality</li>
+				<li>change->Unity</li>
+				<li>change->Freedom</li>
+				<li>change->Sustainability</li>
+				<li>change->Prosperity</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

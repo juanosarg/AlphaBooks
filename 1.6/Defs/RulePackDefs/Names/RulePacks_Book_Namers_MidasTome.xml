@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_MidasTome_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>title->[titleBasic]</li>
+				<li>title(p=2)->[titleAuthored]</li>
+				<!-- Basic -->
+				<li>titleBasic(p=6)->The Midas Tome</li>
+				<li>titleBasic(p=6)->Archotech Secrets of Gold</li>
+				<li>titleBasic->Transmutation Mastery: The Midas Touch</li>
+				<li>titleBasic->The Alchemy of Gold: An Archotech Guide</li>
+				<li>titleBasic->The Golden Touch: An Archotech Tome</li>
+				<li>titleBasic->Turning Craft to Gold: The Midas Tome</li>
+				<li>titleBasic->The Archotech Midas Codex</li>
+				<li>titleBasic->Forging Wealth: Secrets of the Midas Tome</li>
+				<!-- Authored -->
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Guide to the Midas Touch</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Archotech Codex of Gold</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Writings on the Midas Tome</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Manual of Gold Transmutation</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Studies in the Golden Touch</li>
+				<li>titleAuthored->[ANYPAWN_nameIndef]’s Secrets of Archotech Alchemy</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

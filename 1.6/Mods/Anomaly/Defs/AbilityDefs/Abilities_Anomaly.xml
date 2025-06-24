@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>ABooks_UnnaturalHealing_Charges</defName>
+		<label>unnatural healing</label>
+		<description>Use dark psychic influence to heal someone. The process will stop bleeding, restore blood loss, and can even heal significant injuries. However, it may also have unexpected side effects.</description>
+		<iconPath>UI/Abilities/UnnaturalHealing</iconPath>
+		<cooldownTicksRange>1</cooldownTicksRange>
+		<!-- 6 days -->
+		<showPsycastEffects>false</showPsycastEffects>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+		<warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+		<warmupSound>AnomalyAbilityWarmup</warmupSound>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>-1</range>
+			<warmupTime>4.5</warmupTime>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_UnnaturalHealing"/>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>UnnaturalHealing</fleckDef>
+			</li>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+	</AbilityDef>
+	<AbilityDef Name="ShapeFlesh">
+		<defName>ABooks_ShapeFlesh_Charges</defName>
+		<label>shape flesh</label>
+		<description>Induce a dark archotech to reconfigure a corpse into a horrendous fleshbeast. The fleshbeast will be hostile to all humans, including the one who created it.</description>
+		<iconPath>UI/Abilities/ShapeFlesh</iconPath>
+		<cooldownTicksRange>1</cooldownTicksRange>
+		<showPsycastEffects>false</showPsycastEffects>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+		<warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+		<warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+		<warmupSound>AnomalyAbilityWarmup</warmupSound>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>2</warmupTime>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetCorpses>true</canTargetCorpses>
+				<onlyTargetCorpses>true</onlyTargetCorpses>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_FleshbeastFromCorpse"/>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>ABooks_TransmuteSteel_Charges</defName>
+		<label>transmute steel</label>
+		<description>Reconfigure steel at the atomic level, turning it into a random valuable material. Can target a stack of steel or a steel slag chunk.</description>
+		<iconPath>UI/Abilities/TransmuteSteel</iconPath>
+		<cooldownTicksRange>1</cooldownTicksRange>
+		<showPsycastEffects>false</showPsycastEffects>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+		<warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+		<warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+		<warmupSound>AnomalyAbilityWarmup</warmupSound>
+		<useAverageTargetPositionForWarmupEffecter>true</useAverageTargetPositionForWarmupEffecter>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<warmupTime>2</warmupTime>
+			<range>-1</range>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>true</canTargetBuildings>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetItems>true</canTargetItems>
+				<thingCategory>Item</thingCategory>
+				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_Transmute">
+				<failedMessage>Must target steel, steel slag chunks, steel buildings, or steel items.</failedMessage>
+				<elementRatios>
+					<li>
+						<sourceStuff>Steel</sourceStuff>
+						<ratio>1</ratio>
+					</li>
+					<li>
+						<sourceStuff>ChunkSlagSteel</sourceStuff>
+						<ratio>15</ratio>
+					</li>
+				</elementRatios>
+				<outcomeStuff>
+					<li>Plasteel</li>
+					<li>Gold</li>
+					<li>Uranium</li>
+					<li>Bioferrite</li>
+				</outcomeStuff>
+				<outcomeItems>
+					<li>Plasteel</li>
+					<li>Gold</li>
+					<li>Uranium</li>
+					<li>Bioferrite</li>
+					<li>Meat_Twisted</li>
+				</outcomeItems>
+			</li>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>ABooks_PsychicSlaughter_Charges</defName>
+		<label>psychic slaughter</label>
+		<description>Use dark psychic power to induce chaotic reconfiguration of flesh. This kills a flesh creature in seconds and converts its body into a pile of twisted flesh.</description>
+		<iconPath>UI/Abilities/Slaughter</iconPath>
+		<cooldownTicksRange>1</cooldownTicksRange>
+		<showPsycastEffects>false</showPsycastEffects>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<moteOffsetAmountTowardsTarget>0.5</moteOffsetAmountTowardsTarget>
+		<warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+		<warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+		<warmupSound>AnomalyAbilityWarmup</warmupSound>
+		<writeCombatLog>true</writeCombatLog>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>2</warmupTime>
+			<range>4.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+			<targetParams>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_PsychicSlaughter"/>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>ABooks_ReleaseDeadlifeDust_Charges</defName>
+		<label>release deadlife dust</label>
+		<description>Release a cloud of dust-like substance that will settle on nearby corpses and raise them as shamblers. The shamblers will only attack your enemies. Deadlife dust is made of nano-scale archites that penetrate and reanimate dead tissue at the cellular level.</description>
+		<iconPath>UI/Abilities/ReleaseDeadlifeDust</iconPath>
+		<cooldownTicksRange>1</cooldownTicksRange>
+		<showPsycastEffects>false</showPsycastEffects>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<hotKey>Misc1</hotKey>
+		<hostile>false</hostile>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<label>release deadlife dust</label>
+			<drawAimPie>false</drawAimPie>
+			<warmupTime>0.5</warmupTime>
+			<violent>false</violent>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+			<soundCast>DeadlifeRelease</soundCast>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityReleaseGas">
+				<gasType>DeadlifeDust</gasType>
+				<cellsToFill>15</cellsToFill>
+			</li>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>ABooks_CorrosiveSpray_Charges</defName>
+		<label>corrosive spray</label>
+		<description>Spray acid over a short distance at high velocity.</description>
+		<iconPath>UI/Abilities/AcidSpray</iconPath>
+		<cooldownTicksRange>1</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<displayOrder>300</displayOrder>
+		<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+		<warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>11.9</range>
+			<warmupTime>0.25</warmupTime>
+			<soundCast>AcidSpray_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilitySprayLiquid">
+				<projectileDef>Proj_CorrosiveFluid</projectileDef>
+				<numCellsToHit>9</numCellsToHit>
+				<sprayEffecter>AcidSpray_Directional</sprayEffecter>
+			</li>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>ABooks_MetalbloodInjection_Charges</defName>
+		<label>metalblood injection</label>
+		<description>Release metalblood serum into the bloodstream, reducing incoming damage for a short period of time.</description>
+		<iconPath>UI/Abilities/MetalbloodInjection</iconPath>
+		<cooldownTicksRange/>
+		<hostile>false</hostile>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<targetRequired>false</targetRequired>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<statBases>
+			<Ability_Duration>40</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+			<soundCast>Pawn_Ghoul_Frenzy</soundCast>
+			<targetable>false</targetable>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>Metalblood</hediffDef>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>ABooks_VoidTerror_Charges</defName>
+		<label>void terror</label>
+		<description>Psychically induce terrifying hallucinations, causing a person to flee in terror.</description>
+		<iconPath>UI/Abilities/VoidTerror</iconPath>
+		<cooldownTicksRange>1</cooldownTicksRange>
+		<!-- 3 hours -->
+		<warmupEffecter>HoraxianSpellDark_Warmup</warmupEffecter>
+		<cooldownPerCharge>true</cooldownPerCharge>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<range>31.9</range>
+			<drawAimPie>true</drawAimPie>
+			<requireLineOfSight>true</requireLineOfSight>
+			<soundCast>VoidTerrorCast</soundCast>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetSelf>false</canTargetSelf>
+				
+				<neverTargetIncapacitated>true</neverTargetIncapacitated>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityGiveMentalState">
+				<compClass>CompAbilityEffect_GiveMentalState</compClass>
+				<stateDef>TerrifyingHallucinations</stateDef>
+				<goodwillImpact>-25</goodwillImpact>
+				<forced>true</forced>
+			</li>
+			<li Class="CompProperties_AbilityConnectingFleckLine">
+				<fleckDef>PsycastPsychicLine</fleckDef>
+			</li>
+			<li Class="CompProperties_AbilityEffecterOnTarget">
+				<effecterDef>VoidTerror_Target</effecterDef>
+			</li>
+			<li Class="AlphaBooks.CompProperties_DeleteWhenZeroCharges"/>
+		</comps>
+	</AbilityDef>
+</Defs>

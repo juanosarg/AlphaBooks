@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_AberrantGrimoire_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>title->[adjective] [noun]</li>
+				<li>title->[noun] of [mysticTheme]</li>
+				<li>title->[arcaneDescriptor] [grimoire]</li>
+				<li>title->The [grimoire] of [anomaly]</li>
+				<!-- Adjectives -->
+				<li>adjective->Aberrant</li>
+				<li>adjective->Unknowable</li>
+				<li>adjective->Twisted</li>
+				<li>adjective->Eldritch</li>
+				<li>adjective->Corrupted</li>
+				<li>adjective->Otherworldly</li>
+				<li>adjective->Fractured</li>
+				<li>adjective->Profane</li>
+				<!-- Nouns -->
+				<li>noun->Codex</li>
+				<li>noun->Tome</li>
+				<li>noun->Scripture</li>
+				<li>noun->Treatise</li>
+				<li>noun->Scroll</li>
+				<li>noun->Ledger</li>
+				<li>noun->Record</li>
+				<li>noun->Writ</li>
+				<!-- Mystic Themes -->
+				<li>mysticTheme->Forbidden Knowledge</li>
+				<li>mysticTheme->Ritual Secrets</li>
+				<li>mysticTheme->Shattered Realms</li>
+				<li>mysticTheme->Warped Souls</li>
+				<li>mysticTheme->Lost Dimensions</li>
+				<li>mysticTheme->Eternal Silence</li>
+				<li>mysticTheme->Fractured Anomalies</li>
+				<!-- Arcane Descriptors -->
+				<li>arcaneDescriptor->Shrouded</li>
+				<li>arcaneDescriptor->Forbidden</li>
+				<li>arcaneDescriptor->Accursed</li>
+				<li>arcaneDescriptor->Blighted</li>
+				<li>arcaneDescriptor->Enigmatic</li>
+				<li>arcaneDescriptor->Veiled</li>
+				<li>arcaneDescriptor->Unseen</li>
+				<li>arcaneDescriptor->Warped</li>
+				<!-- Grimoire Titles -->
+				<li>grimoire->Grimoire</li>
+				<li>grimoire->Manuscript</li>
+				<li>grimoire->Compendium</li>
+				<li>grimoire->Text</li>
+				<li>grimoire->Collection</li>
+				<li>grimoire->Chronicle</li>
+				<li>grimoire->Archive</li>
+				<!-- Anomalies -->
+				<li>anomaly->the Rift</li>
+				<li>anomaly->the Void</li>
+				<li>anomaly->the Other Side</li>
+				<li>anomaly->Ethereal Worlds</li>
+				<li>anomaly->the Lost Plane</li>
+				<li>anomaly->Unending Chaos</li>
+				<li>anomaly->the Forgotten Wastes</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

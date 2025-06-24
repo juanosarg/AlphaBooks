@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>ABooks_DurathreadTechniques</defName>
+		<label>durathread mastery</label>
+		<description>Perusing a folder of durathread techniques has unlocked durathread as a material for this person, enabling its crafting and use in construction and crafting projects. Anything created out of cloth by them will from now on be made with durathread instead, which has better qualities.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<comps>
+			
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			
+		</comps>
+		<stages>
+			<li>
+				
+			</li>
+			
+		</stages>
+	</HediffDef>
+</Defs>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_ArmyManual_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			
+				<rulesStrings>
+					<li>title->[descriptor] [category]: [specialDetail]</li>
+					<li>title->[category] of [specialDetail]</li>
+					<li>title->[descriptor] [category]</li>
+					<li>descriptor->Comprehensive</li>
+					<li>descriptor->Advanced</li>
+					<li>descriptor->Tactical</li>
+					<li>descriptor->Essential</li>
+					<li>descriptor->Field</li>
+					<li>descriptor->Strategic</li>
+					<li>descriptor->Operational</li>
+					<li>category->Army Manual</li>
+					<li>category->Field Guide</li>
+					<li>category->Military Handbook</li>
+					<li>category->Tactics Compendium</li>
+					<li>category->Warfare Codex</li>
+					<li>specialDetail->Modern Combat</li>
+					<li>specialDetail->the Rim’s Warfare</li>
+					<li>specialDetail->Battlefield Strategies</li>
+					<li>specialDetail->Survival and Engagement</li>
+					<li>specialDetail->Combined Arms</li>
+					<li>specialDetail->Victory Through Preparation</li>
+					<li>specialDetail->the Art of War</li>
+				</rulesStrings>
+		
+		</rulePack>
+	</RulePackDef>
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+
+	<AlphaBooks.ChargeAbilityDef>
+		<defName>ABooks_ChargeAbilities</defName>
+		<chargeAbilities>			
+			
+			<li>ABooks_GreaterFireSpew_Charges</li>
+			<li>ABooks_SharpshooterCommand_Charges</li>
+			<li>ABooks_Cornucopia_Charges</li>
+			
+		</chargeAbilities>							
+	</AlphaBooks.ChargeAbilityDef>
+
+
+
+
+
+</Defs>

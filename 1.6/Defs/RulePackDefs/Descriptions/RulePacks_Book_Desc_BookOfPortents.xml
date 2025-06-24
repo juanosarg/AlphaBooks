@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_BookOfPortents_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>desc->[excerpt]\n\n[qualityStatement][ending]</li>
+				<li>desc->[excerpt]\n\n[writingQualitySentence][ending]</li>
+				<!-- Excerpts -->
+				<li>excerpt->"Behold, O seeker, the [randAstralDescriptor] dance of the heavens, where the [astralSign] foretells the coming of [mysticEvent]."</li>
+				<li>excerpt->"Within these hallowed pages lies the truth of the [randAstralDescriptor] firmament, where [celestialBeing] weaves the tapestry of fate."</li>
+				<li>excerpt->"Mark this: [astralSign] rises as [celestialBeing] whispers secrets only the bold dare to grasp."</li>
+				<li>excerpt->"Writ in [randMaterial], this tome calls forth [mysticEvent], casting shadows and light in equal measure."</li>
+				<li>excerpt->"Through the veil of the [randAstralDescriptor] night, the [celestialPhenomenon] guides the worthy toward enlightenment and [mysticEvent]."</li>
+				<li>excerpt->"Dare ye trust the portents of [astralSign]? For the [celestialPhenomenon] carries whispers of [mysticEvent] to those who seek the [randAstralDescriptor] truth."</li>
+				<!-- Quality Statements -->
+				<li>qualityStatement(quality==6)->The tome exudes an aura of divine clarity, rendering its prophecies undeniable.</li>
+				<li>qualityStatement(quality==5)->Its foretellings, while cryptic, resonate with undeniable power and wisdom.</li>
+				<li>qualityStatement(quality==4)->Though veiled in mystic riddles, the book’s prophecies hold a curious charm.</li>
+				<li>qualityStatement(quality==3)->Its omens, though eccentric, offer intriguing glimpses into celestial truths.</li>
+				<li>qualityStatement(quality==2)->Clouded by ramblings, the prophecies waver between insight and folly.</li>
+				<li>qualityStatement(quality==1)->A baffling jumble of absurdity, its "portents" inspire little but confusion.</li>
+				<li>qualityStatement(quality==0)->An incoherent mess, its so-called "portents" are laughable at best.</li>
+				<!-- Writing Quality Sentences -->
+				<li>writingQualitySentence(quality==6)->A masterful blend of poetic mysticism and prophetic authority.</li>
+				<li>writingQualitySentence(quality==5)->A captivating exploration of cosmic mysteries, deftly woven together.</li>
+				<li>writingQualitySentence(quality==4)->An engaging, if occasionally obtuse, narrative of celestial lore.</li>
+				<li>writingQualitySentence(quality==3)->A serviceable collection of musings on the heavens, if overly ornate.</li>
+				<li>writingQualitySentence(quality==2)->Unpolished and uneven, but faint sparks of insight persist.</li>
+				<li>writingQualitySentence(quality==1)->Riddled with verbosity and confusion, it struggles to inspire.</li>
+				<li>writingQualitySentence(quality==0)->A chaotic and unintelligible diatribe of celestial nonsense.</li>
+				<!-- Endings -->
+				<li>ending->\n\nUpon reading, this book will trigger a random astronomical incident and inspire awe, granting a mood boost proportional to its quality.</li>
+				<!-- Random Astral Descriptors -->
+				<li>randAstralDescriptor->shimmering</li>
+				<li>randAstralDescriptor->enigmatic</li>
+				<li>randAstralDescriptor->ethereal</li>
+				<li>randAstralDescriptor->ancient</li>
+				<li>randAstralDescriptor->luminescent</li>
+				<li>randAstralDescriptor->celestial</li>
+				<li>randAstralDescriptor->esoteric</li>
+				<!-- Astral Signs -->
+				<li>astralSign->Ecliptic Wyrm</li>
+				<li>astralSign->Starward Serpent</li>
+				<li>astralSign->Void's Herald</li>
+				<li>astralSign->Luminous Harbinger</li>
+				<li>astralSign->Comet of Destiny</li>
+				<!-- Mystic Events -->
+				<li>mysticEvent->great awakenings</li>
+				<li>mysticEvent->chaos and order intertwined</li>
+				<li>mysticEvent->the illumination of truth</li>
+				<li>mysticEvent->a herald of cosmic change</li>
+				<li>mysticEvent->revelations beyond mortal grasp</li>
+				<!-- Celestial Beings -->
+				<li>celestialBeing->the Starforged Seer</li>
+				<li>celestialBeing->the Cosmic Weaver</li>
+				<li>celestialBeing->the Luminary of Ages</li>
+				<li>celestialBeing->the Voidwatcher</li>
+				<li>celestialBeing->the Stellar Oracle</li>
+				<!-- Celestial Phenomena -->
+				<li>celestialPhenomenon->auroras</li>
+				<li>celestialPhenomenon->eclipses</li>
+				<li>celestialPhenomenon->meteoric showers</li>
+				<li>celestialPhenomenon->solar flares</li>
+				<li>celestialPhenomenon->falling stars</li>
+				<!-- Materials -->
+				<li>randMaterial->stardust ink</li>
+				<li>randMaterial->crystalline parchment</li>
+				<li>randMaterial->voidsteel</li>
+				<li>randMaterial->auric vellum</li>
+				<li>randMaterial->lunar bindings</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

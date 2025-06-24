@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_InstructionManual_Namer</defName>
+		<include>
+			<li>ArtNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<!-- Roots -->
+				<li>title->[manualAdjective] [manualType]</li>
+				<!-- Manual adjectives -->
+				<li>manualAdjective->Simple</li>
+				<li>manualAdjective->Efficient</li>
+				<li>manualAdjective->Compact</li>
+				<li>manualAdjective->User-friendly</li>
+				<li>manualAdjective->Minimalist</li>
+				<li>manualAdjective->Quick-start</li>
+				<li>manualAdjective->Overcomplicated</li>
+				<li>manualAdjective->Intuitive</li>
+				<!-- Manual types -->
+				<li>manualType->Instruction Manual</li>
+				<li>manualType->Assembly Guide</li>
+				<li>manualType->Setup Sheet</li>
+				<li>manualType->Build-It-Yourself Pamphlet</li>
+				<li>manualType->How-To Book</li>
+				<li>manualType->Step-by-Step Guide</li>
+				<li>manualType->DIY Manual</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

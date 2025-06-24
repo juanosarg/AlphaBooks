@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ABooks_MidasTome_Description</defName>
+		<include>
+			<li>ArtDescriptionUtility_Global</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>desc->[intro], [contentOverview]. [quirkStatement]. [qualityStatement][ending]</li>
+				<!-- Introductory statements -->
+				<li>intro->This [writingQualityAdjective] [bookType] unveils the secrets of Archotech gold transmutation</li>
+				<li>intro->A [writingQualityAdjective] tome detailing the enigmatic process of converting matter into gold</li>
+				<li>intro->A [writingQualityAdjective] work on Archotech alchemy exploring the modern Philosophy Stone</li>
+				<li>intro->This [writingQualityAdjective] text promises mastery over the fabled Midas Touch</li>
+				<!-- Content Overview -->
+				<li>contentOverview->a method to transform all finished crafts and structures into pure gold</li>
+				<li>contentOverview->the art of turning mundane materials into gleaming wealth</li>
+				<li>contentOverview->a step-by-step guide to achieving unlimited riches through Archotech power</li>
+				<li>contentOverview->the secrets of manipulating matter to yield endless gold</li>
+				<!-- Quirk Statements -->
+				<li>quirkStatement->Beware, however, for the power to transmute can turn even the simplest tools into ruinously heavy treasure</li>
+				<li>quirkStatement->Users report an unsettling tendency to view all items as “future gold”</li>
+				<li>quirkStatement->Some claim the tome whispers warnings against excessive greed during transmutation</li>
+				<li>quirkStatement->Readers often describe an overwhelming urge to gild everything, including the colony dog</li>
+				<!-- Quality Statements -->
+				<li>qualityStatement(quality==6)->It is [excellentDesc], a masterpiece of Archotech literature.</li>
+				<li>qualityStatement(quality==5)->It is [decentDesc], offering profound insights into transmutation.</li>
+				<li>qualityStatement(quality==4)->It is [functionalDesc], providing practical instructions despite some mystique.</li>
+				<li>qualityStatement(quality==3)->It is [mediocreDesc], with cryptic passages that confound readers.</li>
+				<li>qualityStatement(quality==2)->It is [poorDesc], filled with fragmented theories and half-finished diagrams.</li>
+				<li>qualityStatement(quality==1)->It is [terribleDesc], an incoherent jumble of arcane symbols and nonsense.</li>
+				<li>qualityStatement(quality==0)->It is [awfulDesc], a comedic disaster of incomprehensible drivel.</li>
+				<!-- Writing Quality -->
+				<li>writingQualityAdjective(quality==6)->brilliantly composed</li>
+				<li>writingQualityAdjective(quality==5)->excellently crafted</li>
+				<li>writingQualityAdjective(quality==4)->well-organized</li>
+				<li>writingQualityAdjective(quality==3)->barely coherent</li>
+				<li>writingQualityAdjective(quality==2)->frustratingly disjointed</li>
+				<li>writingQualityAdjective(quality==1)->comically terrible</li>
+				<li>writingQualityAdjective(quality==0)->complete farce of a</li>
+				<!-- Excellent descriptors -->
+				<li>excellentDesc->a timeless guide for those seeking Archotech enlightenment</li>
+				<li>excellentDesc->a definitive work on transmutation</li>
+				<li>excellentDesc->an unrivaled source of alchemical wisdom</li>
+				<li>excellentDesc->an extraordinary testament to Archotech ingenuity</li>
+				<!-- Decent descriptors -->
+				<li>decentDesc->a fascinating glimpse into advanced transmutation techniques</li>
+				<li>decentDesc->a competent explanation of gold conversion</li>
+				<li>decentDesc->an insightful read for the curious and the wealthy alike</li>
+				<!-- Functional descriptors -->
+				<li>functionalDesc->a sufficient resource for aspiring transmuters</li>
+				<li>functionalDesc->a serviceable manual for practical Archotech applications</li>
+				<li>functionalDesc->a modest guide to gilding the mundane</li>
+				<!-- Mediocre descriptors -->
+				<li>mediocreDesc->a confounding mix of wisdom and riddles</li>
+				<li>mediocreDesc->a lackluster attempt at conveying Archotech secrets</li>
+				<li>mediocreDesc->an uneven exploration of the golden arts</li>
+				<!-- Poor descriptors -->
+				<li>poorDesc->a confusing and poorly executed volume</li>
+				<li>poorDesc->a frustratingly vague and incomplete book</li>
+				<li>poorDesc->an infuriating misfire in Archotech literature</li>
+				<!-- Terrible descriptors -->
+				<li>terribleDesc->a ridiculous attempt at documentation, barely readable</li>
+				<li>terribleDesc->a bizarre mess of gibberish and misplaced arrogance</li>
+				<li>terribleDesc->a woefully inept portrayal of Archotech knowledge</li>
+				<!-- Awful descriptors -->
+				<li>awfulDesc->a catastrophically bad attempt at Archotech writing, useful only as a doorstop</li>
+				<li>awfulDesc->a humiliating parody of its own lofty ambitions</li>
+				<li>awfulDesc->a collection of nonsensical scribbles, likely penned by a drunk muffalo</li>
+
+				<!-- Ending -->
+				<li>ending->\n\nOnce read, this book will be consumed, imbuing its reader with the power to convert all built structures and crafts into gold.</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>
