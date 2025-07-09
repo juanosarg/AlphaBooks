@@ -309,6 +309,7 @@
     <Compile Include="Abilities\Properties\CompProperties_DeleteWhenZeroCharges.cs" />
     <Compile Include="BookReadResults\BookReadResult_Condiment.cs" />
     <Compile Include="BookReadResults\BookReadResult_PlaySound.cs" />
+    <Compile Include="BookReadResults\BookReadResult_SkillTrainer.cs" />
     <Compile Include="BookReadResults\BookReadResult_SpawnThingsByQuality.cs" />
     <Compile Include="BookReadResults\BookReadResult_Biome.cs" />
     <Compile Include="BookReadResults\BookReadResult_CallRaid.cs" />
@@ -365,6 +366,7 @@
     <Compile Include="PlaceWorkers\PlaceWorker_ShowSpawnerRadius.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Condiment.cs" />
+    <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_SkillTrainer.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Plant.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_Biome.cs" />
     <Compile Include="ReadingOutcomeDoers\Properties\BookOutcomeProperties_CallRaids.cs" />
@@ -385,6 +387,7 @@
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Hediff.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_MapLocations.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Plant.cs" />
+    <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_SkillTrainer.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Text.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_RandomInspiration.cs" />
     <Compile Include="ReadingOutcomeDoers\ReadingOutcomeDoer_Religious.cs" />

@@ -30,8 +30,18 @@
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-					<li Class="AlphaBooks.BookOutcomeProperties_MapLocations">
+						<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
+						<descriptionForStages>
+							<li>95% Negative Thought Duration Factor, 105% Positive Thought Duration Factor, 95% MTB Lovin' Factor</li>
+							<li>90% Negative Thought Duration Factor, 110% Positive Thought Duration Factor, 90% MTB Lovin' Factor</li>
+							<li>80% Negative Thought Duration Factor, 120% Positive Thought Duration Factor, 80% MTB Lovin' Factor</li>
+							<li>70% Negative Thought Duration Factor, 130% Positive Thought Duration Factor, 70% MTB Lovin' Factor</li>
+							<li>60% Negative Thought Duration Factor, 140% Positive Thought Duration Factor, 50% MTB Lovin' Factor</li>
+							<li>50% Negative Thought Duration Factor, 150% Positive Thought Duration Factor, 30% MTB Lovin' Factor</li>
+							<li>40% Negative Thought Duration Factor, 160% Positive Thought Duration Factor, 10% MTB Lovin' Factor</li>
 						
+						</descriptionForStages>
+						<ticks>180000</ticks>
 					</li>
 				</doers>
 			</li>
@@ -43,7 +53,8 @@
 			<li Class="AlphaBooks.BookDefModExtension">
 				<readResults>
 					<li>
-						<doerClass>AlphaBooks.BookReadResult_MapLocations</doerClass>					
+						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
+						<hediffToAdd>ABooks_LustySauridMaid</hediffToAdd>
 					</li>
 					<li>
 						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					

@@ -8,11 +8,11 @@
 	</supportedVersions>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaBooks</modIconPath>
 	<packageId>sarg.alphabooks</packageId>
-	<description>- 19 new types of books that are all single-use, and give a bonus to the reader. From useful hediffs, to abilities, to unlocking new map locations, there is variety enough to spice up any playthrough. They all have custom graphics, descriptions and mechanics.
+	<description>- 21 new types of books that are all single-use, and give a bonus to the reader. From useful hediffs, to abilities, to unlocking new map locations, there is variety enough to spice up any playthrough. They all have custom graphics, descriptions and mechanics.
 - All books work like normal books regarding bookshelves, acting as quest rewards, etc, but colonists will NOT auto-read them.
 - A new quest to raid ancient ruined libraries to acquire the new books.
 - A new furniture building, the plinth, to display your favourite books and give x10 Beauty.
-- Anomaly, Royalty, Ideology and VE Cooking add new books, for a total of 24.
+- Anomaly, Royalty, Ideology and VE Cooking add new books, for a total of 26.
 </description>
 	<modDependencies>
 		<li>

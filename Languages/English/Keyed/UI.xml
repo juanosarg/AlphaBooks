@@ -15,6 +15,7 @@
 	<ABooks_HediffNoTime>Reader will receive {0}</ABooks_HediffNoTime>
 	<ABooks_Nothing>This ruined book won't provide any benefit to the reader except a meager amount of recreation, and it will basically disintegrate after being read.</ABooks_Nothing>
 	<ABooks_NewMapLocations>Reading this book will discover {0} new map locations on the world map.</ABooks_NewMapLocations>
+	<ABooks_SkillTrainer>Reading this book will provide {0} experience points in a random skill, regardless of passion in it.</ABooks_SkillTrainer>
 	<ABooks_UnlockPsycast>Reading this book will unlock the {0} psycast (level {1}) for the reader.</ABooks_UnlockPsycast>
 	<ABooks_Biome>Reading this book will give advantages to the reader when on the {0} biome.</ABooks_Biome>
 	<ABooks_StatsReport_TempMinByBiome>In the {0} biome: -20 ºC</ABooks_StatsReport_TempMinByBiome>

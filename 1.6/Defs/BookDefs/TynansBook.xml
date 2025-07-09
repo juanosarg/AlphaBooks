@@ -30,7 +30,7 @@
 					<addTopAltitudeBias>true</addTopAltitudeBias>
 				</verticalGraphic>
 				<doers>
-					<li Class="AlphaBooks.BookOutcomeProperties_MapLocations">
+					<li Class="AlphaBooks.BookOutcomeProperties_SkillTrainer">
 						
 					</li>
 				</doers>
@@ -43,7 +43,7 @@
 			<li Class="AlphaBooks.BookDefModExtension">
 				<readResults>
 					<li>
-						<doerClass>AlphaBooks.BookReadResult_MapLocations</doerClass>					
+						<doerClass>AlphaBooks.BookReadResult_SkillTrainer</doerClass>					
 					</li>
 					<li>
 						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					
