@@ -9,6 +9,7 @@
 		<tags>
 			<li>ABooks_RuinedLibrary</li>
 		</tags>
+		<gravShipsCanLandOn>true</gravShipsCanLandOn>
 	</SitePartDef>
 	<GenStepDef>
 		<defName>ABooks_RuinedLibrary</defName>
