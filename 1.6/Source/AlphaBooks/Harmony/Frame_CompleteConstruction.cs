@@ -60,6 +60,8 @@ namespace AlphaBooks
                 if (def.MadeFromStuff == true)
                 {
                     __result.SetStuffDirect(ThingDefOf.Gold);
+                    StatDefOf.MaxHitPoints.Worker.ClearCacheForThing(__result);
+                    __result.HitPoints = __result.MaxHitPoints;
                 }
             }
             if (AlphaBooks_Frame_CompleteConstruction_Patch.crafter?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_TreatiseOfStainlessSteel) == true)
@@ -67,6 +69,8 @@ namespace AlphaBooks
                 if (def.MadeFromStuff == true && __result.Stuff == ThingDefOf.Steel)
                 {
                     __result.SetStuffDirect(InternalDefOf.ABooks_StainlessSteel);
+                    StatDefOf.MaxHitPoints.Worker.ClearCacheForThing(__result);
+                    __result.HitPoints = __result.MaxHitPoints;
                 }
             }
             if (AlphaBooks_Frame_CompleteConstruction_Patch.crafter?.health?.hediffSet.HasHediff(InternalDefOf.ABooks_DurathreadTechniques) == true)
@@ -74,6 +78,8 @@ namespace AlphaBooks
                 if (def.MadeFromStuff == true && __result.Stuff == ThingDefOf.Cloth)
                 {
                     __result.SetStuffDirect(InternalDefOf.ABooks_Durathread);
+                    StatDefOf.MaxHitPoints.Worker.ClearCacheForThing(__result);
+                    __result.HitPoints = __result.MaxHitPoints;
                 }
             }
 

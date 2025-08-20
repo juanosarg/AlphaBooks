@@ -48,6 +48,8 @@ namespace AlphaBooks
                 if (product?.def.MadeFromStuff==true)
                 {
                     product.SetStuffDirect(ThingDefOf.Gold);
+                    StatDefOf.MaxHitPoints.Worker.ClearCacheForThing(product);
+                    product.HitPoints = product.MaxHitPoints;
                 }
 
             }
@@ -57,6 +59,8 @@ namespace AlphaBooks
                 if (product?.def.MadeFromStuff == true && product.Stuff ==ThingDefOf.Steel)
                 {
                     product.SetStuffDirect(InternalDefOf.ABooks_StainlessSteel);
+                    StatDefOf.MaxHitPoints.Worker.ClearCacheForThing(product);
+                    product.HitPoints = product.MaxHitPoints;
                 }
 
             }
@@ -66,6 +70,8 @@ namespace AlphaBooks
                 if (product?.def.MadeFromStuff == true && product.Stuff == ThingDefOf.Cloth)
                 {
                     product.SetStuffDirect(InternalDefOf.ABooks_Durathread);
+                    StatDefOf.MaxHitPoints.Worker.ClearCacheForThing(product);
+                    product.HitPoints = product.MaxHitPoints;
                 }
 
             }
