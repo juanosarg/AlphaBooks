@@ -26,6 +26,9 @@
 	<ABooks_Nonsense>The text is nonsensical and nearly unreadable. It is a mystery what effect reading it may have, if any.</ABooks_Nonsense>
 	<ABooks_StainlessSteel>Studying this treatise unlocks stainless steel as a material, enabling its crafting and use in construction and crafting projects. Anything created out of steel by the reader will from now on be made with stainless steel instead, which has better qualities and is non-flammable.</ABooks_StainlessSteel>
 	<ABooks_DurathreadTechniques>Studying this treatise unlocks durathread as a material, enabling its crafting and use in construction and crafting projects. Anything created out of cloth by the reader will from now on be made with durathread instead, which has better qualities.</ABooks_DurathreadTechniques>
+	<Abooks_ReadDurathreadTechniques>{0} has mastered durathread techniques and will use this material instead of cloth.</Abooks_ReadDurathreadTechniques>
+	<Abooks_ReadStainlessSteel>{0} has mastered stainless steel and will use this material instead of steel.</Abooks_ReadStainlessSteel>
+	<ABooks_ReadMidas>{0} has acquired a Midas touch, and will turn all finished crafts and structures into gold.</ABooks_ReadMidas>
 	
 	<ABooks_DisableQuests>Disable Ruined Library quests</ABooks_DisableQuests>
 	<ABooks_DisableQuests_Description>Disables Ruined Library quests from triggering. Bear in mind these quests are independent of any other quests or storyteller events (raids, manhunters, etc).</ABooks_DisableQuests_Description>

@@ -22,7 +22,8 @@ namespace AlphaBooks
 
 
         public static void Notify_BookRead(Pawn pawn, Book book, ThoughtDef thought = null, List<AbilityDef> abilities = null, 
-            List<int> chargesByQuality = null, HediffDef hediffToAdd = null, List<ThingAndCount> thingsToSpawnByQuality = null, SoundDef sound = null)
+            List<int> chargesByQuality = null, HediffDef hediffToAdd = null, List<ThingAndCount> thingsToSpawnByQuality = null, SoundDef sound = null, 
+            string generalPurposeText = "")
         {
             if(book is Book_Skill book_Skill)
             {

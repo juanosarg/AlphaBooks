@@ -24,6 +24,7 @@ namespace AlphaBooks
         public HediffDef hediffToAdd;
         public List<ThingAndCount> thingsToSpawnByQuality;
         public SoundDef sound;
+        public string generalPurposeText;
 
     }
 

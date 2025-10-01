@@ -307,6 +307,7 @@
     <Compile Include="Abilities\CompAbilityEffect_DeleteWhenZeroCharges.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityCornucopia.cs" />
     <Compile Include="Abilities\Properties\CompProperties_DeleteWhenZeroCharges.cs" />
+    <Compile Include="BookReadResults\BookReadResult_Notification.cs" />
     <Compile Include="BookReadResults\BookReadResult_Condiment.cs" />
     <Compile Include="BookReadResults\BookReadResult_PlaySound.cs" />
     <Compile Include="BookReadResults\BookReadResult_SkillTrainer.cs" />

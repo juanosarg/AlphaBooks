@@ -11,12 +11,12 @@
 		<comps>
 			<li Class="AlphaBooks.HediffCompProperties_DeleteAfterTime">
 				<scaleTicksPerQuality>true</scaleTicksPerQuality>
-				<ticksAwful>10000</ticksAwful>
-				<ticksPoor>15000</ticksPoor>
-				<ticksNormal>25000</ticksNormal>
-				<ticksGood>30000</ticksGood>
-				<ticksExcellent>37500</ticksExcellent>
-				<ticksMasterwork>50000</ticksMasterwork>
+				<ticksAwful>2500</ticksAwful>
+				<ticksPoor>5000</ticksPoor>
+				<ticksNormal>10000</ticksNormal>
+				<ticksGood>12500</ticksGood>
+				<ticksExcellent>18750</ticksExcellent>
+				<ticksMasterwork>25000</ticksMasterwork>
 				<ticksLegendary>60000</ticksLegendary>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>

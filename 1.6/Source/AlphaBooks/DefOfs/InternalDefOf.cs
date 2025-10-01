@@ -79,6 +79,8 @@ namespace AlphaBooks
 
         public static QuestScriptDef Abooks_OpportunitySite_RuinedLibrary;
 
+        public static JobDef ABooks_Reading;
+
 
     }
 }

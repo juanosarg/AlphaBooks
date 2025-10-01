@@ -32,12 +32,12 @@
 				<doers>
 					<li Class="AlphaBooks.BookOutcomeProperties_Hediff">
 						<descriptionForStages>
+							<li>the capacity to turn all finished crafts and structures into gold for 1 hour</li>
+							<li>the capacity to turn all finished crafts and structures into gold for 2 hours</li>
 							<li>the capacity to turn all finished crafts and structures into gold for 4 hours</li>
-							<li>the capacity to turn all finished crafts and structures into gold for 6 hours</li>
+							<li>the capacity to turn all finished crafts and structures into gold for 5 hours</li>
+							<li>the capacity to turn all finished crafts and structures into gold for 7.5 hours</li>
 							<li>the capacity to turn all finished crafts and structures into gold for 10 hours</li>
-							<li>the capacity to turn all finished crafts and structures into gold for 12 hours</li>
-							<li>the capacity to turn all finished crafts and structures into gold for 15 hours</li>
-							<li>the capacity to turn all finished crafts and structures into gold for 20 hours</li>
 							<li>the capacity to turn all finished crafts and structures into gold for 1 day</li>
 						
 						</descriptionForStages>
@@ -55,6 +55,10 @@
 					<li>
 						<doerClass>AlphaBooks.BookReadResult_GiveHediff</doerClass>
 						<hediffToAdd>ABooks_MidasTome</hediffToAdd>
+					</li>
+					<li>
+						<doerClass>AlphaBooks.BookReadResult_Notification</doerClass>
+						<generalPurposeText>ABooks_ReadMidas</generalPurposeText>
 					</li>
 					<li>
 						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>					

@@ -47,6 +47,10 @@
 						<hediffToAdd>ABooks_DurathreadTechniques</hediffToAdd>
 					</li>
 					<li>
+						<doerClass>AlphaBooks.BookReadResult_Notification</doerClass>
+						<generalPurposeText>Abooks_ReadDurathreadTechniques</generalPurposeText>
+					</li>
+					<li>
 						<doerClass>AlphaBooks.BookReadResult_DestroyBook</doerClass>
 					</li>
 				</readResults>

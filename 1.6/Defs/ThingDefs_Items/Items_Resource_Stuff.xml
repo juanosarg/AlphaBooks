@@ -36,6 +36,7 @@
 			</categories>
 			<appearance>Metal</appearance>
 			<commonality>0</commonality>
+			 <isAirtight>true</isAirtight>
 			<constructEffect>ConstructMetal</constructEffect>
 			<color>(83,87,97)</color>
 			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
