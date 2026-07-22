@@ -4,7 +4,7 @@
   
   <JobDef>
     <defName>ABooks_Reading</defName>
-    <driverClass>JobDriver_Reading</driverClass>
+    <driverClass>AlphaBooks.JobDriver_ReadAlphaBook</driverClass>
     <casualInterruptible>false</casualInterruptible>
     <reportString>reading TargetA</reportString>
   </JobDef>

@@ -307,6 +307,7 @@
     <Compile Include="Abilities\CompAbilityEffect_DeleteWhenZeroCharges.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityCornucopia.cs" />
     <Compile Include="Abilities\Properties\CompProperties_DeleteWhenZeroCharges.cs" />
+    <Compile Include="AI\JobDriver_ReadAlphaBook.cs" />
     <Compile Include="BookReadResults\BookReadResult_Notification.cs" />
     <Compile Include="BookReadResults\BookReadResult_Condiment.cs" />
     <Compile Include="BookReadResults\BookReadResult_PlaySound.cs" />
@@ -355,7 +356,6 @@
     <Compile Include="Harmony\Frame_CompleteConstruction.cs" />
     <Compile Include="Harmony\Toils_General_Open.cs" />
     <Compile Include="Harmony\SkillRecord_LearnRateFactor.cs" />
-    <Compile Include="Harmony\JobDriver_Reading_ReadBook.cs" />
     <Compile Include="Harmony\SkillUI_GetSkillDescription.cs" />
     <Compile Include="Harmony\Verb_CastAbility_DrawHighlight.cs" />
     <Compile Include="HediffComps\HediffComp_AddBiome.cs" />
